@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-appearance="light" data-bg="paper" class="dash">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="color-scheme" content="light dark"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>AI-MAP Ethiopia: Surveyor's dashboard</title>
+<script>
+/* Same pre-paint theme resolution as the questionnaire, and the same stored
+   keys, so a surveyor who set dark mode in one gets it in the other. */
+(function () {
+  try {
+    var pref = localStorage.getItem('aimap_theme') || 'light';
+    var bg = localStorage.getItem('aimap_bg') || 'paper';
+    var dark = pref === 'dark' ||
+      (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var r = document.documentElement;
+    r.setAttribute('data-appearance', dark ? 'dark' : 'light');
+    r.setAttribute('data-bg', bg);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='14' width='5' height='14' fill='%230b6b53'/%3E%3Crect x='13' y='8' width='5' height='20' fill='%230b6b53'/%3E%3Crect x='22' y='18' width='5' height='10' fill='%230b6b53'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header id="hdr">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> AI-MAP Ethiopia · Dashboard</div>
+    <div class="hdr-right">
+      <span id="netstat" class="pill" role="status">…</span>
+      <a class="pill" href="index.html">Questionnaire</a>
+      <button type="button" id="signout" class="iconbtn" title="Sign out"
+              aria-label="Sign out">⎋</button>
+    </div>
+  </div>
+</header>
+
+<!-- ------------------------------------------------------------ token gate -->
+<main class="wrap" id="main">
+
+<!-- --------------------------------------------------------------- content -->
+<div id="app" hidden>
+
+  <!-- One filter row above everything it scopes. Never a control inside a card. -->
+  <div id="filters">
+    <div class="row">
+      <button type="button" class="btn ghost" id="refresh">Refresh</button>
+      <label class="hint"><input type="checkbox" id="tablemode"> Table view</label>
+      <span class="spacer"></span>
+      <span class="asof" id="asof"></span>
+    </div>
+  </div>
+
+  <div id="tabs" role="tablist" aria-label="Dashboard sections"></div>
+  <div id="view"></div>
+
+  <p class="fine noprint" style="margin:28px 0 40px">
+    Figures are computed live from the collection database on each refresh.
+    Sector and construct figures are withheld below the minimum n set in
+    <code>tools/schema/sampling.json</code>: a withheld row shows why, because a
+    caveat under a number does not stop the number being quoted.
+  </p>
+</div>
+</main>
+
+<div id="tip" role="status" aria-live="off"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

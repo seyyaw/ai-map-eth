@@ -1,0 +1,1984 @@
+{
+  "code": "IND",
+  "title": "AI Practitioners, Researchers and Educators Survey",
+  "intro": "For anyone working in or studying technology, data, research or education in Ethiopia. About 12 minutes. Anonymous. Results published openly.",
+  "sections": [
+    {
+      "id": "S",
+      "title": "Consent",
+      "questions": [
+        {
+          "id": "S1",
+          "type": "consent",
+          "required": true,
+          "text": "Consent to participate",
+          "core": true
+        },
+        {
+          "id": "S2",
+          "type": "single",
+          "required": true,
+          "text": "Which best describes you?",
+          "options": [
+            {
+              "value": "dev",
+              "label": "Software developer or engineer"
+            },
+            {
+              "value": "data",
+              "label": "Data scientist, ML engineer or analyst"
+            },
+            {
+              "value": "it",
+              "label": "IT / systems professional"
+            },
+            {
+              "value": "acad",
+              "label": "University lecturer or researcher"
+            },
+            {
+              "value": "phd",
+              "label": "PhD or Masters student"
+            },
+            {
+              "value": "ustudent",
+              "label": "Undergraduate student"
+            },
+            {
+              "value": "teacher",
+              "label": "School teacher or education professional"
+            },
+            {
+              "value": "health",
+              "label": "Health professional"
+            },
+            {
+              "value": "gov",
+              "label": "Public sector professional (non-IT)"
+            },
+            {
+              "value": "founder",
+              "label": "Founder or entrepreneur"
+            },
+            {
+              "value": "other",
+              "label": "Other",
+              "allow_text": true
+            }
+          ],
+          "core": true
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "title": "About you",
+      "questions": [
+        {
+          "id": "A1",
+          "type": "single",
+          "text": "Age group",
+          "options": [
+            {
+              "value": "1",
+              "label": "Under 20"
+            },
+            {
+              "value": "2",
+              "label": "20-24"
+            },
+            {
+              "value": "3",
+              "label": "25-34"
+            },
+            {
+              "value": "4",
+              "label": "35-44"
+            },
+            {
+              "value": "5",
+              "label": "45-54"
+            },
+            {
+              "value": "6",
+              "label": "55 or over"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "A2",
+          "type": "single",
+          "text": "Gender",
+          "options": [
+            {
+              "value": "f",
+              "label": "Woman"
+            },
+            {
+              "value": "m",
+              "label": "Man"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            },
+            {
+              "value": "na",
+              "label": "Prefer not to say"
+            }
+          ],
+          "optional": true
+        },
+        {
+          "id": "A3",
+          "type": "single",
+          "required": true,
+          "text": "Where are you based?",
+          "options_ref": "ORG:A1",
+          "extra_options": [
+            {
+              "value": "diaspora",
+              "label": "Outside Ethiopia (diaspora)"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "A4",
+          "type": "single",
+          "show_if": {
+            "q": "A3",
+            "op": "eq",
+            "value": "diaspora"
+          },
+          "text": "Do you currently collaborate with Ethiopian institutions on AI or research?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, actively and regularly"
+            },
+            {
+              "value": "2",
+              "label": "Occasionally"
+            },
+            {
+              "value": "1",
+              "label": "No, but I would like to"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "note": "Measures the diaspora engagement channel that §9.5 recommends formalising."
+        },
+        {
+          "id": "A5",
+          "type": "single",
+          "text": "Highest qualification completed",
+          "options": [
+            {
+              "value": "1",
+              "label": "Secondary"
+            },
+            {
+              "value": "2",
+              "label": "TVET / Diploma"
+            },
+            {
+              "value": "3",
+              "label": "Bachelors"
+            },
+            {
+              "value": "4",
+              "label": "Masters"
+            },
+            {
+              "value": "5",
+              "label": "PhD"
+            }
+          ],
+          "core": true,
+          "optional": true
+        },
+        {
+          "id": "A6",
+          "type": "single",
+          "show_if": {
+            "q": "A5",
+            "op": "gte",
+            "value": "3"
+          },
+          "text": "Was your highest qualification obtained in Ethiopia or abroad?",
+          "options": [
+            {
+              "value": "et",
+              "label": "Ethiopia"
+            },
+            {
+              "value": "abroad",
+              "label": "Abroad"
+            },
+            {
+              "value": "both",
+              "label": "Partly both"
+            }
+          ],
+          "optional": true
+        },
+        {
+          "id": "A7",
+          "type": "single",
+          "text": "Years of professional experience in technology, data or research",
+          "options": [
+            {
+              "value": "0",
+              "label": "None yet"
+            },
+            {
+              "value": "1",
+              "label": "Under 2"
+            },
+            {
+              "value": "2",
+              "label": "2-5"
+            },
+            {
+              "value": "3",
+              "label": "6-10"
+            },
+            {
+              "value": "4",
+              "label": "More than 10"
+            }
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Your use of AI",
+      "questions": [
+        {
+          "id": "B1",
+          "type": "single",
+          "required": true,
+          "text": "How often do you personally use AI tools such as ChatGPT, Claude, Gemini or Copilot?",
+          "options": [
+            {
+              "value": "5",
+              "label": "Every day"
+            },
+            {
+              "value": "4",
+              "label": "Several times a week"
+            },
+            {
+              "value": "3",
+              "label": "Weekly"
+            },
+            {
+              "value": "2",
+              "label": "Monthly"
+            },
+            {
+              "value": "1",
+              "label": "Tried once or twice"
+            },
+            {
+              "value": "0",
+              "label": "Never"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "B2",
+          "type": "multi",
+          "show_if": {
+            "q": "B1",
+            "op": "gte",
+            "value": "1"
+          },
+          "text": "What do you use them for?",
+          "options": [
+            {
+              "value": "write",
+              "label": "Writing and editing"
+            },
+            {
+              "value": "translate",
+              "label": "Translation"
+            },
+            {
+              "value": "code",
+              "label": "Writing or debugging code"
+            },
+            {
+              "value": "learn",
+              "label": "Learning and explanation"
+            },
+            {
+              "value": "research",
+              "label": "Research and literature"
+            },
+            {
+              "value": "analysis",
+              "label": "Data analysis"
+            },
+            {
+              "value": "teach_prep",
+              "label": "Preparing teaching materials"
+            },
+            {
+              "value": "teach_grade",
+              "label": "Grading or giving feedback on student work"
+            },
+            {
+              "value": "admin",
+              "label": "Reports and administrative work"
+            },
+            {
+              "value": "ideas",
+              "label": "Brainstorming"
+            },
+            {
+              "value": "other",
+              "label": "Other",
+              "allow_text": true
+            }
+          ]
+        },
+        {
+          "id": "B3",
+          "type": "single",
+          "show_if": {
+            "q": "B1",
+            "op": "gte",
+            "value": "1"
+          },
+          "text": "Do you pay for any AI tool?",
+          "options": [
+            {
+              "value": "self",
+              "label": "Yes, personally"
+            },
+            {
+              "value": "employer",
+              "label": "Yes, my employer pays"
+            },
+            {
+              "value": "want",
+              "label": "No: I would, but payment is difficult from Ethiopia"
+            },
+            {
+              "value": "no",
+              "label": "No, free versions only"
+            }
+          ],
+          "note": "The 'payment is difficult' share quantifies an FX/payment-rails barrier rarely captured in global surveys.",
+          "core": true
+        },
+        {
+          "id": "B4",
+          "type": "single",
+          "show_if": {
+            "q": "B1",
+            "op": "eq",
+            "value": "0"
+          },
+          "text": "Why not?",
+          "options": [
+            {
+              "value": "access",
+              "label": "No reliable internet or device"
+            },
+            {
+              "value": "unaware",
+              "label": "I don't know how"
+            },
+            {
+              "value": "cost",
+              "label": "Cost"
+            },
+            {
+              "value": "lang",
+              "label": "They don't work in my language"
+            },
+            {
+              "value": "trust",
+              "label": "I don't trust them"
+            },
+            {
+              "value": "norelevance",
+              "label": "Not relevant to my work"
+            },
+            {
+              "value": "policy",
+              "label": "Not allowed at my workplace"
+            },
+            {
+              "value": "other",
+              "label": "Other",
+              "allow_text": true
+            }
+          ]
+        },
+        {
+          "id": "B5",
+          "type": "single",
+          "text": "Have you ever built, trained or fine-tuned a machine learning model yourself?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, deployed in real use"
+            },
+            {
+              "value": "2",
+              "label": "Yes, for research or study"
+            },
+            {
+              "value": "1",
+              "label": "Followed a tutorial only"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "core": true,
+          "show_if": {
+            "q": "S2",
+            "op": "in",
+            "value": [
+              "dev",
+              "data",
+              "it",
+              "acad",
+              "phd",
+              "ustudent",
+              "founder"
+            ]
+          },
+          "note": "Asked only of respondents whose role plausibly involves building things. A school teacher or a non-IT public servant answering 'no' to every technical item learns nothing and leaves -- and the resulting 'no skills' reading would be an artefact of asking the wrong people, not a finding."
+        },
+        {
+          "id": "B6",
+          "type": "single",
+          "text": "Do you have access to a GPU or computing cluster for machine learning work?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Yes, at my institution"
+            },
+            {
+              "value": "3",
+              "label": "Yes, I pay for cloud myself"
+            },
+            {
+              "value": "2",
+              "label": "Free tiers only (Colab, Kaggle)"
+            },
+            {
+              "value": "1",
+              "label": "My own laptop GPU"
+            },
+            {
+              "value": "0",
+              "label": "No access"
+            }
+          ],
+          "note": "Individual-level compute access: the constraint that most affects Ethiopian researchers in practice. Asked only of respondents whose role plausibly involves building things. A school teacher or a non-IT public servant answering 'no' to every technical item learns nothing and leaves -- and the resulting 'no skills' reading would be an artefact of asking the wrong people, not a finding.",
+          "core": true,
+          "show_if": {
+            "q": "S2",
+            "op": "in",
+            "value": [
+              "dev",
+              "data",
+              "it",
+              "acad",
+              "phd",
+              "ustudent",
+              "founder"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "AT",
+      "title": "Kinds of AI you personally use",
+      "questions": [
+        {
+          "id": "AT1",
+          "type": "multi",
+          "core": true,
+          "show_if": {
+            "q": "B1",
+            "op": "gte",
+            "value": "1"
+          },
+          "text": "Which of these have you personally used or worked with? Choose all that apply.",
+          "options": [
+            {
+              "value": "genai",
+              "label": "Generative AI / chatbots"
+            },
+            {
+              "value": "predict",
+              "label": "Predictive analytics or machine learning"
+            },
+            {
+              "value": "cv",
+              "label": "Computer vision (e.g. recognising objects or faces in photos)"
+            },
+            {
+              "value": "nlp_local",
+              "label": "Language technology for Amharic or another Ethiopian language"
+            },
+            {
+              "value": "speech",
+              "label": "Speech recognition or text-to-speech"
+            },
+            {
+              "value": "robotics",
+              "label": "Robotics or automation (e.g. drones, sensors, automated machines)"
+            },
+            {
+              "value": "recsys",
+              "label": "Recommendation or personalisation systems (e.g. suggested videos, products or content)"
+            },
+            {
+              "value": "agentic",
+              "label": "AI agents that act on their own (booking, filing, replying)"
+            },
+            {
+              "value": "local_oss",
+              "label": "Running an open-weight model (e.g. Llama, Mistral) on your own hardware to avoid API costs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "U",
+      "title": "Why you do or do not use AI",
+      "help": "Eleven statements. There are no right answers; we are measuring what drives adoption, not testing you.",
+      "questions": [
+        {
+          "id": "U1",
+          "type": "likert_grid",
+          "required": true,
+          "core": true,
+          "text": "How much do you agree with each statement?",
+          "rows": [
+            {
+              "value": "pe1",
+              "label": "Using AI tools improves the quality of my work",
+              "construct": "performance_expectancy"
+            },
+            {
+              "value": "pe2",
+              "label": "Using AI tools helps me get things done faster",
+              "construct": "performance_expectancy"
+            },
+            {
+              "value": "ee1",
+              "label": "Learning to use AI tools is easy for me",
+              "construct": "effort_expectancy"
+            },
+            {
+              "value": "ee2",
+              "label": "I can get AI tools to do what I want without much effort",
+              "construct": "effort_expectancy"
+            },
+            {
+              "value": "si1",
+              "label": "People whose opinion I value think I should use AI tools",
+              "construct": "social_influence"
+            },
+            {
+              "value": "si2",
+              "label": "Using AI tools is expected in my workplace or field",
+              "construct": "social_influence"
+            },
+            {
+              "value": "fc1",
+              "label": "I have the internet, device and payment access I need to use AI tools",
+              "construct": "facilitating_conditions"
+            },
+            {
+              "value": "fc2",
+              "label": "I can get help when I have difficulty with an AI tool",
+              "construct": "facilitating_conditions"
+            },
+            {
+              "value": "aa1",
+              "label": "I would rather rely on a person's judgement than an algorithm's",
+              "construct": "algorithmic_aversion"
+            },
+            {
+              "value": "aa2",
+              "label": "I do not trust AI tools to be accurate about Ethiopian subjects",
+              "construct": "algorithmic_aversion"
+            },
+            {
+              "value": "aa3",
+              "label": "AI tools do not understand the language or context I work in",
+              "construct": "algorithmic_aversion"
+            }
+          ],
+          "scale": [
+            {
+              "value": "1",
+              "label": "Strongly disagree"
+            },
+            {
+              "value": "2",
+              "label": "Disagree"
+            },
+            {
+              "value": "3",
+              "label": "Neither"
+            },
+            {
+              "value": "4",
+              "label": "Agree"
+            },
+            {
+              "value": "5",
+              "label": "Strongly agree"
+            }
+          ],
+          "note": "UTAUT (Venkatesh et al. 2003) extended with algorithmic aversion, following Ayeni et al. (MWAIS 2024), who field the same constructs in Nigeria, Cameroon and Uganda at n=54. Fielding them here at scale with a documented frame makes the Ethiopian result comparable to that work and to any later replication. The three aversion rows are reverse-coded in scoring.",
+          "row_noun": "statement"
+        },
+        {
+          "id": "U2",
+          "type": "single",
+          "core": true,
+          "text": "How likely are you to use AI tools in your work over the next twelve months?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Certain, I will"
+            },
+            {
+              "value": "3",
+              "label": "Likely"
+            },
+            {
+              "value": "2",
+              "label": "Unsure"
+            },
+            {
+              "value": "1",
+              "label": "Unlikely"
+            },
+            {
+              "value": "0",
+              "label": "I will not"
+            }
+          ],
+          "note": "Behavioural intention: the UTAUT dependent variable. Kept separate from B1 (current frequency), so intention and behaviour can diverge, which is where facilitating conditions show up. The top option formerly read “Certain; I already do and will continue”, which a respondent who answered “Never” to B1 could not truthfully pick. Behavioural intention must be answerable by a non-user; that is the whole point of asking it separately from current frequency."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Skills and training",
+      "questions": [
+        {
+          "id": "C1",
+          "type": "likert_grid",
+          "text": "How would you rate your own ability in each area?",
+          "scale": [
+            {
+              "value": "0",
+              "label": "None"
+            },
+            {
+              "value": "1",
+              "label": "Basic"
+            },
+            {
+              "value": "2",
+              "label": "Intermediate"
+            },
+            {
+              "value": "3",
+              "label": "Advanced"
+            },
+            {
+              "value": "4",
+              "label": "Expert"
+            }
+          ],
+          "rows": [
+            {
+              "value": "prog",
+              "label": "Programming (Python, R or similar)"
+            },
+            {
+              "value": "stats",
+              "label": "Statistics"
+            },
+            {
+              "value": "ml",
+              "label": "Machine learning"
+            },
+            {
+              "value": "dl",
+              "label": "Deep learning / neural networks"
+            },
+            {
+              "value": "nlp",
+              "label": "Natural language processing"
+            },
+            {
+              "value": "cv",
+              "label": "Computer vision"
+            },
+            {
+              "value": "data_eng",
+              "label": "Data engineering and pipelines"
+            },
+            {
+              "value": "deploy",
+              "label": "Deploying models into production"
+            },
+            {
+              "value": "prompt",
+              "label": "Effective use of generative AI tools"
+            },
+            {
+              "value": "ethics",
+              "label": "AI ethics and risk assessment"
+            }
+          ],
+          "core": true,
+          "show_if": {
+            "q": "S2",
+            "op": "in",
+            "value": [
+              "dev",
+              "data",
+              "it",
+              "acad",
+              "phd",
+              "ustudent",
+              "founder"
+            ]
+          },
+          "note": "Asked only of respondents whose role plausibly involves building things. A school teacher or a non-IT public servant answering 'no' to every technical item learns nothing and leaves -- and the resulting 'no skills' reading would be an artefact of asking the wrong people, not a finding.",
+          "row_noun": "skill area"
+        },
+        {
+          "id": "C2",
+          "type": "single",
+          "text": "Where did you learn most of what you know about AI?",
+          "options": [
+            {
+              "value": "univ_et",
+              "label": "Ethiopian university course"
+            },
+            {
+              "value": "univ_abroad",
+              "label": "University abroad"
+            },
+            {
+              "value": "online",
+              "label": "Free online courses"
+            },
+            {
+              "value": "paid",
+              "label": "Paid online courses"
+            },
+            {
+              "value": "self",
+              "label": "Self-taught from documentation and practice"
+            },
+            {
+              "value": "work",
+              "label": "On the job"
+            },
+            {
+              "value": "community",
+              "label": "Community, meetups or peer groups"
+            },
+            {
+              "value": "none",
+              "label": "I have not learned about AI"
+            }
+          ],
+          "note": "Tests whether formal Ethiopian higher education is actually the main skills channel: a direct check on §9.5."
+        },
+        {
+          "id": "C3",
+          "type": "single",
+          "text": "In your Ethiopian education, was AI or machine learning taught?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, as a full course or specialisation"
+            },
+            {
+              "value": "2",
+              "label": "Yes, briefly within another course"
+            },
+            {
+              "value": "1",
+              "label": "No, but related computing was"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "na",
+              "label": "Not educated in Ethiopia"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "type": "likert_grid",
+          "text": "How much do each of these limit your ability to develop AI skills?",
+          "scale": [
+            {
+              "value": "0",
+              "label": "Not at all"
+            },
+            {
+              "value": "1",
+              "label": "A little"
+            },
+            {
+              "value": "2",
+              "label": "Moderately"
+            },
+            {
+              "value": "3",
+              "label": "A lot"
+            },
+            {
+              "value": "4",
+              "label": "Completely blocks me"
+            }
+          ],
+          "rows": [
+            {
+              "value": "internet",
+              "label": "Internet cost or reliability"
+            },
+            {
+              "value": "power",
+              "label": "Electricity interruptions"
+            },
+            {
+              "value": "compute",
+              "label": "No access to computing power"
+            },
+            {
+              "value": "money",
+              "label": "Cannot pay for courses or tools from Ethiopia"
+            },
+            {
+              "value": "time",
+              "label": "No time alongside work"
+            },
+            {
+              "value": "mentors",
+              "label": "No mentors or experienced colleagues"
+            },
+            {
+              "value": "materials",
+              "label": "No materials in my language"
+            },
+            {
+              "value": "data",
+              "label": "No datasets to practise on"
+            },
+            {
+              "value": "community",
+              "label": "No local community of practice"
+            }
+          ],
+          "row_noun": "factor"
+        },
+        {
+          "id": "C5",
+          "type": "multi",
+          "max_select": 3,
+          "text": "What training would help you most in the next year? Choose up to three.",
+          "options": [
+            {
+              "value": "basic",
+              "label": "Basic, safe use of AI chatbots and tools"
+            },
+            {
+              "value": "teaching",
+              "label": "Using AI for my teaching or classroom work"
+            },
+            {
+              "value": "detect",
+              "label": "How to spot AI-generated or plagiarised work"
+            },
+            {
+              "value": "programming",
+              "label": "Programming and machine learning skills"
+            },
+            {
+              "value": "data",
+              "label": "Data analysis and statistics"
+            },
+            {
+              "value": "ethics",
+              "label": "AI ethics and safe, responsible use"
+            },
+            {
+              "value": "language",
+              "label": "Local-language AI tools"
+            },
+            {
+              "value": "other",
+              "label": "Something else",
+              "allow_text": true
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "type": "single",
+          "text": "Are you a member of any Ethiopian technical community or network (e.g. EthioNLP, developer groups, professional associations)?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, actively"
+            },
+            {
+              "value": "2",
+              "label": "Yes, passively"
+            },
+            {
+              "value": "1",
+              "label": "No, but I know of them"
+            },
+            {
+              "value": "0",
+              "label": "No, and I don't know of any"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Language",
+      "questions": [
+        {
+          "id": "D1",
+          "type": "multi",
+          "required": true,
+          "text": "Which languages do you speak fluently?",
+          "options_ref": "ORG:L1"
+        },
+        {
+          "id": "D2",
+          "type": "single",
+          "text": "In which language do you usually work with AI tools?",
+          "options": [
+            {
+              "value": "en",
+              "label": "English"
+            },
+            {
+              "value": "am",
+              "label": "Amharic"
+            },
+            {
+              "value": "mix",
+              "label": "A mix"
+            },
+            {
+              "value": "other",
+              "label": "Another Ethiopian language",
+              "allow_text": true
+            },
+            {
+              "value": "na",
+              "label": "I don't use AI tools"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "D3",
+          "type": "single",
+          "show_if": {
+            "q": "D2",
+            "op": "not_eq",
+            "value": "na"
+          },
+          "text": "When you try to use AI tools in an Ethiopian language, how well do they perform?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Well"
+            },
+            {
+              "value": "3",
+              "label": "Acceptably for simple tasks"
+            },
+            {
+              "value": "2",
+              "label": "Poorly"
+            },
+            {
+              "value": "1",
+              "label": "Unusable"
+            },
+            {
+              "value": "0",
+              "label": "I have never tried"
+            }
+          ]
+        },
+        {
+          "id": "D4",
+          "type": "single",
+          "text": "Has having to work in English rather than your first language limited your work or learning?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, significantly"
+            },
+            {
+              "value": "2",
+              "label": "Yes, somewhat"
+            },
+            {
+              "value": "1",
+              "label": "No"
+            },
+            {
+              "value": "na",
+              "label": "English is my strongest working language"
+            }
+          ],
+          "note": "Quantifies the language penalty at individual level: a measurement absent from every prior Ethiopian AI study.",
+          "core": true
+        }
+      ]
+    },
+    {
+      "id": "ET",
+      "title": "Ethical lines",
+      "questions": [
+        {
+          "id": "ET1",
+          "type": "multi",
+          "core": true,
+          "text": "Which of these decisions do you think AI should NEVER make without a human checking first? Choose all that apply.",
+          "options": [
+            {
+              "value": "credit",
+              "label": "Credit, loan or insurance decisions"
+            },
+            {
+              "value": "hiring",
+              "label": "Hiring or firing decisions"
+            },
+            {
+              "value": "medical",
+              "label": "Medical diagnosis or treatment"
+            },
+            {
+              "value": "policing",
+              "label": "Policing or security actions"
+            },
+            {
+              "value": "benefits",
+              "label": "Government benefits or services"
+            },
+            {
+              "value": "none",
+              "label": "None; I trust AI for all of these",
+              "exclusive": true
+            }
+          ]
+        },
+        {
+          "id": "ET2",
+          "type": "single",
+          "text": "Have you personally raised an ethical or safety concern about an AI system at work or in your studies?",
+          "options": [
+            {
+              "value": "yes_acted",
+              "label": "Yes, and something changed as a result"
+            },
+            {
+              "value": "yes_nothing",
+              "label": "Yes, but nothing changed"
+            },
+            {
+              "value": "no_opportunity",
+              "label": "No, I have not had the occasion to"
+            },
+            {
+              "value": "no_unsafe",
+              "label": "No, I did not feel able to raise it"
+            }
+          ]
+        },
+        {
+          "id": "ET3",
+          "type": "single",
+          "core": true,
+          "text": "If an AI system causes harm, who do you think should be held responsible?",
+          "options_ref": "ORG:I8b"
+        },
+        {
+          "id": "ET4",
+          "type": "single",
+          "text": "Have you personally used, or seen others use, AI tools in a way that would count as cheating or unauthorised work (e.g. on an exam, assignment, or something you were responsible for evaluating)?",
+          "options": [
+            {
+              "value": "used",
+              "label": "Yes, I have done this myself"
+            },
+            {
+              "value": "seen",
+              "label": "I have seen others do this"
+            },
+            {
+              "value": "suspect",
+              "label": "Neither, but I think it happens"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "na",
+              "label": "Not applicable to me"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Research and publication",
+      "show_if": {
+        "q": "S2",
+        "op": "in",
+        "value": [
+          "acad",
+          "phd",
+          "data",
+          "founder"
+        ]
+      },
+      "questions": [
+        {
+          "id": "E1",
+          "type": "single",
+          "text": "Have you published research involving AI or machine learning?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Yes, more than five papers"
+            },
+            {
+              "value": "3",
+              "label": "Yes, two to five"
+            },
+            {
+              "value": "2",
+              "label": "Yes, one"
+            },
+            {
+              "value": "1",
+              "label": "Submitted but not published"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ]
+        },
+        {
+          "id": "E2",
+          "type": "multi",
+          "show_if": {
+            "q": "E1",
+            "op": "gte",
+            "value": "2"
+          },
+          "text": "Who were your co-authors?",
+          "options": [
+            {
+              "value": "et_same",
+              "label": "Colleagues at my own Ethiopian institution"
+            },
+            {
+              "value": "et_other",
+              "label": "Other Ethiopian institutions"
+            },
+            {
+              "value": "diaspora",
+              "label": "Ethiopian researchers abroad"
+            },
+            {
+              "value": "africa",
+              "label": "Other African institutions"
+            },
+            {
+              "value": "global",
+              "label": "Institutions in Europe, North America or Asia"
+            },
+            {
+              "value": "solo",
+              "label": "Sole author"
+            }
+          ],
+          "note": "Feeds the diaspora co-authorship analysis in §4.5.2."
+        },
+        {
+          "id": "E3",
+          "type": "multi",
+          "text": "What is your research area?",
+          "options": [
+            {
+              "value": "nlp",
+              "label": "NLP / language technology"
+            },
+            {
+              "value": "cv",
+              "label": "Computer vision"
+            },
+            {
+              "value": "health",
+              "label": "Health applications"
+            },
+            {
+              "value": "agri",
+              "label": "Agriculture applications"
+            },
+            {
+              "value": "edu",
+              "label": "Education applications"
+            },
+            {
+              "value": "finance",
+              "label": "Finance applications"
+            },
+            {
+              "value": "theory",
+              "label": "ML theory or methods"
+            },
+            {
+              "value": "ethics",
+              "label": "AI ethics, policy or society"
+            },
+            {
+              "value": "speech",
+              "label": "Speech technology"
+            },
+            {
+              "value": "other",
+              "label": "Other",
+              "allow_text": true
+            }
+          ]
+        },
+        {
+          "id": "E4",
+          "type": "multi",
+          "max_select": 3,
+          "text": "What most limits your research? Choose up to three.",
+          "options": [
+            {
+              "value": "compute",
+              "label": "No computing resources"
+            },
+            {
+              "value": "data",
+              "label": "No datasets"
+            },
+            {
+              "value": "funding",
+              "label": "No research funding"
+            },
+            {
+              "value": "time",
+              "label": "Teaching load leaves no research time"
+            },
+            {
+              "value": "access",
+              "label": "No access to paywalled literature"
+            },
+            {
+              "value": "collab",
+              "label": "No collaborators"
+            },
+            {
+              "value": "conf",
+              "label": "Cannot afford conference travel or fees"
+            },
+            {
+              "value": "visa",
+              "label": "Visa refusals for conferences"
+            },
+            {
+              "value": "supervision",
+              "label": "No senior supervision or mentorship"
+            },
+            {
+              "value": "internet",
+              "label": "Internet reliability"
+            }
+          ],
+          "note": "Visa refusal and conference-cost items capture structural exclusion from the global research community: routinely omitted from readiness indices."
+        },
+        {
+          "id": "E5",
+          "type": "single",
+          "text": "Have you created or released any dataset, model or tool for Ethiopian languages or contexts?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, publicly released"
+            },
+            {
+              "value": "2",
+              "label": "Yes, but not publicly available"
+            },
+            {
+              "value": "1",
+              "label": "In progress"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ]
+        },
+        {
+          "id": "E6",
+          "type": "text",
+          "show_if": {
+            "q": "E5",
+            "op": "in",
+            "value": [
+              "3",
+              "2"
+            ]
+          },
+          "text": "Please name it and give a link if there is one.",
+          "note": "Builds the national resource inventory for §6.2 and §5.5."
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Work, pay and future plans",
+      "questions": [
+        {
+          "id": "F1",
+          "type": "single",
+          "text": "Current employment status",
+          "options": [
+            {
+              "value": "full",
+              "label": "Full-time employed in Ethiopia"
+            },
+            {
+              "value": "part",
+              "label": "Part-time or contract"
+            },
+            {
+              "value": "remote",
+              "label": "Employed remotely by a foreign organisation"
+            },
+            {
+              "value": "self",
+              "label": "Self-employed / freelance"
+            },
+            {
+              "value": "student",
+              "label": "Student"
+            },
+            {
+              "value": "seeking",
+              "label": "Seeking work"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ],
+          "note": "The remote-for-foreign-employer share is a key indicator of internal brain drain.",
+          "core": true
+        },
+        {
+          "id": "F2",
+          "type": "single",
+          "show_if": {
+            "q": "F1",
+            "op": "in",
+            "value": [
+              "full",
+              "part",
+              "remote",
+              "self"
+            ]
+          },
+          "text": "Approximate monthly income (ETB)",
+          "options": [
+            {
+              "value": "1",
+              "label": "Under 10,000"
+            },
+            {
+              "value": "2",
+              "label": "10,000-25,000"
+            },
+            {
+              "value": "3",
+              "label": "25,000-50,000"
+            },
+            {
+              "value": "4",
+              "label": "50,000-100,000"
+            },
+            {
+              "value": "5",
+              "label": "Over 100,000"
+            },
+            {
+              "value": "na",
+              "label": "Prefer not to say"
+            }
+          ]
+        },
+        {
+          "id": "F3",
+          "type": "likert_grid",
+          "text": "How much do you agree with each statement?",
+          "scale": [
+            {
+              "value": "1",
+              "label": "Strongly disagree"
+            },
+            {
+              "value": "2",
+              "label": "Disagree"
+            },
+            {
+              "value": "3",
+              "label": "Neither"
+            },
+            {
+              "value": "4",
+              "label": "Agree"
+            },
+            {
+              "value": "5",
+              "label": "Strongly agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "intent1",
+              "label": "I intend to leave Ethiopia to work abroad within the next three years"
+            },
+            {
+              "value": "intent2",
+              "label": "I am actively taking steps to move abroad"
+            },
+            {
+              "value": "intent3",
+              "label": "If a good opportunity arose abroad, I would take it"
+            },
+            {
+              "value": "stay1",
+              "label": "I can build the career I want without leaving Ethiopia",
+              "reverse": true
+            },
+            {
+              "value": "opt1",
+              "label": "AI will create more opportunities than problems for Ethiopia"
+            },
+            {
+              "value": "opt2",
+              "label": "AI puts my own job at risk"
+            }
+          ],
+          "scoring": "emigration_intention_scale",
+          "note": "Three-item emigration intention scale (α to be reported). Converts 'brain drain' from an assertion into a measured quantity with covariates.",
+          "core": true,
+          "row_noun": "statement"
+        },
+        {
+          "id": "F4",
+          "type": "multi",
+          "max_select": 3,
+          "show_if": {
+            "q": "F3",
+            "op": "scale_gte",
+            "value": 4
+          },
+          "text": "What would most make you stay? Choose up to three.",
+          "options": [
+            {
+              "value": "pay",
+              "label": "Better pay"
+            },
+            {
+              "value": "work",
+              "label": "More interesting technical work"
+            },
+            {
+              "value": "compute",
+              "label": "Access to computing and data resources"
+            },
+            {
+              "value": "career",
+              "label": "Clear career progression"
+            },
+            {
+              "value": "stability",
+              "label": "Political and economic stability"
+            },
+            {
+              "value": "internet",
+              "label": "Reliable internet and power"
+            },
+            {
+              "value": "family",
+              "label": "Family reasons"
+            },
+            {
+              "value": "research",
+              "label": "Research funding and freedom"
+            },
+            {
+              "value": "nothing",
+              "label": "Nothing would change my mind"
+            }
+          ]
+        },
+        {
+          "id": "F5",
+          "type": "single",
+          "text": "Have you been offered or applied for AI-related work outside Ethiopia?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, and accepted"
+            },
+            {
+              "value": "2",
+              "label": "Yes, offered but declined"
+            },
+            {
+              "value": "1",
+              "label": "Applied, not offered"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ]
+        },
+        {
+          "id": "F6",
+          "type": "single",
+          "text": "Would you do paid data annotation or curation work for Ethiopian language datasets?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes"
+            },
+            {
+              "value": "2",
+              "label": "Yes, if fairly paid"
+            },
+            {
+              "value": "1",
+              "label": "Possibly"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Policy and institutions",
+      "questions": [
+        {
+          "id": "G1",
+          "type": "single",
+          "text": "Are you aware of Ethiopia's National AI Policy (2024)?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, I have read it"
+            },
+            {
+              "value": "2",
+              "label": "Yes, not read"
+            },
+            {
+              "value": "1",
+              "label": "Heard of it"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "G2",
+          "type": "single",
+          "text": "Has any government AI programme, funding or training benefited you personally?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, significantly"
+            },
+            {
+              "value": "2",
+              "label": "Yes, a little"
+            },
+            {
+              "value": "1",
+              "label": "No"
+            },
+            {
+              "value": "0",
+              "label": "No, and I don't know how to access any"
+            }
+          ],
+          "note": "A direct, individual-level measure of whether public AI spending reaches practitioners."
+        },
+        {
+          "id": "G3",
+          "type": "single",
+          "text": "How would you describe the Ethiopian AI Institute's effect on the wider AI community?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Strongly positive, it enables others"
+            },
+            {
+              "value": "3",
+              "label": "Somewhat positive"
+            },
+            {
+              "value": "2",
+              "label": "Neutral or no effect on me"
+            },
+            {
+              "value": "1",
+              "label": "Somewhat negative, it crowds out others"
+            },
+            {
+              "value": "0",
+              "label": "Strongly negative"
+            },
+            {
+              "value": "na",
+              "label": "I don't know enough to say"
+            }
+          ],
+          "note": "Balanced wording with an explicit 'don't know' to avoid forcing uninformed opinion.",
+          "core": true
+        },
+        {
+          "id": "G4",
+          "type": "longtext",
+          "text": "What single change would most improve the environment for AI work in Ethiopia?"
+        },
+        {
+          "id": "G5",
+          "type": "single",
+          "text": "This one is not a question; it is a check that a person is answering. Please choose “Disagree”.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Strongly disagree"
+            },
+            {
+              "value": "2",
+              "label": "Disagree"
+            },
+            {
+              "value": "3",
+              "label": "Neither"
+            },
+            {
+              "value": "4",
+              "label": "Agree"
+            },
+            {
+              "value": "5",
+              "label": "Strongly agree"
+            }
+          ],
+          "flags": [
+            "attention_check"
+          ],
+          "expected": "2",
+          "core": true,
+          "help": "Surveys like this one are sometimes filled in by programs, or by people tapping through without reading. One item that asks for a specific answer tells us how much of that is in the data. It does not affect you either way.",
+          "note": "Instructed-response attention check. The wording was originally “so we can check for automated responses”, which reads as an accusation to the respondent who IS reading -- the only person who will ever see it properly. It is marked core so it survives the short form: a short questionnaire is more prone to straight-lining, not less."
+        },
+        {
+          "id": "G6",
+          "type": "multi",
+          "max_select": 5,
+          "core": true,
+          "text": "What should Ethiopia's AI policy include that it does not adequately cover today? Choose up to five.",
+          "options_ref": "ORG:I10",
+          "note": "Same options as the organisational instrument's I10, so practitioner and institutional views of the same question can be compared directly."
+        }
+      ]
+    },
+    {
+      "id": "GV",
+      "title": "The global picture",
+      "questions": [
+        {
+          "id": "GV1",
+          "type": "single",
+          "core": true,
+          "text": "In your view, who currently controls the direction of global AI development?",
+          "options_ref": "ORG:GV1"
+        },
+        {
+          "id": "GV2",
+          "type": "multi",
+          "max_select": 3,
+          "core": true,
+          "text": "What is the biggest risk to Ethiopia if it does NOT accelerate AI adoption over the next five years? Choose up to three.",
+          "options_ref": "ORG:GV2"
+        },
+        {
+          "id": "GV3",
+          "type": "scale",
+          "core": true,
+          "text": "How urgent is it for Ethiopia to accelerate AI adoption now, relative to other national priorities?",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label": "Not urgent",
+            "max_label": "Extremely urgent"
+          }
+        },
+        {
+          "id": "GV4",
+          "type": "multi",
+          "max_select": 3,
+          "text": "What does Ethiopia need most right now to accelerate AI adoption? Choose up to three.",
+          "options": [
+            {
+              "value": "funding",
+              "label": "Funding and investment"
+            },
+            {
+              "value": "people",
+              "label": "More trained people"
+            },
+            {
+              "value": "infra",
+              "label": "Better infrastructure (power, internet, compute)"
+            },
+            {
+              "value": "policy",
+              "label": "Clearer government policy"
+            },
+            {
+              "value": "private",
+              "label": "Private-sector investment"
+            },
+            {
+              "value": "intl",
+              "label": "International partnerships"
+            }
+          ]
+        },
+        {
+          "id": "GV5",
+          "type": "longtext",
+          "optional": true,
+          "text": "Optional: if Ethiopia does little more on AI over the next five years, what do you think the country looks like in 2031 compared with peers that did invest?"
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "title": "Close",
+      "questions": [
+        {
+          "id": "H1",
+          "type": "single",
+          "text": "May we contact you about follow-up research or to share results?",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            }
+          ]
+        },
+        {
+          "id": "H1b",
+          "type": "multi",
+          "show_if": {
+            "q": "H1",
+            "op": "eq",
+            "value": "yes"
+          },
+          "text": "How may we reach you? Choose any that suit you.",
+          "help": "We only ask for what you choose to give, and it is stored separately from your answers.",
+          "options": [
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "phone",
+              "label": "Phone or SMS"
+            },
+            {
+              "value": "telegram",
+              "label": "Telegram"
+            }
+          ],
+          "note": "Multi-select rather than one-of: a respondent with an unreliable email and a reliable phone should be able to give both, and follow-up reaches more people if they pick the channel rather than the researcher."
+        },
+        {
+          "id": "H2",
+          "type": "email",
+          "show_if": {
+            "q": "H1b",
+            "op": "includes",
+            "value": "email"
+          },
+          "text": "Your email address",
+          "validate": "email",
+          "pii": true,
+          "storage": "separate"
+        },
+        {
+          "id": "H2b",
+          "type": "phone",
+          "show_if": {
+            "q": "H1b",
+            "op": "includes",
+            "value": "phone"
+          },
+          "text": "Your phone number",
+          "validate": "phone",
+          "pii": true,
+          "storage": "separate"
+        },
+        {
+          "id": "H2c",
+          "type": "text",
+          "show_if": {
+            "q": "H1b",
+            "op": "includes",
+            "value": "telegram"
+          },
+          "text": "Your Telegram username",
+          "help": "For example @yourname",
+          "pii": true,
+          "storage": "separate"
+        },
+        {
+          "id": "H3",
+          "type": "text",
+          "hidden": true,
+          "flags": [
+            "honeypot"
+          ],
+          "text": "Leave empty"
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "experience_fits_age",
+      "type": "incompatible_pair",
+      "field": "A1",
+      "value": "1",
+      "other": "A7",
+      "other_values": [
+        "4"
+      ],
+      "severity": "flag",
+      "message": "Under 20 with more than ten years of professional experience is unlikely. Please check.",
+      "note": "Both items are bands, so only the genuinely impossible corner is worth testing; anything subtler would be a form arguing with a respondent about arithmetic it cannot actually do. Flagged, not blocked -- the answer is recorded either way and the flag is reported as a data-quality statistic."
+    },
+    {
+      "id": "career_intent_contradiction",
+      "type": "both_at_least",
+      "fields": [
+        "F3.intent1",
+        "F3.stay1"
+      ],
+      "min": 4,
+      "severity": "flag",
+      "message": "Strong agreement with both intending to leave and being able to build a career without leaving.",
+      "note": "F3.stay1 is reverse-keyed ON PURPOSE. Agreeing strongly with a statement and its opposite is the classic signature of straight-lining, and detecting it is the entire reason a reverse-keyed item is in an attitude scale. Routing it away would delete the detector and leave the scale unable to tell a considered answer from a column of identical taps. Flagged, never blocked, and reported as a data-quality statistic alongside the speeder and planted-item rates."
+    },
+    {
+      "id": "abroad_offer_without_intent",
+      "type": "incompatible_pair",
+      "field": "F5",
+      "values": [
+        "3"
+      ],
+      "other": "F3.intent1",
+      "other_values": [
+        "1",
+        "2"
+      ],
+      "severity": "flag",
+      "message": "Has accepted AI work outside Ethiopia, but reports no intention to leave.",
+      "note": "Genuinely possible -- remote work for a foreign employer is accepting work abroad without leaving, and F1 has an option for exactly that. Flagged so the analysis can separate the two rather than assume."
+    },
+    {
+      "id": "expertise_without_practice",
+      "type": "incompatible_pair",
+      "field": "B5",
+      "values": [
+        "0"
+      ],
+      "other": "C1.ml",
+      "other_values": [
+        "4"
+      ],
+      "severity": "flag",
+      "message": "Rates their machine-learning ability at the top of the scale, but reports never having built or trained a model.",
+      "note": "Self-rated ability against reported practice. The gap is the individual-level twin of the organisational self-versus-computed maturity gap, and is worth measuring for the same reason."
+    }
+  ]
+}

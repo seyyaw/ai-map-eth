@@ -1,0 +1,96 @@
+{
+  "_comment": [
+    "The sampling matrix from docs/study-design-decisions.md §1, as data rather than prose,",
+    "so the dashboard can show a live quota gap and the field team can act on it the same day.",
+    "",
+    "Targets are stated per CELL, not as a total with a note about representativeness.",
+    "A total alone is what lets a study finish 'on target' with nothing from Afar, and that",
+    "failure is invisible until analysis. Each cell names the variable it is defined over,",
+    "so the dashboard reads the respondent's own answer rather than a separate field the",
+    "enumerator has to remember to set.",
+    "",
+    "Where 'census' is true the stratum is small enough to enumerate completely and the",
+    "target is the whole population; what can go wrong there is response rate, not sampling",
+    "error, and the dashboard labels it accordingly."
+  ],
+  "version": "0.2-draft",
+
+  "ORG": {
+    "total": 400,
+    "variable": "S3",
+    "note": "Strata over the S3 organisation type. Financial institutions, public universities and federal bodies are enumerable and are taken as a census; the rest are sampled proportional to size with deliberate oversampling of the five sectors the analysis compares.",
+    "cells": [
+      { "value": "fed_gov",   "label": "Federal ministry / agency",        "target": 55, "census": true },
+      { "value": "reg_gov",   "label": "Regional / city bureau",           "target": 45 },
+      { "value": "soe",       "label": "State-owned enterprise",           "target": 20 },
+      { "value": "bank",      "label": "Bank, insurer, MFI, fintech",      "target": 55, "census": true },
+      { "value": "telecom",   "label": "Telecom / ICT provider",           "target": 12, "census": true },
+      { "value": "health",    "label": "Hospital / health agency",         "target": 50 },
+      { "value": "hei",       "label": "University / TVET / research",     "target": 50, "census": true },
+      { "value": "school",    "label": "School (K-12)",                    "target": 15 },
+      { "value": "manuf",     "label": "Manufacturing / industry",         "target": 30 },
+      { "value": "agri",      "label": "Agriculture / agri-business",      "target": 35 },
+      { "value": "logistics", "label": "Logistics / transport / utilities","target": 12 },
+      { "value": "startup",   "label": "Startup / software / IT services", "target": 12 },
+      { "value": "ngo",       "label": "NGO / development partner",        "target": 9 }
+    ]
+  },
+
+  "IND": {
+    "total": 1500,
+    "variable": "recruit_arm",
+    "note": "Dual-frame. The two arms are opened together so that arm is not confounded with fielding week, and are sized so neither can be dismissed as a footnote to the other.",
+    "cells": [
+      { "value": "list",     "label": "List-based frame",  "target": 700 },
+      { "value": "referral", "label": "Referral / RDS",    "target": 700 },
+      { "value": "open",     "label": "Open link",         "target": 100, "weightable": false }
+    ],
+    "secondary": {
+      "variable": "A3",
+      "note": "Monitored, not quota-enforced: a quota on location inside a referral chain would break the RDS assumptions the chain exists to satisfy.",
+      "watch": [
+        { "value": "addis", "label": "Addis Ababa", "max_share": 0.6 },
+        { "value": "diaspora", "label": "Diaspora", "max_share": 0.25 }
+      ]
+    }
+  },
+
+  "CIT": {
+    "total": 2300,
+    "note": "1,500 online panel plus an 800-response enumerator booster. The booster is the anchor the panel is calibrated to; it is quota-controlled by region and settlement type, with a deliberate rural majority because the panel has none.",
+    "arms": [
+      { "value": "open",     "label": "Telegram / web panel", "target": 1500, "weightable": false },
+      { "value": "referral", "label": "Referral panel",       "target": 0, "note": "pooled into the panel; kept distinguishable for chain analysis" },
+      { "value": "booster",  "label": "Enumerator booster",   "target": 800 }
+    ],
+    "booster_quota": {
+      "arm": "booster",
+      "variable": "A1",
+      "cross": "A2",
+      "note": "Four regions plus Addis. Rural cells are the larger half by design: roughly three Ethiopians in four live rurally and none of them are on the Telegram panel.",
+      "cells": [
+        { "value": "addis",   "label": "Addis Ababa", "urban": 90,  "periurban": 20, "rural": 0 },
+        { "value": "oromia",  "label": "Oromia",      "urban": 50,  "periurban": 40, "rural": 130 },
+        { "value": "amhara",  "label": "Amhara",      "urban": 45,  "periurban": 35, "rural": 110 },
+        { "value": "south",   "label": "South Ethiopia", "urban": 30, "periurban": 25, "rural": 75 },
+        { "value": "somali",  "label": "Somali",      "urban": 25,  "periurban": 15, "rural": 60 },
+        { "value": "sidama",  "label": "Sidama",      "urban": 15,  "periurban": 10, "rural": 25 }
+      ]
+    },
+    "calibration": {
+      "note": "The panel is raked to these margins and a propensity adjustment is estimated against the booster. Raw, calibrated and booster estimates are reported together, always; the spread between them is a finding about online measurement in Ethiopia, not a weighting appendix.",
+      "margins": ["A1", "A2", "A3", "A4", "A5"]
+    }
+  },
+
+  "quality_thresholds": {
+    "note": "Phase 3 daily review triggers (docs/study-design-decisions.md §4). Crossing one pauses a channel; it does not stop the study.",
+    "flag_rate_max": 0.10,
+    "dropoff_rate_max": 0.35,
+    "cit_median_minutes_max": 8,
+    "enumerator_duration_min_ratio": 0.6,
+    "client_divergence_max": 0,
+    "question_dropoff_max": 0.15,
+    "min_n_for_ranking": 15
+  }
+}

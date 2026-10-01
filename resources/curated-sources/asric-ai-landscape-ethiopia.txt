@@ -1,0 +1,454 @@
+188 
+  
+The Landscape of Artificial Intelligence Implementation in Ethiopia  
+ 
+Wegene Demisie Jima1*, Tesfaye Addisu Tarekegn1, Taye Girma Debele2 
+ 
+1Artificial intelligence technology transfer division, Ethiopian artificial intelligence institute , Addis Ababa, Ethiopia  
+2Research and Development Sector, Ethiopian artificial intelligence institute , Addis Ababa, Ethiopia  
+*Corresponding author:  hugnietotal@gmail.com  
+Abstract  
+This study aims to assess the landscape of Artificial Intelligence (AI) implementation in Ethiopia and provide 
+recommendations for Ethiopia’s AI policy and strategy development. This is done by surveying data and computing 
+infrastructures, robotic infrastr uctures, organizational level AI policy and strategies, and AI skill development in 
+Ethiopia. Studies have been conducted employing semi -structured interviews, a physical review of infrastructures, 
+web visits, and literature studies. The data collection in volves 32 government organizations and private companies in 
+Ethiopia. The study revealed that the data center service in Ethiopia has many opportunities to grow. There are also 
+promising attempts by government organizations in establishing enterprise -based  data centers and implementing 
+associated policies within their organizations. The study identified that the country's lack of AI policy and strategy 
+affects AI stakeholders to design and create short and long -term action -oriented strategies. Further, the survey revealed 
+that the Ethiopian government started encouraging efforts in directing universities for AI skill development, digital 
+technology implementation, and infrastructure development. This study implies that focus must be given to data, legal 
+fram ework, skill and infrastructure development, research and development investment, inter -organizational 
+cooperation, and AI startup support while creating AI policies and strategies.  
+Keywords : Artificial Intelligence, infrastructure, Ethiopia, Data center, Policy  
+ 
+1. Introduction   
+Artificial intelligence (AI) has evolved as an emerging technology, capable of delivering large incremental 
+value to a wide range of sectors ( Ho et al., 2021 ). It has a significant future to stimulate economic growth 
+by making processes smarter, faster, and cheaper. AI technology has also the potential to impact individual 
+lives, organizations, and society by transforming global economic sectors and creating s ubstantial 
+innovation and economic growth ( Berente et al., 2021; Agrawal, 2017) . Potential AI innov ations include 
+boosting health and quality of life, enhancing education for remote students, transforming national defense 
+and security, improving agricultural productivity, reinventing business innovation and competitiveness, 
+effective natural disaster re sponse, rapid materials discovery, monitoring the supply chain, and generating 
+resilient cyber security  (Gil and Selman, 2019 ).  
+All these innovations require an inclusive national ecosystem suitable for a range of fundamental research 
+advances and the adoption of innovation outcomes. This can be facilitated by setting national AI policy and 
+strategy which can support data acquisiti ons, AI infrastructure, and skill development, create a regulatory 
+framework, and continuous support for research activities and AI startups ( Ho et al., 2021;  Talaviya, 2020; 
+Gil and Selman, 2019 ). Tackling appropriate resources needed for AI technology in novation will facilitate 
+the sustainable utilization of AI for economic and societal growth. Infrastructure and the talent pool are 
+critical issues in the current AI ecosystem. AI infrastructure is the collection of hardware and software 
+elements needed to  enable AI applications. It includes computing power, networking, and storage, as well 
+as an interface for users to access those resources ( Parsaeefard et al., 2019;  Jordan, 2019 ). According to the 
+global AI talent report, AI talents include data engineers , data scientists, machine learning engineers, and 
+artificial intelligence engineers ( Haynes and Gbedemah, 2021 ). Globally, the need for AI expertise far 
+exceeds the supply, and the gap will only continue to grow unless supported with immediate solutions. 
+Available online at https://asric.africa/natural -sciences  
+ASRIC Journal on Natural Sciences Vol 3(2) (2023) 1 88-197 
+189 
+ Finally, there are many concerns related to the security risk of AI systems, data privacy, and ensuring ethical 
+uses of AI. Thus, factors will affect AI innovation and deployment by governments, organizations, and 
+individuals. The nations which act to over take AI innovation challenges at an early stage and harness its 
+opportunity faster will have a chance to lead AI technology revolutions.  
+Recently, AI has gained priority in the policy directives of developed nations as well as developing 
+countries. Countries are focusing on using AI technologies for development and economic growth, fostering 
+research and development, strengthening the AI ec osystem that includes AI infrastructure investment, 
+supporting AI startups, and AI skills and knowledge development ( America, 2017 ). All nations around the 
+globe started paying due attention to AI and creating institutional competencies. Some countries are  in the 
+race for AI technology dominance and working on developing their stances towards AI by capitalizing on 
+their comparative strengths and ensuring the risk of AI ( Chatterjee , 2020).  
+Similarly, the Ethiopian government recognizes the vast opportunities AI offers to the entire economy and 
+considers AI as one of the focus areas in the national digital transformation agendas. Accordingly, the 
+Ethiopian government implemented digital trans formation policies and strategies (Kemp, 2023; Digital 
+Ethiopia 2025, 2021) , start mobile money 
+(https://www.gsma.com/mobileeconomy/wpcontent/uploads/2021/09/GSMA_ME_SSA_2021_English_
+Web_Singles.pdf ), established an ICT park that attracts investors that provide data infrastructure services 
+and Ethiopian artificial intelligence institutes that lead AI tech communities ( Artificial Intelligence Institute 
+Establishment Council of Ministers, Regulation No. 510/2022, 2022; Digital Ethiopia , 2021). However, 
+Ethiopia lacks a policy and strategy that guide AI, an enabling data ecosystem that facilitates access to 
+intelligent data, sufficient high -quality talent working on cutting -edge AI algorithms, and comput ing 
+infrastructure capable to handle AI algorithms. Moreover, the data center market in Ethiopia is at an early 
+stage and one of the business areas getting focus recently by the government and private sector.  
+In this study, we are going to assess the Ethiopian government’s potential to adopt AI, the challenges the 
+government face in the race of AI technology adoption, the digital research infrastructure the nation needs 
+to support the development and use of AI by surveying data and computing infrastructure, policy and 
+strategies towards AI adoption, and potential trained workforce capable to develop and maintain these 
+powerful resources for evaluating the state of AI in Ethiopian.  
+2. Methodology  
+The data used for this study were collected using semi -structured interviews conducted in person by two 
+members of the data collection team with informants selected by the head of the organization followed by 
+physical assessments of the AI and robotic infr astructure in Ethiopia between January 1 and 30 2023. 
+Interview -guided questionnaires were shared with the selected organization for data collection 15 days 
+before semi -structured interviews were conducted to provide time to prepare and collect figurative data by 
+data-providing organizations. Data were collected from 10 governmental organizations (ministries/offices/ 
+research institutes), 18 universities, and 4 private data infrastructure service providers located in Addis 
+Ababa, Oromia, Amhara, Sidama, and  Dire Dawa regions. The collected data is used for assessing 
+organizational and national AI policy and strategy, data and computing infrastructure, robotics 
+infrastructure, and human force to run AI infrastructure. These organizations were selected based o n a 
+preliminary survey of the organization, the time required for data collection, the expenditure involved for 
+travel, and the scope of the study. In certain cases where there was inadequate information from the 
+interview -guide questionnaire, organization al document review, web visits, and personal communication 
+with assigned representatives were conducted to get the required information.  
+3. Result and discussion  
+3.1. Opportunity for data center industry in Ethiopia  
+a. Government Effort on the digital economy  
+The digital economy is driving data center industry growth by facilitating digital data consumption. Digital 
+infrastructure such as data center service is crucial to foster countries’ economic development and 
+190 
+ prosperity. Recently, the Ethiopian government working to create policies that support a conducive 
+environment for ICT and digital technologies ( Digital Ethiopia 2025, 2021 ). To support this effort the 
+country designed and implemented a digital foundation project with a loan received from the World Bank 
+for the implementation of digital transformation projects designed by Ethiopia. The project aims to create 
+an enabling poli cy and regulatory system, build digital infrastructure, and improve the quality of b roadband 
+connections to grow Ethiopia's digital economy. In addition, it focuses on supporting the expansion of 
+digital business creation and digital entrepreneurship skills by building the infrastructure for government 
+services to be delivered to the user  through electronic means. This project will help to create new 
+opportunities for creating creative works, jobs, and resources, and will support the implementation of the 
+national strategy to ensure the benefit of the people.  
+b. Increasing drivers for the data center market  
+With emerging of Ethio Telecom competitors such as Safari com and the falling data cost and affordability, 
+more people are gaining access to the Internet and smartphones. Ethio Telecom customer has 68.9 million 
+mobile voice users, 33.4 million data and int ernet users, and 584,300 broadband internet users with a total 
+of 71.3 million customers as of March 2023 ( https://www.ethiotelecom.et/ ). Ethiopia had more than 44.5 
+million smartphone users in 2020. More than 40% of the Ethiopian population is under the age of 15 and 
+young consumers looking for a mobile phone which will remain the primary source of growth for the 
+foreseeable future. This  has led to an ever -growing amount of digitized data, which drives the adoption of 
+data center services in Ethiopia. Ethiopia’s smartphone adoption is forecasted to reach 58 percent in 2025 
+from 44 percent in 2020. Safaricom plans to spend $8.5 billion ove r 10 years on network infrastructure and 
+services and will be keen to introduce many of its services, including M -Pesa, and data center services to 
+Ethiopia 
+(https://www.gsma.com/mobileeconomy/wpcontent/uploads/2021/09/GSMA_ME_SSA_2021_English_
+Web_Singles.pdf ). In another dimension, Ethiopia is the marketplace for social media platforms like 
+Facebook which was the most popular social media platform in Ethiopia, with almost 6.9 million users and 
+Messenger followed with nearly 6.5 million accounts. Social media companies store and manage customer 
+data from all of the data produced by billions of people on social media ( Kemp, 2023 ). The need for a data 
+center will continue as existing social media applications grow and new social media apps are created and 
+governm ent needs to store its population data within its territory. Moreover, the beginning of e -commerce 
+requires storing data with enhanced data security & privacy and needs data center industry expansion as it 
+is the backbone of this vast and ever -expanding tr ading. The data center segment is expected to get revenue 
+from E -commerce in Ethiopia as young consumers prefer online spending. Additionally, the mobile app 
+market is booming and innovators are engaged in creating new services each day. The app industry h as 
+seen immense growth in the past couple of years all over the world and its growth is forecasted to continue 
+shortly. The rise in technology -driven start -ups is boosting this market and app market growth is a catalyst 
+for the data center market growth.  
+c. Growth for data colocation service  
+The Ethiopia colocation market has tremendous potential to grow since key customers such as banking, 
+insurance, financial services, and media require strict data confidentiality and complete management 
+control of their operations. Colocation services lever aging levers like multi -tenancy where multiple 
+independent instances of one or multiple applications operate in a shared environment, scalability, and 
+reduce capital expenditure amongst other things. In addition, cloud service providers are also generating  
+new demand for colocation for third -party facilities to host their infrastructure for providing services to 
+customers. Licensing data center services is a cost -efficient and reliable option in comparison to 
+establishing private data centers   
+3.2. Ethiopian AI Policy and Strategy  
+Ethiopia has not yet developed an AI policy and strategy that drive AI adoption and directs national AI -
+based research and development, supports AI startups, and guides ethical regulation that comes up with 
+new technology utilization ( Kutima et al. , 2023 ).  Ethiopia in developing AI policy and strategy has fallen 
+191 
+ behind when compared to AI’s usage by start -ups who have so seamlessly blended AI into the services 
+provided to customers. Even though policies and strategy are not developed and shared with AI 
+stakeholders; most of the universities working on AI has ident ified research area that planned to give 
+priority to developing AI solutions. Those organizations set AI research priority areas as natural language 
+processing, machine learning, AI, robotics, and data science for providing AI solutions to agriculture, 
+education, health, manufacturing, and services sectors. For example, The Ethiopian agriculture sector is 
+accompanied by small -scale farmers, who often lack access to the technology and resources needed to 
+optimize their crop yields and detect crop diseases. A  research project conducted by Jimma University aim 
+in developing an AI -powered drone that could collect data on crop health and yield, the researchers hoped 
+to provide farmers with the information they need to make more informed decisions about their crop s. 
+Similar projects were conducted by other universities in AI to solve issues of small farmers with AI 
+solutions.  
+The policy and strategy can help AI stakeholders to design and create action -oriented strategies align with 
+national strategies for achieving national AI targets with relevant budgets, timelines, and key performance. 
+The policy and strategy also ensure Eth iopian efforts to reorganize resources towards the most pressing 
+Ethiopian AI need. The Ethiopian government needs to consider the best approach to AI policy and strategy 
+development to create fostering AI ecosystem that contributes to national development  priory agendas. 
+Hence, we are recommending six key policy considerations for developing AI policy and strategy in 
+Ethiopia which includes skill and capacity development, infrastructure development, investment in research 
+and development, access to data, c reating a regulatory framework, and advancing cooperation. The current 
+landscape for each of these drivers’ as mentioned by the survey respondents shows crucial features of the 
+strategy and needs more work to become successful in harnessing the benefit of AI.  
+3.3.  Data and computing infrastructure service providers in Ethiopia   
+AI applications have become started growing into the daily lives of Ethiopian citizens in the form of app -
+based applications and digital assistants on smartphones. Few IT service providers and software developing 
+companies in Ethiopia have begun thinking, talking, and launching AI platforms. AI application developers 
+need data center services for data storage and computing services.  There is high interest from the private 
+sector in Ethiopia in building data centers and providing services such as colocation  and cloud service. 
+Ethio Telecom is one of the leading institutions  in Ethiopia  in providing data center services for customers 
+and started colocation data center service in 2021 as shown in Fig.1. Ethio Telecom’s  data center service 
+start flourishing and the company is diversifying its data center service as demand for the service grows 
+due to trust in connectivity and securities of Ethio Telecom data center service by customers. The company 
+data center utilizatio n is 100% and currently, it has more than 90 customers subscribed to its service. The 
+major data center service su bscribed by the customer is colocation service and the banking sector is the 
+major customer of the organization’s data center service. Ethio Telecom also started providing cloud 
+services called telecloud services which include Infrastructure as a Service (IaaS ), Platform as a Service 
+(PaaS),  and Software as a Service (SaaS)  for both private and governmental organizations that require high 
+data storage and utilization ( https://telecloud.ethiotelecom.et/ ).  Like Ethio Telecom, four private sectors 
+have been investing in data center infrastructure in Ethiopia. For instance, Wingu Africa 
+(https://www.wingu.africa/our -locations/addis -ababa -ethiopia/ ), RedFox solution group 
+(http://redfoxsolutionsgroup.com/ ), and Raxio ( https://www.raxiogroup.com/services/ ) have been invested 
+in data center facilities to meet the growing demand for colocation, cloud computing, and other digital 
+services in the country. As seen in Fig.1, data center service in Ethiopia is at an early stage of development 
+and most private dat a center service is focused on colocation services. All those private data services 
+providing companies’ data center is located in the ICT Park in Addis Ababa city and expansion to other 
+region is currently limited. Some companies like Wingu Africa and Red fox, plan to expand their data center 
+located outside of Addis Ababa city. Additionally, third -party cloud service providers also started growing 
+as colocation services start flourishing. Private companies that started providing data center services mainly  
+focus on industries such as Enterprise, Financial, Telecoms, and Media sectors as a business target market. 
+192 
+ But these are just small steps towards achieving the ultimate goal of AI’s contribution to the economic 
+growth of the nation. Private data center service expansion will enhance the decentralization of 
+organizational IT services by moving data, processing, and resources away from the organization’s local 
+data center or corporate hub to the data center service provider’s infrastructure to enable faster processing, 
+reduce cost, sustainability, scalability, and security.  
+ 
+Figure1 : Data Center service providers in Ethiopia and Their Services   
+Similar to profit -making organizations Ethiopian government also making significant progress in 
+expanding its data center infrastructure to support its economic growth and digital transformation. The 
+Ethiopian government has launched the construction of a data center in the country, which provides hosting 
+services to government agencies and private companies. Uptime Tier III standard data center currently 
+located in artificial intelligence institute(AII), minister of Innovation and Technology (MINT) 
+(https://www.mint.gov.et ), and Minister of Education (MOE) (  https://ethernet.edu.et/ ) start providing 
+service for the customer in need as seen in Fig.2. The data center located in the Ministry of Education 
+provides cloud service and high -performance computing (HPC) service to universities, TVET, and other 
+accountable institutions to MOE. Similarly, the data center is located in AII and MINT mainly provide data 
+center service for government institution and cloud service for limited private organizations (Fig. 2). One 
+of the challenges for data center service in Ethiopia is limited skilled h uman resource gaps, especially in 
+governmental -based organizations, and the availability of reliable and affordable energy. However, the 
+country is investing in improving its energy infrastructure, including the development of renewable energy 
+sources like  hydropower, wind, and solar. Another challenge for data center infrastructure in Ethiopia is 
+connectivity. The country has been investing in expanding its fiber -optic network to improve connectivity 
+and support the growth of data center infrastructure.  
+
+193 
+  
+ Figure 2: Uptime Tier III Government Data Centers in Ethiopia and Their Services  
+3.4. Enterprise -based data center and its attribute in Ethiopia  
+It is a type of data center that is built, owned, and operated by companies and optimized for their end -users, 
+most of them are on the corporate campus. This kind of data center is owned by most governmental 
+organizations and universities. As survey data i ndicated in Fig.3, 16.7% of governmental organizations and 
+55.5% of universities do not have data center policies and strategies implemented within their organization.  
+Half of the governmental organizations surveyed responded that their data center policy  and strategy is 
+underdevelopment while 33.3% of governmental organizations have policy and strategy in place. 
+Approximately, half of the university surveyed has also implemented data center policies and strategies 
+within their organizations. However, the national ICT strategic plan for higher education and TVET (2021 -
+2030) developed by the Minister of Science and Higher Education who is currently the Minister of 
+Education was used by most universities (Minister of Science and Higher Education, 2020). Datac enter 
+percentage utilization for most organizations as seen in Fig.3 is below 85%. As shown in Fig. 3, the majority 
+of enterprise data centers are used air cooling systems as the main source for data center cooling while some 
+institutions use water cooling  systems and others use both air and water cooling systems. In other cases, 
+83.3% of government organizations and 44.4% of government universities use network -related or tape 
+backup systems for their data backup (Fig.3). Around 16.7% of either governmental  organizations or 
+universities use edge data center backup systems.  
+ 
+Figure 3: Enterprise -based data center and its attribute in Ethiopia   
+
+194 
+ 3.5. Robotics infrastructure  
+Ethiopia, like many other countries, is currently investing in robotics technology to improve various 
+industries such as agriculture, manufacturing, and healthcare. Ethiopia's robotics industry is still in its early 
+stages, the country is making significan t investments to develop its robotic infrastructure. The government 
+has launched several initiatives to support the development of the country's robotics industry. For example 
+in 2021 Ethiopian government establish a research center in 11 universities to p romote research and 
+development in which one of the pillars is robotics. The government also create a partnership with 
+developmental organizations to establish a robotics hub in Ethiopia to facilitate research, development, and 
+commercialization of robotic s technologies.  
+The Robotics laboratory focusing on designing, building, and testing robot designs equipped with required 
+machines and test bed distribution in Ethiopia is limited.  Most of the robotic laboratories located in 
+Ethiopian universities are used for educationa l purposes and are equipped with  analysis, simulation, and 
+design tools having software such as CAD/CAM, Solid work, Catia and ANSY, and demonstration robots. 
+Robotic research infrastructure for robotics  research, robotics prototyping, manufacturing, and o ptical 
+inspection equipped with equipment motion capture system, and a workbench with tools for support and 
+maintenance of robots not highly distributed in Ethiopian universities. Among surveyed universities, 44.4% 
+of the universities have AI and robotics centers of excellence as seen in Table I. The robotics research 
+infrastructure is not sufficient to conduct even simple robotics research and development, and the country 
+needs start of art robotic infrastructure that will help researchers to conduct resea rch, tests, and develop 
+robots. Moreover, all universities have ICT centers and more than half have STEM centers of excellence. 
+ICT centers located at different universities were established with similar structures and goals as directed 
+by the minister of education. In other directions, some private institutions also have robotics centers of 
+excellence and are working towards training, researching, and robotics developments. For Example, iCog 
+Labs is a company engaged in providing research and development s ervices to its customer on artificial 
+intelligence, machine learning, robotics, and application software. This company is developing various 
+robotics technologies and has worked on projects such as developing robots for educational purposes and 
+creating an  AI-powered virtual assistant for customers based in Ethiopia ( https://icog -labs.com/ ).  
+Table I: University Contribution towards AI Adoption in Ethiopia   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.6. Human force to run AI infrastructure  
+Artificial intelligence is a broad discipline, and it has a diversity of associated specialists for conducting 
+research and development and running AI infrastructure. According to the global AI talent report, AI talents 
+includes data engineers, data scient ist, machine learning engineer, and artificial intelligence 
+engineer( Haynes and Gbedemah, 2021 ). We also follow a similar approach to identify AI human force 
+capable to run AI infrastructure. Universities and training centers are working in filling an indu stry need Area of Excellence  Categories  Percentage  
+Center of Excellence  AI and Robotics  44.4%  
+Information and communication 
+technologies (ICT) and Science, 
+Technology, Engineering, and Mathematics 
+(STEM)  100%  
+Offer AI -related coarse  Yes  77.7%  
+No  22.2%  
+Offer AI -related Ph.D. program  Yes 50% 
+NO 50% 
+Have founded AI -related project  Yes 61.1%  
+No  38.9%  
+Research priority area  Robotics   44.4%  
+Natural Language Processing (NLP)  22.2%  
+AI and Machine Learning (ML)  50% 
+195 
+ and develop professionals working in emerging technology areas. More than 75% of universities in Ethiopia 
+recently started providing courses in artificial intelligence and related field as shown in Table I.  
+Additionally, 50% of universities surveyed also offer a Ph.D. course in the field related to AI and robotics. 
+Moreover, around 60 % of universities surveyed have funding for AI -related projects. This indicates 
+governmental organizations as well as private companies interested in AI technologies. The res earch 
+priorities of most of the universities are artificial intelligence and machine learning, followed by robotics 
+research and development.  
+3.7. Challenges for artificial intelligence adoption in Ethiopia  
+a. Access to data  
+AI applications require a large set of data to train machine models for better performance. AI researchers 
+and developers’ demand for access to data has exponentially grown in the world. This has largely been led 
+by the assumption that AI model training ne eds access to data facilitates to spur innovation, improved 
+service delivery, and better economic opportunities for citizens. Ethiopian companies’ digital data capturing 
+and sharing experience is limited and major data players are reluctant to share their company data. As a 
+result, important industry -specific data necessary for building AI solutions and utilize for customized 
+platforms have been limited.  
+b. Regulatory framework  
+Ethiopia lacks AI policies and strategies that promote AI development, and create enabling ecosystem for 
+AI investment, utilization, and capacity and skill development. The absence of a national AI regulatory 
+framework created a risk of data privacy, and f ear of investments in AI infrastructure, research and 
+development, and training. This slows the development and growth of AI in the country. Hence, the 
+government needs to act rapidly to create enabling ecosystem for AI development and utilization by 
+devel oping AI policy and sharing with its stakeholders, regulatory laws and means to mitigate AI risks.  
+c. Infrastructure  
+AI infrastructure development by the government, as well as private institutions, is at an early stage in 
+Ethiopia and appropriate computing infrastructure is rarely available throughout the country. AI application 
+Training and interface require high compu ting and connectivity for the appropriate deployment of AI -based 
+services. Only a few cloud service providers provide cloud service and most of them are under development. 
+The lack of availability of AI infrastructure is posing problems for start -ups to us e AI. Low availability of 
+proper infrastructure and its cost push startups to look for an alternative source outside that country based 
+on open -source services.  
+d. AI talent  
+It is known that only a meager percentage of AI professionals in Ethiopia could work on AI technology. 
+The insufficient availability of talent in the field of AI has created impediments to AI adoption. There is a 
+dearth of Ph.D. scholars in this domain.  
+e. AI Research and Development  
+The lack of government and private institutions’ investment in AI research and development limits the 
+opportunities to design AI solutions that meet the most pressing Ethiopian needs. The government must 
+provide funding for research and development in prov iding AI solutions in priority government sectors.  
+f. Cooperation  
+The involvement of the international organization in funding AI research in Ethiopia is limited compared 
+to neighboring countries such as Kenya. Regional and international cooperation is also needed for data -
+sharing, cofounding AI solutions, and mobility o f AI talents useful for local AI developers in advancing in 
+AI research for developmental priorities.  
+3.8. AI Implications in Ethiopia and Action Forward   
+Ethiopia working to deploy AI solutions on a small scale, unlike other African countries that attracted global 
+technology giants such as Google’s AI research lab in Accra, Ghana, and IBM’s AI -oriented research labs 
+196 
+ in Kenya and South Africa ( Global Information Society Watch, 2019 ). However, global companies such as 
+Excellent Digital Solution have centers in Ethiopia and offer Artificial Intelligence and Machine Learning 
+solutions to customers around the globe ( https://excellerentsolutions.com/ ). Similarly, iCog Labs Software 
+Consultancy Company based in Addis Ababa provided research and development services to its customers 
+on artificial intelligence, machine learning, robotics, and application software in collaboration with 
+international AI re search groups ( https://icog -labs.com/ ). Ethio Robo Robotics 
+(https://ethioroborobotics.com ) company partnering with VEX Robotics ( https://www.vexrobotics.com ), a 
+US-based company working to transform access to robotics training by providing mentor -based training to 
+children to promote the early adoption of AI technologies. Guzo Technologies, Lersha, EthioCloud, and 
+other companies are also working on AI relate d-software and product development to provide AI solutions 
+to customers in Ethiopia to mention a few. Those are attempts by private sector investments in AI -based 
+solutions for early AI technology adoptions in Ethiopia. In terms of government readiness, th e state of AI 
+in Ethiopia is accompanied by various challenges and opportunities ( Adams, 2022 ). The government has 
+given attention to technology and perceived it as one of the technologies that have the potential for 
+economic and social development. Accord ingly, the government has invested in establishing ICT Park that 
+attracts investors working in IT and IT -related services, creates Ethiopian artificial intelligence institutes 
+that lead AI tech communities, built a government data center, and directed univ ersities to train more AI 
+task forces. However, the government lacks behind in publishing AI policies and strategies, implementing 
+legal frameworks concerning data privacy and protection, assessing the ethical risks of AI solutions on 
+societies, and other related issues. The adoption of AI technology within the country is also challenged by 
+factors such as lack of access to data, absence of regulatory framework, lack of computing and data 
+infrastructure, limited AI talent, insignificant R& D investment, and  cooperation among others. AI 
+applications require a large set of data to train machine models for better performance. AI researchers and 
+developers’ demand for access to data has exponentially grown in the world. This has largely been led by 
+the assumptio n that AI model training needs access to data facilitates to spur innovation, improved service 
+delivery, and better economic opportunities for citizens. Ethiopian companies’ digital data capturing and 
+sharing experience is limited and major data players ar e reluctant to share their company data. As a result, 
+important industry -specific data necessary for building AI solutions and utilize for customized platforms 
+have been limited. Ethiopia also lacks AI regulatory framework that promotes AI development and 
+deployments. The absence of a national AI regulatory framework created a risk of data privacy, and fear of 
+investments in AI infrastructure, research and development, and training. AI infrastructure development by 
+the government, as well as private institu tions, is at an early stage in Ethiopia and appropriate computing 
+infrastructure is rarely available throughout the country. AI application Training and interface require high 
+computing and connectivity for the appropriate deployment of AI -based services. Only a few cloud service 
+providers provide cloud service and most of them are under development. The lack of availability of AI 
+infrastructure is posing problems for start -ups to use AI. Low availability of proper infrastructure and its 
+cost push startups to look for an alternative source outside that country based on open -source services. The 
+insufficient availability of talent in the field of AI accompanied by the lack of government and private 
+institutions’ investment in AI research and development has c reated impediments to AI adoption. The 
+government must provide funding for research and development in providing AI solutions in priority 
+government sectors. Finally, regional and international cooperation is also needed for data -sharing, 
+cofounding AI sol utions, and mobility of AI talents useful for local AI developers in advancing AI 
+development and deployments.  
+4. Conclusion  
+An organizational survey was conducted to assess the state of the AI ecosystem in Ethiopia by mapping 
+Ethiopian AI infrastructure and government readiness to create sustainable ecosystems to intake and adopt 
+AI in Ethiopia.  The survey data was collected f rom 28 governmental organizations including ministries, 
+research institutions, offices, and universities, and 4 private data infrastructure service providers in Ethiopia. 
+The collected data were analyzed by categorizing collected data into data center infr astructure and services, 
+robotics infrastructure, and human force to run AI infrastructure. Additional government attempts in 
+197 
+ developing Ethiopian AI policy and strategy and challenges Ethiopia faced for AI adoptions were analyzed 
+based on data from surveyed organizations. The Ethiopian government is making significant progress in 
+expanding its data center infrastructure to suppo rt its economic growth and digital transformation.  The data 
+center industry in Ethiopia has many driving opportunities such as government efforts on the digital 
+economy, growth of data colocation service, and increasing drivers for the data center market that include 
+increasing mobile penetrations and usage of the internet, growth of social media usage, the beginning of e -
+commerce, emerging of IT and IT -enabled service, a rise of app eco -system and emerging technologies. 
+There is high interest from the pri vate sector in Ethiopia in building data centers and providing services 
+such as colocation and cloud service. Currently, there are around 8 companies in Ethiopia that provide data 
+center services, and most of them provide data colocation services as the ma in preferable data center 
+services. Ethio Telecom is a company that has a large number of subscribers compared to other data center 
+service providers. Most of the organizations surveyed have an enterprise data center. Ethiopia lacks state 
+of art robotic in frastructure capable of research and development, prototyping, and manufacturing of robots. 
+Similarly, Ethiopia has a shortage of AI talents. However, most of the universities in Ethiopia started 
+providing training in AI and started Ph.D. programs in AI -related fields that support AI adoption shortly.   
+5. Reference   
+Adams, R., 2022. AI in Africa: key concerns and policy considerations for the future of the continent.  
+Agrawal, A., Gans, J. and Goldfarb, A., 2017. What to expect from artificial intelligence.  
+America, N., 2017. A Next Generation Artificial Intelligence Development Plan, China, July, New America.  
+Artificial Intelligence Institute Establishment Council of Ministers, Regulation No. 510/2022, Federal Negarit 
+Gazette , 2022, pages 14216 -14222  
+Berente, N., Gu, B., Recker, J. and Santhanam, R., 2021. Managing artificial intelligence, MIS Quarterly , 45(3).  DOI: 
+10.25300/MISQ/2021/16274  
+Chatterjee, S., 2020. AI strategy of India: policy framework, adoption challenges and actions for government, 
+Transforming Government: People, Process and Policy , 14(5), pp.757 -775.  https://doi.org/10.1108/TG -
+05-2019 -0031  
+Crainic, A., 2021. Research into the use of AI in business in the Netherlands and how to drive adoption.  
+Digital Ethiopia 2025, 2021. A digital strategy for Ethiopia’s inclusive prosperity, Federal democratic republic of 
+Ethiopia”, available at: https://mint.gov.et/wp -content/uploads/2021/05/Digital -Ethiopia -2025 -Strategy -
+english. -.pdf  
+Gil, Y. and Selman, B., 2019. A 20 -year community roadmap for artificial intelligence research in the US. arXiv 
+preprint arXiv:1908.02624.  https://doi.org/10.48550/arXiv.1908.02624  
+Global Information Society Watch, 2019. Artificial intelligence: Human rights, social justice and development.  
+Haynes, A. and Gbedemah, L., 2021. The Global AI Index, Methodology”, Tortoise Media 2021  
+Ho, D.E., King, J., Wald, R.C. and Wald, C., 2021. Building a national AI research resource: a blueprint for the 
+national research cloud. Stanford Institute for Human -Centered Artificial Intelligence.  
+Jordan, M.I., 2019. Artificial intelligence —the revolution hasn’t happened yet, Harvard Data Science Review , 1(1), 
+pp.1-9. 
+Kemp, S., 2023. Digital 2023: Ethiopia, Datareportal, available at: https://datareportal.com/reports/digital -2023 -
+ethiopia  
+Klauke, J., Heinz, S.,A Maturity Model for Artificial Intelligence” STATWORX AI -Whitepaper  
+Kutima,V., Ogonjo,F., Karanja, N., Abiero,D., Orero,L.O., Kaaniru,J., 2023. The State of AI in Africa Report 2023, 
+Strathmore University, Centre for Intellectual Property and Information Technology Law (CIPIT)  
+Minister of Science and Higher Education, 2020. National ICT Strategic Plan for Higher Education and TVET (2021 -
+2030), Ethiopia  
+Parsaeefard, S., Tabrizian, I. and Leon -Garcia, A., 2019. Artificial intelligence as a service (AI -aaS) on software -
+defined Infrastructure, In  2019 IEEE Conference on Standards for Communications and Networking 
+(CSCN)  (pp. 1 -7). DOI: 10.1109/CSCN.2019.8931372  
+Talaviya, T., Shah, D., Patel, N., Yagnik, H. and Shah, M., 2020. Implementation of artificial intelligence in 
+agriculture for optimization of irrigation and application of pesticides and herbicides,  Artificial Intelligence 
+in Agriculture , 4, pp.58 -73. https://doi.org/10.1016/j.aiia.2020.04.002  
+ 

@@ -1,0 +1,110 @@
+# AI-MAP Ethiopia: collection server + Telegram bot.
+#
+#   cp .env.example .env && nano .env
+#   docker compose up -d --build
+#   docker compose logs -f
+#
+# Two services, ONE database. They share it by sharing a volume, because SQLite
+# is a local file rather than a service: the bot needs no inbound port, but it
+# does need the same filesystem as the server. Running it elsewhere gives two
+# databases that never reconcile, and the failure is silent; each service looks
+# healthy on its own, and you discover the split at analysis when `by_mode` turns
+# out to have counted one channel all along.
+#
+# The anchor below is what makes that structural rather than remembered: both
+# services take their database path and image from the same definition, so they
+# cannot be pointed at different files without editing one line that visibly
+# serves both.
+
+x-aimap: &aimap
+  build:
+    context: .
+  image: aimap:local
+  environment: &aimap-env
+    AIMAP_DB: /data/aimap.db
+    AIMAP_ADMIN_TOKEN: ${AIMAP_ADMIN_TOKEN:?set AIMAP_ADMIN_TOKEN in .env, see .env.example}
+    TZ: ${TZ:-Africa/Addis_Ababa}
+  volumes:
+    - aimap-data:/data
+  restart: unless-stopped
+
+services:
+  server:
+    <<: *aimap
+    container_name: aimap-server
+    # Bound to localhost by default. This is plain HTTP; put Caddy or nginx in
+    # front for TLS before any respondent sees it (DEPLOY.md §3).
+    ports:
+      - "${AIMAP_BIND:-127.0.0.1:8000}:8000"
+    healthcheck:
+      # /api/stats is the public progress counter: cheap, and it proves the
+      # database is readable rather than merely that the process is up.
+      test: ["CMD", "python", "-c",
+             "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/api/stats', timeout=5).status == 200 else 1)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 15s
+      retries: 3
+
+  bot:
+    <<: *aimap
+    container_name: aimap-bot
+    command: ["python", "tools/telegram_bot/bot.py"]
+    # on-failure, not unless-stopped: a clean exit means "not configured" and
+    # must stay exited. Only a genuine crash is worth retrying.
+    restart: on-failure
+    environment:
+      <<: *aimap-env
+      # Unset or empty, the bot logs why and exits ZERO, so `on-failure` leaves
+      # it visibly stopped rather than restarting it forever. A container
+      # scrolling the same error past nobody every two seconds is how a dead
+      # collection channel goes unnoticed for a week.
+      AIMAP_BOT_TOKEN: ${AIMAP_BOT_TOKEN:-}
+    depends_on:
+      server:
+        condition: service_healthy
+    healthcheck:
+      # A bot whose token was rejected, or whose event loop has wedged, keeps its
+      # process alive and its container "running". The bot touches this file
+      # every 30s from inside the loop, so a stale mtime is the only liveness
+      # signal here that cannot lie.
+      test: ["CMD", "python", "-c",
+             "import os,sys,time; p='/tmp/aimap-bot-alive'; sys.exit(0 if os.path.exists(p) and time.time()-os.path.getmtime(p) < 120 else 1)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+    # Long polling makes only outbound connections: no published port, ever.
+
+  # Nightly backup. Opt-in, because it writes to a second volume:
+  #   docker compose --profile backup up -d
+  backup:
+    <<: *aimap
+    container_name: aimap-backup
+    restart: unless-stopped
+    ports: []
+    volumes:
+      - aimap-data:/data
+      - aimap-backups:/backups
+    environment:
+      <<: *aimap-env
+      AIMAP_BACKUP_KEEP: ${AIMAP_BACKUP_KEEP:-30}
+    profiles: ["backup"]
+    # `sqlite3 .backup` is safe against a live writer; `cp` of an open SQLite
+    # file is not, and produces an archive that restores to a corrupt database.
+    command:
+      - /bin/sh
+      - -c
+      - |
+        while true; do
+          STAMP=$$(date -u +%Y%m%dT%H%M%SZ)
+          sqlite3 "$$AIMAP_DB" ".backup '/backups/aimap-$$STAMP.db'" \
+            && gzip -9 "/backups/aimap-$$STAMP.db" \
+            && echo "backed up aimap-$$STAMP.db.gz"
+          find /backups -name 'aimap-*.db.gz' -mtime +$$AIMAP_BACKUP_KEEP -delete
+          sleep 86400
+        done
+
+volumes:
+  aimap-data:
+  aimap-backups:

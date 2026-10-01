@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+tools/data/*.db
+tools/data/*.db-wal
+tools/data/*.db-shm
+.venv/
+backups/
+
+# docker compose secrets
+.env

@@ -1,0 +1,12 @@
+# AI-MAP Ethiopia — all runtime dependencies.
+#   python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+#
+# The collection server and the Telegram bot share one database, so in most
+# deployments they share one virtualenv too.
+
+# collection server (serves the web questionnaire, receives submissions)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Telegram bot
+python-telegram-bot>=21,<22

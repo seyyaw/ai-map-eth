@@ -1,0 +1,968 @@
+{
+  "code": "CIT",
+  "title": "AI and You: Citizen Pulse Survey",
+  "intro": "Help us understand how AI is really being used across Ethiopia. Six short questions, completely anonymous. About 5 minutes.",
+  "design_notes": "Optimised for Telegram: one question per message, button answers wherever possible, no free typing except one optional item, resumable, no personal identifiers. Also fielded via IVR (voice menu) for non-smartphone respondents and by enumerators in the rural booster sample. Fielded in English only, which materially constrains who this instrument can reach: see the paper's limitations section.",
+  "sections": [
+    {
+      "id": "S",
+      "title": "Start",
+      "questions": [
+        {
+          "id": "S2",
+          "type": "consent",
+          "required": true,
+          "text": "Consent to participate",
+          "core": true
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "title": "About you",
+      "questions": [
+        {
+          "id": "A1",
+          "type": "single",
+          "required": true,
+          "text": "Which region do you live in?",
+          "options": [
+            {
+              "value": "addis",
+              "label": "Addis Ababa"
+            },
+            {
+              "value": "oromia",
+              "label": "Oromia"
+            },
+            {
+              "value": "amhara",
+              "label": "Amhara"
+            },
+            {
+              "value": "tigray",
+              "label": "Tigray"
+            },
+            {
+              "value": "somali",
+              "label": "Somali"
+            },
+            {
+              "value": "sidama",
+              "label": "Sidama"
+            },
+            {
+              "value": "central",
+              "label": "Central Ethiopia"
+            },
+            {
+              "value": "south",
+              "label": "South Ethiopia"
+            },
+            {
+              "value": "swep",
+              "label": "South West Ethiopia"
+            },
+            {
+              "value": "afar",
+              "label": "Afar"
+            },
+            {
+              "value": "benishangul",
+              "label": "Benishangul-Gumuz"
+            },
+            {
+              "value": "gambella",
+              "label": "Gambella"
+            },
+            {
+              "value": "harari",
+              "label": "Harari"
+            },
+            {
+              "value": "dire",
+              "label": "Dire Dawa"
+            },
+            {
+              "value": "outside",
+              "label": "Outside Ethiopia"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "A2",
+          "type": "single",
+          "required": true,
+          "text": "Do you live in a town or in a rural area?",
+          "options": [
+            {
+              "value": "urban",
+              "label": "Town or city"
+            },
+            {
+              "value": "periurban",
+              "label": "Small town"
+            },
+            {
+              "value": "rural",
+              "label": "Rural area"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "A3",
+          "type": "single",
+          "required": true,
+          "text": "Your age",
+          "options": [
+            {
+              "value": "1",
+              "label": "18-24"
+            },
+            {
+              "value": "2",
+              "label": "25-34"
+            },
+            {
+              "value": "3",
+              "label": "35-44"
+            },
+            {
+              "value": "4",
+              "label": "45-59"
+            },
+            {
+              "value": "5",
+              "label": "60 or over"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "A4",
+          "type": "single",
+          "text": "Gender",
+          "options": [
+            {
+              "value": "f",
+              "label": "Woman"
+            },
+            {
+              "value": "m",
+              "label": "Man"
+            },
+            {
+              "value": "na",
+              "label": "Prefer not to say"
+            }
+          ]
+        },
+        {
+          "id": "A5",
+          "type": "single",
+          "text": "Highest level of education you completed",
+          "options": [
+            {
+              "value": "0",
+              "label": "No formal schooling"
+            },
+            {
+              "value": "1",
+              "label": "Primary"
+            },
+            {
+              "value": "2",
+              "label": "Secondary"
+            },
+            {
+              "value": "3",
+              "label": "Vocational training (TVET) or diploma"
+            },
+            {
+              "value": "4",
+              "label": "University degree"
+            },
+            {
+              "value": "5",
+              "label": "Postgraduate"
+            }
+          ]
+        },
+        {
+          "id": "A6",
+          "type": "single",
+          "text": "What do you mainly do?",
+          "options": [
+            {
+              "value": "farm",
+              "label": "Farming or livestock"
+            },
+            {
+              "value": "trade",
+              "label": "Trade or small business"
+            },
+            {
+              "value": "gov",
+              "label": "Government employee"
+            },
+            {
+              "value": "private",
+              "label": "Private sector employee"
+            },
+            {
+              "value": "student",
+              "label": "Student"
+            },
+            {
+              "value": "teacher",
+              "label": "Teacher"
+            },
+            {
+              "value": "health",
+              "label": "Health worker"
+            },
+            {
+              "value": "daily",
+              "label": "Daily labour"
+            },
+            {
+              "value": "home",
+              "label": "Household work"
+            },
+            {
+              "value": "unemployed",
+              "label": "Not working at present"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Your phone and internet",
+      "questions": [
+        {
+          "id": "B1",
+          "type": "single",
+          "required": true,
+          "text": "What kind of phone do you use?",
+          "options": [
+            {
+              "value": "smart",
+              "label": "Smartphone"
+            },
+            {
+              "value": "basic",
+              "label": "Basic phone (calls and SMS only)"
+            },
+            {
+              "value": "shared",
+              "label": "I use someone else's phone"
+            },
+            {
+              "value": "none",
+              "label": "I do not use a phone"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "B2",
+          "type": "single",
+          "text": "How often do you use the internet?",
+          "options": [
+            {
+              "value": "5",
+              "label": "Every day"
+            },
+            {
+              "value": "4",
+              "label": "A few times a week"
+            },
+            {
+              "value": "3",
+              "label": "About once a week"
+            },
+            {
+              "value": "2",
+              "label": "Occasionally"
+            },
+            {
+              "value": "1",
+              "label": "Rarely"
+            },
+            {
+              "value": "0",
+              "label": "Never"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "B3",
+          "type": "multi",
+          "text": "Which digital services do you use? Select all that apply.",
+          "options": [
+            {
+              "value": "telegram",
+              "label": "Telegram"
+            },
+            {
+              "value": "mobilemoney",
+              "label": "Telebirr or mobile money"
+            },
+            {
+              "value": "bank",
+              "label": "A bank app"
+            },
+            {
+              "value": "govservice",
+              "label": "A government online service"
+            },
+            {
+              "value": "social",
+              "label": "Social media (Facebook, TikTok, YouTube, WhatsApp)"
+            },
+            {
+              "value": "none",
+              "label": "None of these",
+              "exclusive": true
+            }
+          ],
+          "note": "Simplified to focus on services relevant to AI adoption mapping. Social media platforms are grouped as they have similar AI integration patterns."
+        },
+        {
+          "id": "B4",
+          "type": "single",
+          "text": "What is the biggest problem with using the internet where you live?",
+          "options": [
+            {
+              "value": "cost",
+              "label": "It costs too much"
+            },
+            {
+              "value": "slow",
+              "label": "It is too slow"
+            },
+            {
+              "value": "nonetwork",
+              "label": "There is no network"
+            },
+            {
+              "value": "power",
+              "label": "No electricity to charge"
+            },
+            {
+              "value": "device",
+              "label": "I have no suitable phone"
+            },
+            {
+              "value": "skills",
+              "label": "I do not know how to use it"
+            },
+            {
+              "value": "language",
+              "label": "It is not in my language"
+            },
+            {
+              "value": "none",
+              "label": "No problem"
+            }
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Artificial intelligence",
+      "questions": [
+        {
+          "id": "C1",
+          "type": "single",
+          "required": true,
+          "text": "Have you heard of artificial intelligence (AI)?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, and I understand what it is"
+            },
+            {
+              "value": "2",
+              "label": "Yes, but I am not sure what it is"
+            },
+            {
+              "value": "1",
+              "label": "I have heard the name only"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "C2",
+          "type": "info",
+          "text": "Artificial intelligence means computer programs that can understand language, recognise images or voices, and answer questions, for example ChatGPT, voice assistants, or automatic translation.",
+          "core": true
+        },
+        {
+          "id": "C3",
+          "type": "single",
+          "required": true,
+          "text": "Have you ever used a tool like this yourself?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Yes, I use one regularly"
+            },
+            {
+              "value": "3",
+              "label": "Yes, sometimes"
+            },
+            {
+              "value": "2",
+              "label": "I tried once or twice"
+            },
+            {
+              "value": "1",
+              "label": "No, but I would like to"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "C4",
+          "type": "multi",
+          "show_if": {
+            "q": "C3",
+            "op": "gte",
+            "value": "2"
+          },
+          "text": "What have you used it for?",
+          "options": [
+            {
+              "value": "questions",
+              "label": "Asking questions and getting information"
+            },
+            {
+              "value": "translate",
+              "label": "Translation"
+            },
+            {
+              "value": "school",
+              "label": "School or study work"
+            },
+            {
+              "value": "work",
+              "label": "My job"
+            },
+            {
+              "value": "write",
+              "label": "Writing letters or documents"
+            },
+            {
+              "value": "health",
+              "label": "Health questions"
+            },
+            {
+              "value": "farm",
+              "label": "Farming advice"
+            },
+            {
+              "value": "fun",
+              "label": "Curiosity or entertainment"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "type": "single",
+          "show_if": {
+            "q": "C3",
+            "op": "gte",
+            "value": "2"
+          },
+          "text": "In which language did you use it?",
+          "options": [
+            {
+              "value": "am",
+              "label": "Amharic"
+            },
+            {
+              "value": "en",
+              "label": "English"
+            },
+            {
+              "value": "both",
+              "label": "Both"
+            },
+            {
+              "value": "other",
+              "label": "Another Ethiopian language"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "C6",
+          "type": "single",
+          "show_if": {
+            "q": "C5",
+            "op": "in",
+            "value": [
+              "am",
+              "both",
+              "other"
+            ]
+          },
+          "text": "How well did it work in that Ethiopian language?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Well"
+            },
+            {
+              "value": "2",
+              "label": "Not very well"
+            },
+            {
+              "value": "1",
+              "label": "Badly"
+            },
+            {
+              "value": "0",
+              "label": "It did not work at all"
+            }
+          ],
+          "note": "The population-level counterpart to ORG-L3 and IND-D3. Triangulated across all three instruments, this measures the Ethiopian-language performance gap at citizen, practitioner and organisational level simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Trust and data",
+      "questions": [
+        {
+          "id": "D1",
+          "type": "likert_grid",
+          "text": "How much would you trust each of these to handle your personal information properly?",
+          "scale": [
+            {
+              "value": "1",
+              "label": "Not at all"
+            },
+            {
+              "value": "2",
+              "label": "A little"
+            },
+            {
+              "value": "3",
+              "label": "Somewhat"
+            },
+            {
+              "value": "4",
+              "label": "A lot"
+            },
+            {
+              "value": "na",
+              "label": "Don't know"
+            }
+          ],
+          "rows": [
+            {
+              "value": "gov",
+              "label": "Government offices"
+            },
+            {
+              "value": "bank",
+              "label": "Banks"
+            },
+            {
+              "value": "telecom",
+              "label": "Telecom companies"
+            },
+            {
+              "value": "health",
+              "label": "Hospitals and health centres"
+            },
+            {
+              "value": "foreign",
+              "label": "Foreign technology companies"
+            },
+            {
+              "value": "local_co",
+              "label": "Ethiopian technology companies"
+            }
+          ],
+          "row_noun": "organisation"
+        },
+        {
+          "id": "D2",
+          "type": "single",
+          "text": "Would you be comfortable if a computer, instead of a person, made a decision about a loan, a job or a government service for you?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, comfortable"
+            },
+            {
+              "value": "2",
+              "label": "Only if a person checks it"
+            },
+            {
+              "value": "1",
+              "label": "Uncomfortable"
+            },
+            {
+              "value": "0",
+              "label": "Strongly against"
+            },
+            {
+              "value": "na",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "D3",
+          "type": "single",
+          "text": "If a computer decision affected you unfairly, would you know how to complain?",
+          "options": [
+            {
+              "value": "2",
+              "label": "Yes"
+            },
+            {
+              "value": "1",
+              "label": "Not sure"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ],
+          "note": "A direct citizen-level measure of contestability: the practical test of the algorithmic-accountability gap identified in §4.1.4."
+        },
+        {
+          "id": "D4",
+          "type": "single",
+          "text": "Do you think AI will be good or bad for people like you in Ethiopia?",
+          "options": [
+            {
+              "value": "4",
+              "label": "Mostly good"
+            },
+            {
+              "value": "3",
+              "label": "More good than bad"
+            },
+            {
+              "value": "2",
+              "label": "Equally good and bad"
+            },
+            {
+              "value": "1",
+              "label": "More bad than good"
+            },
+            {
+              "value": "0",
+              "label": "Mostly bad"
+            },
+            {
+              "value": "na",
+              "label": "Don't know"
+            }
+          ],
+          "core": true
+        },
+        {
+          "id": "D5",
+          "type": "single",
+          "core": true,
+          "text": "Do you think the Ethiopian government currently has a clear plan for AI?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes"
+            },
+            {
+              "value": "2",
+              "label": "I think so, but I am not sure"
+            },
+            {
+              "value": "1",
+              "label": "No"
+            },
+            {
+              "value": "0",
+              "label": "I had not thought about it"
+            }
+          ]
+        },
+        {
+          "id": "D6",
+          "type": "single",
+          "core": true,
+          "text": "Who do you think should mainly decide the rules for how AI is used in Ethiopia?",
+          "options": [
+            {
+              "value": "gov",
+              "label": "The government"
+            },
+            {
+              "value": "companies",
+              "label": "The technology companies themselves"
+            },
+            {
+              "value": "intl",
+              "label": "International organisations"
+            },
+            {
+              "value": "none",
+              "label": "No rules are needed"
+            },
+            {
+              "value": "na",
+              "label": "Don't know"
+            }
+          ]
+        },
+        {
+          "id": "D7",
+          "type": "multi",
+          "core": true,
+          "text": "Which of these should a computer never decide on its own, without a person checking?",
+          "options": [
+            {
+              "value": "credit",
+              "label": "Whether to give someone a loan"
+            },
+            {
+              "value": "medical",
+              "label": "A medical diagnosis"
+            },
+            {
+              "value": "hiring",
+              "label": "Whether to hire someone"
+            },
+            {
+              "value": "policing",
+              "label": "Police or security actions"
+            },
+            {
+              "value": "benefits",
+              "label": "Government benefits"
+            },
+            {
+              "value": "none",
+              "label": "I trust computers to decide any of these",
+              "exclusive": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "What matters to you",
+      "questions": [
+        {
+          "id": "E1",
+          "type": "multi",
+          "max_select": 3,
+          "required": true,
+          "text": "Where would this technology help you most? Choose up to three.",
+          "options": [
+            {
+              "value": "health",
+              "label": "Getting health advice or diagnosis"
+            },
+            {
+              "value": "education",
+              "label": "Education for me or my children"
+            },
+            {
+              "value": "farming",
+              "label": "Farming and livestock advice"
+            },
+            {
+              "value": "gov",
+              "label": "Getting government services faster"
+            },
+            {
+              "value": "money",
+              "label": "Loans, savings or banking"
+            },
+            {
+              "value": "job",
+              "label": "Finding work"
+            },
+            {
+              "value": "language",
+              "label": "Translation into my language"
+            },
+            {
+              "value": "market",
+              "label": "Market and price information"
+            },
+            {
+              "value": "weather",
+              "label": "Weather and early warning"
+            },
+            {
+              "value": "business",
+              "label": "Running my business"
+            }
+          ],
+          "note": "This item produces the demand-side ranking that anchors the §5 value-creation portfolio in citizen priorities rather than in institutional preference.",
+          "core": true
+        },
+        {
+          "id": "E2",
+          "type": "multi",
+          "max_select": 3,
+          "text": "What concerns you most about AI? Choose up to three.",
+          "options": [
+            {
+              "value": "jobs",
+              "label": "Job displacement"
+            },
+            {
+              "value": "privacy",
+              "label": "Privacy and data misuse"
+            },
+            {
+              "value": "surveillance",
+              "label": "Government surveillance"
+            },
+            {
+              "value": "wrong",
+              "label": "Inaccurate information"
+            },
+            {
+              "value": "excluded",
+              "label": "Digital divide and exclusion"
+            },
+            {
+              "value": "language",
+              "label": "Language barriers"
+            },
+            {
+              "value": "control",
+              "label": "Foreign control of technology"
+            },
+            {
+              "value": "none",
+              "label": "No concerns",
+              "exclusive": true
+            }
+          ],
+          "note": "Streamlined to focus on AI-specific concerns rather than general technology worries. Removed less actionable items like 'culture' and 'misinfo' to keep focus on adoption barriers."
+        },
+        {
+          "id": "E3",
+          "type": "single",
+          "text": "Would you want to learn how to use these tools if free training were available in your language?",
+          "options": [
+            {
+              "value": "3",
+              "label": "Yes, definitely"
+            },
+            {
+              "value": "2",
+              "label": "Probably"
+            },
+            {
+              "value": "1",
+              "label": "Probably not"
+            },
+            {
+              "value": "0",
+              "label": "No"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GV",
+      "title": "Looking ahead",
+      "questions": [
+        {
+          "id": "GV1",
+          "type": "scale",
+          "core": true,
+          "text": "How urgent do you think it is for Ethiopia to catch up with other countries on AI?",
+          "scale": {
+            "min": 1,
+            "max": 5,
+            "min_label": "Not urgent",
+            "max_label": "Extremely urgent"
+          }
+        },
+        {
+          "id": "GV2",
+          "type": "multi",
+          "max_select": 2,
+          "core": true,
+          "text": "What worries you most if Ethiopia falls behind other countries on AI? Choose up to two.",
+          "options": [
+            {
+              "value": "jobs",
+              "label": "Jobs and opportunities go abroad"
+            },
+            {
+              "value": "economy",
+              "label": "The economy falls behind"
+            },
+            {
+              "value": "control",
+              "label": "Foreign companies control our data and technology"
+            },
+            {
+              "value": "culture",
+              "label": "Our language and culture get left out"
+            },
+            {
+              "value": "none",
+              "label": "This does not worry me",
+              "exclusive": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Finish",
+      "questions": [
+        {
+          "id": "F1",
+          "type": "longtext",
+          "optional": true,
+          "text": "Is there anything you would like to say about technology and your life? (optional)"
+        },
+        {
+          "id": "F2",
+          "type": "info",
+          "text": "Thank you. Your answers help make sure decisions about technology in Ethiopia reflect what people actually need. Results will be published freely.",
+          "core": true
+        }
+      ]
+    }
+  ]
+}

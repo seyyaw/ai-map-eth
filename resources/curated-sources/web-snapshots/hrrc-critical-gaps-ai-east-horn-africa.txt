@@ -1,0 +1,409 @@
+HRRC accepts NO funding from governments for our research or campaigns. At every step of
+the way, our impact is made possible because of people like YOU. Make your contribution now!Donate
+Home About Us Research News Podcast Support Us Search
+Human Rights Research Center·Dec 31, 2025·12 min read
+Critical Gaps in Artiﬁcial Intelligence in
+the East and Horn of Africa: A Call to
+Action to Safeguard Human Rights
+Author: Ronald Nsubuga, MS
+December 31, 2025
+Introduction
+Artiﬁcial intelligence (AI) is rapidly transforming economies, governance, and 
+social life with the potential to advance sustainable development in Africa 
+(Mienye, Sun, & Ileberi, 2024). The African Union AI strategy posits that AI 
+adoption on the continent will solve the urgent challenges in healthcare, 
+agriculture, education, ﬁnance, and public service delivery (African Union [AU], 
+2024). While AI adoption presents opportunities, it also raises signiﬁcant 
+concerns, more speciﬁcally that most African countries have gaps in regulations 
+of ethical and responsible use of AI (Collaboration on International ICT Policy for 
+East and Southern Africa [CIPESA], 2024).
+This article provides an evaluation of the pre-existing AI inequalities and critical 
+gaps in the East and Horn of Africa, which deepen the existing inequalities, 
+facilitate authoritarian control, and undermine democratic governance and 
+human rights. It calls for a proactive and rights-based approach to AI governance 
+that is inclusive, transparent, and contextually relevant.
+[Image source: HRRC Canva]
+Pre-existing AI inequalities in the East and Horn of Africa
+Overall, the AI readiness index 2024 placed Rwanda among the front-runners in 
+being ready for AI. It highlighted countries with notable progress, like Kenya and 
+Ethiopia, and mentioned countries that are lagging, like Eritrea, the Democratic 
+Republic of Congo, Burundi, and South Sudan (CIPESA, 2024).
+Pre-existing AI inequalities that led to these determinations include legal issues, 
+regulatory frameworks, and enforcement. Countries in the East and Horn of 
+Africa are at various stages of developing their regulatory frameworks to 
+promote inclusive and responsible AI use. Ethiopia, Ghana, Kenya, and Rwanda 
+have developed AI strategies. Tanzania is in the process of developing its national 
+AI strategies and policies. Somalia and South Sudan have not started the process 
+of developing AI strategies and policies (Research ICT Africa, 2025). Regulatory 
+institutions do not have enough technical capacity and funding to identify, 
+mitigate, or oﬀer redress to AI risks suﬀered in society (Lawyers Hub, 2025). 
+Weak institutional frameworks, limited judicial capacity, a lack of expertise from 
+policymakers, fragmented laws, and poor enforcement mechanisms are also a 
+concern. Countries where laws exist are seldom enforced (Tech Hive Advisory 
+and Center for Law & Innovation, 2025). The countries in the East and Horn of 
+Africa also lack an AI incident reporting mechanism.
+Another AI inequality is the digital divide. There are disparities in digital literacy 
+and access to AI technologies deepening existing inequalities between men and 
+women, aﬀecting already unconnected people, limiting opportunities for some 
+populations, and hindering Africa’s competitiveness in the global AI landscape 
+(AU, 2024). For example, Smartphone ownership in Kenya was only about 32% of 
+the population as of 2024 (Global System for Mobile Communications Association 
+[GSMA], 2025). This means a signiﬁcant portion of the population does not have 
+easy access to the internet and the potential services found on the internet. 
+Several of these nations face digital infrastructure issues. The limited 
+infrastructure in the region includes unreliable power supplies, unstable internet 
+connectivity, and insuﬃcient digital education programs. These issues continue 
+to hinder widespread adoption of AI (Okolo, 2024; AU, 2024). This inequality in 
+the region has further led to over-reliance on external providers for 
+computational power, including cloud computing services, which pose more risks 
+
+related to data sovereignty, privacy, vendor lock-in, and security (World Bank 
+2024b). For example, AI Hub for Sustainable Development estimates that about 
+75% of the world’s supercomputers are hosted in countries in the Global North, 
+with less than 1% hosted in Africa. The continent also accounts for 2% of global 
+data centers, which poses a risk of creating technological dependencies. 
+Additionally, unreliable electricity could create frequent system downtimes 
+during critical processes. These potential downtimes can remove the beneﬁts of 
+certain AI uses, like for medical diagnoses. If these diagnoses are hindered by a 
+lack of power, it could aﬀect their reliability and use for medical predictions 
+(Segun et al, 2025).
+Human Rights Implications of AI Inequality
+The inequalities in the growth and application of AI regulations between the East 
+and the Horn of Africa are currently resulting in negative impacts on basic 
+human rights, on the grounds of democracy and electoral integrity, the right to 
+privacy, non-discrimination, climate and environmental impacts, along with the 
+lack of accountability and the state of governance.
+Democracy and electoral integrity
+AI-powered tools, including social media algorithms and automated bots, are 
+increasingly used to spread disinformation, manipulate public opinion, and 
+suppress dissent during electoral processes (Organization for Security and Co-
+operation in Europe [OSCE], 2022). The lack of transparency in these systems 
+threatens the integrity of democratic institutions. For instance, some 
+governments in the East and Horn of Africa were reported to deploy 
+sophisticated surveillance technologies from international vendors, which have 
+been used to track and target journalists and political activists, eﬀectively 
+shrinking the civic space (Amnesty International, 2024).
+Additionally, many states lack regulatory safeguards, digital literacy programs, or 
+transparency rules for platform political advertising and synthetic content. 
+Tanzania and Uganda, despite having laws governing online communication, 
+have not kept pace with AI-speciﬁc threats, leaving their electoral systems 
+vulnerable to new forms of manipulation. External inﬂuence from AI 
+technologies developed outside Africa may undermine national sovereignty, Pan-
+Africanism values, and civil liberties. AI-enabled election manipulation and the 
+dissemination of disinformation pose threats to the integrity of democratic 
+processes, as does the unlawful surveillance of citizens that AI can facilitate (AU, 
+2024).
+Right to Privacy (Data Protection and Surveillance)
+For the ﬁrst time, state agencies can conduct mass surveillance of all citizens’ 
+communications, and micro-target individuals for in-depth coverage that 
+compiles real-time data from mobile calls, short message service (SMS), internet 
+messaging, global positioning system (GPS) location, and ﬁnancial transactions 
+(Institute of Development Studies [IDS], 2023).
+A critical gap is the near-total absence of comprehensive data protection laws 
+aligned with the realities of AI. While Kenya has the Data Protection Act (DPA), its 
+enforcement against state-level surveillance remains weak. Amnesty 
+International reported that awareness of data protection regulations and privacy 
+rights among the population is moderate in urban areas and extremely low in 
+rural areas. Even the enforcement mechanisms of these regulations are not often 
+pursued by citizens after experiencing any form of data breach due to a lack of 
+awareness and trust. There is the belief that any action may be either slow or 
+ineﬀective (Amnesty International, 2025).
+Kenya’s Data Protection Act falls short in addressing the speciﬁc challenges 
+posed by AI systems. The data processing by these systems can lead to signiﬁcant 
+privacy violations and other rights infringements. For example, repurposed data 
+might be used for activities like surveillance. Predictive policing creates a society 
+where the right to a private life is severely diminished and potentially stiﬂes 
+freedoms such as expression and association (European Parliament, 2024). Kenya 
+and Uganda have implemented video surveillance, tracking devices, software, and 
+cloud storage systems through a partnership with Chinese telecom ﬁrm Huawei 
+under Safe City initiatives. These moves are raising concerns about misuse and a 
+lack of transparency (Lawyers Hub, 2025).
+Non-Discrimination: Children, Women, and People with Disabilities
+As more children go online and enjoy the beneﬁts of digital technology, they risk 
+their safety and well-being by increasing their exposure to illegal or age-
+inappropriate content, as well as harmful contact with dangerous adults 
+(UNICEF, 2023). The risks are exacerbated by the lack of robust age veriﬁcation 
+tools that can mitigate children’s exposure to harmful content and interactions 
+online. For instance, in Rwanda and Kenya, the rapid rollout of ed-tech and child-
+facing chatbots has occurred without robust, privacy-preserving age veriﬁcation 
+tools or speciﬁc legal safeguards for children’s data. Safeguards for minors 
+require age-appropriate privacy norms, parental/guardian mechanisms, and 
+algorithmic limits.
+Machine learning algorithms can discriminate based on race and gender as well. 
+For example, gender-biased algorithms used in loan applications have been 
+reported to deny women ﬁnancial independence, and natural language 
+processing tools can perpetuate harmful stereotypes (Buolamwini & Gebru, 
+2018). Without gender-balanced development teams and audited datasets, AI will 
+entrench patriarchal norms and hinder gender equality. Bias in training data and 
+in algorithmic design can reproduce gender inequalities for such things as health 
+recommendations, credit scoring, and policing. There is limited gender-
+disaggregated auditing of AI systems and insuﬃcient participation of women 
+and gender minorities in design and governance. AI may amplify gender-based 
+inequality and unfairness unless equity is embedded throughout design and 
+governance. Segun et al cites Raji and Sholademi (2024), who highlight that 
+predictive policing algorithms, developed in vastly diﬀerent socio-legal contexts, 
+can exacerbate racial and socio-economic proﬁling if deployed without 
+signiﬁcant adaptation and monitoring.
+AI systems often embed biases, creating new barriers for people with disabilities. 
+For example, facial recognition software used for security and public services in 
+airports and banks across Nairobi, Addis Ababa, and Kigali has not been publicly 
+audited for its accuracy on individuals with disabilities like albinism or facial 
+diﬀerences, risking their exclusion. 
+Right of Access to Social Services and Opportunities
+Citron and Pasquale (2014) highlighted that automated scoring systems put 
+crucial opportunities on the line, including the ability to obtain loans, work, 
+housing, and insurance, among others. Deploying AI systems introduces legal 
+and ethical challenges, including algorithmic bias, due process concerns, and 
+accountability gaps in automated decision-making (Ayibam, 2025). There is 
+limited public access to information about datasets, decision rules, or 
+procurement contracts tied to AI systems. Consequently, this opacity 
+undermines citizens’ ability to scrutinize and challenge decisions, thus violating 
+fundamental due process rights.
+In Tanzania, they have started using AI to transcribe court rulings, yet concerns 
+remain regarding accuracy, data security, and fairness in automated legal 
+decision-making (Lawyers Hub, 2025). Additionally, Oluka, Mugurusi, Obicci, and 
+Awuor (2022) cite fears of unemployment, the loss of accountability, and 
+widespread bias due to the deployment of AI systems, which undermine fairness.
+Institutional Accountability and the Governance Vacuum
+Identifying and assessing actual and potential adverse human rights impacts of 
+AI systems is one step in achieving human rights due diligence (Business for 
+Social Responsibility [BSR], 2025). However, most countries in the East and Horn 
+of Africa do not have comprehensive AI regulations. There is a gap in the 
+requirements to assess AI risks. This relates to AI products and services that can 
+be anchored in human rights assessment methodology. Uganda, Kenya, Ethiopia, 
+and Rwanda have national AI strategies. Tanzania has a draft AI strategy under 
+discussion. Other countries in the East and Horn of Africa are yet to commence 
+the process (Africa Data Protection, 2025). Only Rwanda, Kenya, and Djibouti 
+have signed the declaration on sustainable and inclusive AI. The report also notes 
+that no African country has signed the Organization for Economic Co-operation 
+and Development (OECD) Framework for the Classiﬁcation of AI Systems, 
+adopted in 2022, nor the G7 International Code of Conduct for Organizations 
+Developing Advanced AI Systems, established in 2023. The absence of 
+participation in these frameworks limits the continent’s inﬂuence in deﬁning 
+international norms and standards relating to AI.
+Climate and Environmental Impacts
+AI systems, particularly those involving large-scale data processing and machine 
+learning models, consume signiﬁcant amounts of energy, contributing to 
+environmental degradation and increased carbon emissions (World Bank, 2024b). 
+Additionally, with increasing AI comes the need to replace old hardware with 
+newer eﬃcient modern hardware, generating e-waste, which also aﬀects the 
+environment (AU, 2024; World Bank, 2024). In the East and Horn of Africa, 
+Tanzania, Kenya, and Ethiopia are the highest e-waste generation countries in 
+the region. Only Uganda, Tanzania, and Rwanda have an e-waste policy, 
+legislation, or regulation (Kuehr et al, 2024). The high demand for fresh water to 
+cool data centers poses a threat to regions already facing water scarcity (World 
+Bank, 2024).
+Conclusion and Proposed Policy Actions
+Countries in the East and Horn of Africa are adopting predominantly foreign 
+developed AI systems in agriculture, healthcare, education, and ﬁnancial services, 
+which most likely bring bias, misalignments with local values, and disparities in 
+data governance. They also amplify privacy and ethical concerns. The following 
+proposals include policy actions that would guarantee rights, fundamental 
+freedoms, and safety for the people in the region.
+(1) Governments must consider enacting and enforcing comprehensive AI 
+governance frameworks, inspired by the African Union’s Data Policy 
+Framework that mandates human rights due diligence, transparency, and 
+accountability. Governments should collaborate on harmonized regulations 
+to be able to hold multinational corporations accountable.
+(2) National human rights institutions and data protection authorities in the 
+region must be empowered with technical capacity and legal mandates to 
+audit and regulate AI systems. The institutions should be facilitated to 
+conduct human rights impact assessments and propose mitigation plans for 
+all public AI procurement and high-risk private sector AI. This includes those 
+deployed in health, social protection, elections, and identity management 
+systems, among others. Regional Economic Communities should design a 
+regional AI incident reporting platform to be able to counter misinformation 
+and data breaches. It could also hold relevant parties accountable.
+(3) Governments should establish or empower independent, well-resourced 
+AI and data governance institutions, including at the regional level. These 
+institutions must have clear mandates for oversight and the capacity to audit 
+AI systems, investigate rights violations, and handle complaints eﬀectively. 
+These institutions should investigate AI trends, analyze rights infringement 
+cases, and consider risk countermeasures. This includes creating a regional 
+platform that facilitates the anonymized and publicly motivated exchange of 
+data such as incident reports, testing outcomes, and known vulnerabilities, 
+which would help support early warning capabilities and enable coordinated 
+responses.
+(4) Countries should invest in digital infrastructure and inclusion. These 
+investments should include expanding internet access, reducing device and 
+access costs, and improving digital infrastructure, especially in marginalized 
+and underserved areas. AI strategies and tools should be developed to 
+prioritize local languages and cultural relevance. They should respond to 
+local needs and realities.
+(5) Countries should ensure that all AI deployed and used in the public sector 
+is transparent and auditable, including publishing procurement disclosures, 
+providing clear explanations of AI systems’ purpose, usage, and implications. 
+All safeguards should be publicly accessible. Vendors supplying AI tools and 
+applications to governments must be required to disclose key details about 
+their technologies, including their data sources, algorithms, and potential 
+biases. 
+(6) Governments must also adopt policies that limit the use of AI in sensitive 
+domains, such as surveillance and criminal justice, unless robust safeguards 
+are in place to prevent misuse and mitigate harms that may occur in their 
+respective usage.
+(7) Governments should strengthen and integrate detection systems for deep 
+fakes, hate speech, and coordinated disinformation campaigns. They should 
+implement clear tagging or watermarking of AI-generated content and 
+ensure timely responses to reports of harmful content from the region.
+(8) Governments should build out the technical and research capacity of key 
+stakeholders to monitor and document the impact of AI on human rights 
+(social, economic, and political). This includes establishing accessible 
+reporting channels for AI abuse and collecting evidence-based case studies of 
+AI abuses and their eﬀects, particularly on vulnerable, rural, and 
+marginalized groups.
+ 
+Glossary
+ 
+ReferencesAI Governance: a system of policies, processes, people, and daily practices 
+that enable the responsible development, deployment, and oversight of AI 
+systems.
+AI Incident: an event, circumstance, or series of events where the 
+development, use, or malfunction of one or more AI systems directly or 
+indirectly leads to a speciﬁc harm. These harms include injury to health, 
+disruption of critical infrastructure, human rights violations, or damage to 
+property, communities, or the environment.
+AI safety: a scientiﬁc ﬁeld concerned with identifying and addressing the 
+security, ethical, socioeconomic, environmental, technical, and existential 
+risks and harms of frontier AI models.
+Artiﬁcial Intelligence (AI): an AI system is a machine-based system that, for 
+explicit or implicit objectives, infers, from the input it receives, how to 
+generate outputs such as predictions, content, recommendations, or 
+decisions that can inﬂuence physical or virtual environments. Diﬀerent AI 
+systems vary in their levels of autonomy and adaptiveness after deployment.
+Audits: the systematic examination of the algorithms and data used in an AI 
+system to assess its fairness, accountability, transparency, and ethical 
+implications.
+Bias in Artiﬁcial Intelligence (AI): systematic errors in AI systems that lead 
+to unfair or discriminatory outcomes, often favoring or disadvantaging 
+certain groups.
+Computational Power: the ability to store, process, and transfer data at scale. 
+This is crucial for training and deploying AI models and applications.
+Human Rights Impact Assessment (HRIA): a process for identifying and 
+assessing actual and potential human rights impacts of an AI system as well 
+as addressing them based on guidance in the UN Guiding Principles on 
+Business and Human Rights.
+1. Amnesty International (2025). 5 Years On: Citizens’ Perspectives on Kenya’s 
+Data Protection Act Implementation. Accessed at 
+https://www.amnestykenya.org/wp-content/uploads/2025/10/DPA-
+Awareness-Perception-Study-Final.pdf
+2. Africa Data Protection. (2025). Governance of Artiﬁcial Intelligence in Africa. 
+Accessed at 
+https://www.africadataprotection.org/Governance_of_AI_in_Africa_by_Afric
+aDataProtectionV2.pdf
+3. AU. (2025). The Africa Declaration on Artiﬁcial Intelligence. Global AI Africa 
+Summit, Kigali-Rwanda. Accessed at https://c4ir.rw/docs/Africa-Declaration-
+on-Artiﬁcial-Intelligence.pdf
+4. AU. (2024). Continental Artiﬁcial Intelligence Strategy: Harnessing AI for 
+Africa’s Development and Prosperity.  Accessed at 
+5. https://au.int/sites/default/ﬁles/documents/44004-doc-EN-
+_Continental_AI_Strategy_July_2024.pdf
+6. Ayibam, N.J. (2025). Artiﬁcial Intelligence in Public Procurement: Legal 
+Frameworks, Ethical Challenges, and Policy Solutions for Transparent and 
+Eﬃcient Governance. Accessed at 
+https://gnosipublishers.com.ng/index.php/alkebulan/article/download/24/28
+7. African Union (2021) AI for Africa. Accessed at https://africanlii.org/akn/aa-
+au/doc/report/2021-08-31/ai-for-africa-artiﬁcial-intelligence-for-africas-
+socio-economic-development/eng@2021-08-31/source.pdf
+8. BSR [Business for Social Responsibility] (2025). A Human Rights Based 
+Approach to Impact Assessments: Guide 3 of the Responsible AI Practitioner 
+Guides for Taking a Human Rights-Based Approach to Generative AI. 
+Accessed at https://www.bsr.org/ﬁles/BSR-A-Human-Rights-Based-Approach-
+to-Impact-Assessment.pdf
+9. Buolamwini, J., & Gebru, T. (2018). Gender Shades: Intersectional Accuracy 
+Disparities in Commercial Gender Classiﬁcation. Proceedings of Machine 
+Learning Research. Accessed at 
+https://www.classes.cs.uchicago.edu/archive/2020/winter/20370-
+1/readings/gendershadesAIbias.pdf
+10. Citron, D. K., & Pasquale, F. (2014). The Scored Society: Due Process for 
+Automated Predictions. Washington Law Review. Accessed at 
+https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2427903_code829721.pdf
+?abstractid=2376209&mirid=1
+11. CIPESA. (2024). State of Internet Freedom in Africa 2025: Navigating the 
+Implications of AI on Digital Democracy in Africa. Accessed at 
+12. https://cipesa.org/wp-
+content/ﬁles/reports/State_of_Internet_Freedom_in_Africa_Report_.pdf
+13. European Parliament. (2024). Artiﬁcial Intelligence and human rights: Using 
+AI as a weapon of repression and its impact on human rights.  Accessed at 
+https://www.europarl.europa.eu/RegData/etudes/IDAN/2024/754450/EXPO_I
+DA(2024)754450 _EN.pdf 
+14. Ewulum, C. (2023). The Legal Regime for Cross-border Data Transfer in 
+Africa: a Critical Analysis. Accessed at 
+https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4546964_code4320504.p
+df?abstractid=4546 964&mirid=1 
+15. Kuehr et al (2024) Global E-waste Monitor 2024. International 
+Telecommunication Union (ITU) and United Nations Institute for Training 
+and Research (UNITAR). 2024. Geneva/Bonn Accessed at 
+https://ewastemonitor.info/wp-
+content/uploads/2024/12/GEM_2024_EN_11_NOV-web.pdf
+16. GSMA. (2025). Accessed at GSMA Smart Phone Adoption Report. 
+https://www.gsma.com/about-us/regions/africa/wp-
+content/uploads/2025/11/GSMA-SmartPhone_Adoption_Report_ﬁnal.pdf
+17. IDS. (2023). Mapping the Supply of Surveillance Technologies to Africa: Case 
+Studies from Nigeria, Ghana, Morocco, Malawi, and Zambia. The Institute of 
+Development Studies and Partner Organisations. Book. Accessed at 
+https://www.ids.ac.uk/publications/mapping-the-supply-of-surveillance-
+technologies-to-africa-case-studies-from-nigeria-ghana-morocco-malawi-
+and-zambia/
+18. Lawyers Hub. (2025). Africa Artiﬁcial Intelligence and Privacy Report. 
+Accessed at 
+https://www.lawyershub.org/Digital%20Resources/Reports/Africa%20AI%20-
+%20Privacy%20Report.pdf
+19. Mienye, D.I, Sun, Y., Ileberi, E. (2024). Artiﬁcial intelligence and sustainable 
+development in Africa: A comprehensive review. Volume 18, 2024, 100591, 
+ISSN 2666-8270, Accessed at 
+https://www.sciencedirect.com/science/article/pii/S2666827024000677
+20. Muindi, P. (May, 2024). Ushering In a New Dawn for Data Protection: 
+Unpacking the Somalia Data Protection Act of 2023. Accessed at 
+https://cipit.strathmore.edu/ushering-in-a-new-dawn-for-data-protection-
+unpacking-the-somalia-data-protection-act-of-2023/
+21. OHCHR (2011). Guiding Principles on Business and Human Rights. Geneva, 
+Switzerland. Accessed at 
+https://www.ohchr.org/sites/default/ﬁles/documents/publications/guidingpri
+nciplesbusinesshr_en.pdf
+22. Okolo, T.C. (2024). Examining AI in Low and Middle-Income Countries. Policy 
+Report. Accessed at https://www.freiheit.org/sites/default/ﬁles/2025-05/fnf-
+policy-report-ai.pdf
+23. Oluka, P., Mugurusi, G., Obicci, A.P., Awuor, E. (2022). Human-centered 
+artiﬁcial intelligence for the public sector: The gate keeping role of the public 
+procurement professional. Accessed at 
+https://www.researchgate.net/publication/360352910_Human-
+centered_artiﬁcial_intelligence_for_the_public_sector_The_gate_keeping_r
+ole_of_the_public_procurement_professional
+24. OSCE. (2022). Artiﬁcial Intelligence and Disinformation: State-Aligned 
+Information Operations and the Distortion of the Public Sphere. Accessed at 
+https://www.osce.org/ﬁles/f/documents/e/b/522166.pdf
+25. Research ICT Africa (January, 2025). National AI strategies and policies in 
+Africa map. Accessed at https://researchictafrica.net/research/national-ai-
+strategies-and-policies-in-africa-map/
+26. Segun et al (2025). Toward an African Agenda for AI Safety. Accessed at 
+https://www.researchgate.net/publication/394687831_Toward_an_African_A
+genda_for_AI_Safety
+27. Tech Hive Advisory and Center for Law & Innovation. (2025). State of AI 
+Regulation in Africa: Trends and Developments. Accessed at 
+https://cdn.prod.website-
+ﬁles.com/641a2c1dcea0041f8d407596/67ebe308d179638db4072654_State%20
+of%20AI%20Regulation%20in%20Africa%20Trends%20and%20Developments
+%20v2_.pdf 
+28. UNCTAD. (2025). Tecnnology and Innovation Report: Inclusive Artiﬁcial 
+Intelligence for Development. Accessed at 
+https://unctad.org/system/ﬁles/oﬃcial-document/tir2025_en.pdf
+29. UNICEF. (2023). Online Risk and Harm for Children in Eastern and Southern 
+Africa. Accessed at https://www.unicef.org/innocenti/media/3841/ﬁle/Online-
+Risks-Harm-Children-ESA-2023.pdf
+30. World Bank. (2024). The Path to 5G in the Developing World: Planning Ahead 
+for a Smooth Transition. Accessed at 
+https://documents1.worldbank.org/curated/en/099061324171538182/pdf/P1716
+29-bdﬀc81a-e3ad-45a7-8166-5e167f1a1e07.pdf
+31. World Bank. (2024b). Global Trends in AI Governance: Evolving Country 
+Approaches. Accessed at 
+https://documents1.worldbank.org/curated/en/099120224205026271/pdf/P178
+6161ad76ca0ae1ba3b1558ca4ﬀ88ba.pdfRecent Posts See All
+South Korea: Women Face
+Double Discrimination in the…
+Artiﬁcial Inﬂuence: AI and
+Discrimination in America’s…
+Deﬁning Assimilation: The
+Narrative Around Migration
+  300, Alexandria, VA 22314, USA  Email us:
+info@humanrightsresearch.orgTax exempt 501(c)(3)
+EIN: 87-1306523

@@ -1,0 +1,31 @@
+# /etc/systemd/system/aimap-server.service
+#   sudo systemctl daemon-reload && sudo systemctl enable --now aimap-server
+[Unit]
+Description=AI-MAP Ethiopia collection server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+User=aimap
+Group=aimap
+WorkingDirectory=/srv/aimap
+EnvironmentFile=/etc/aimap/aimap.env
+ExecStart=/srv/aimap/.venv/bin/uvicorn --app-dir tools/server app:app \
+          --host 127.0.0.1 --port 8000 --proxy-headers --forwarded-allow-ips='*'
+Restart=on-failure
+RestartSec=5
+
+# Hardening. The service needs to write only to its own data directory.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/aimap/tools/data
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

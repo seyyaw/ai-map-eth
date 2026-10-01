@@ -1,0 +1,249 @@
+/* ===========================================================================
+   AI-MAP Ethiopia: surveyor's dashboard.
+
+   Loads styles.css first for the theme tokens (--bg, --surface, --ink, --line,
+   --accent …), and the light/dark/background machinery, then adds only what a
+   dashboard needs on top. The questionnaire and the dashboard therefore always
+   agree about what "dark mode" means, and a palette change lands in both.
+
+   Chart colours are a SEPARATE, VALIDATED set, not the interface accent.
+   Interface accent and data colour have different jobs: the accent marks what is
+   interactive, and a chart series must mean one entity and nothing else. They are
+   run through the colourblind-safety validator against this project's own
+   surfaces (#ffffff light, #1e2024 dark) at three categorical slots, which is the
+   documented all-pairs limit for this palette. A fourth slot is used only in
+   stacked bars, where adjacency is the relevant test and it passes.
+   =========================================================================== */
+
+:root {
+  /* categorical: identity. Fixed order, never cycled, never by rank. */
+  --s1:#2a78d6;   /* ORG / first series  */
+  --s2:#eb6834;   /* IND / second series */
+  --s3:#1baf7a;   /* CIT / third series  */
+  --s4:#eda100;   /* stacked-bar adjacency only */
+
+  /* sequential: magnitude. One hue, light to dark. */
+  --q1:#cde2fb; --q2:#9ec5f4; --q3:#5598e7; --q4:#2a78d6; --q5:#184f95;
+
+  /* diverging: polarity, with a NEUTRAL midpoint so "no gap" reads as nothing */
+  --dneg:#2a78d6; --dmid:#f0efec; --dpos:#d03b3b;
+
+  /* status: reserved. Never reused as a series colour. Always with icon + label. */
+  --ok:#0ca30c; --warn-c:#fab219; --serious:#ec835a; --crit:#d03b3b;
+
+  --grid:#e1e0d9; --axis:#c3c2b7; --chart-muted:#898781;
+  --dashw:1500px;
+}
+
+[data-appearance="dark"] {
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --q1:#0d366b; --q2:#184f95; --q3:#256abf; --q4:#3987e5; --q5:#86b6ef;
+  --dneg:#3987e5; --dmid:#383835; --dpos:#e66767;
+  --grid:#2c2c2a; --axis:#383835;
+}
+
+.dash .wrap { max-width:var(--dashw); }
+
+/* ------------------------------------------------------------------ gate */
+#gate { max-width:520px; margin:12vh auto; }
+#gate input { width:100%; padding:11px 13px; font:inherit; border:1px solid var(--line);
+  border-radius:8px; background:var(--surface); color:var(--ink); }
+#gate .err { color:var(--crit); font-weight:600; }
+
+/* ------------------------------------------------------- filters and tabs */
+/* One filter row above everything it scopes, never a control inside a card. */
+#filters { position:sticky; top:52px; z-index:9; background:var(--bg);
+  border-bottom:1px solid var(--line); padding:10px 0; }
+#filters .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+#filters .spacer { flex:1 1 auto; }
+.asof { color:var(--muted); font-size:13px; }
+
+#tabs { display:flex; gap:2px; overflow-x:auto; border-bottom:1px solid var(--line);
+  margin-bottom:18px; scrollbar-width:thin; }
+#tabs button { flex:0 0 auto; background:none; border:0; border-bottom:2px solid transparent;
+  padding:10px 14px; font:inherit; color:var(--muted); cursor:pointer; white-space:nowrap; }
+#tabs button[aria-selected="true"] { color:var(--ink); border-bottom-color:var(--accent); font-weight:600; }
+#tabs button:hover { color:var(--ink); }
+
+/* ----------------------------------------------------------------- layout */
+.grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); }
+.grid.wide { grid-template-columns:repeat(auto-fit,minmax(520px,1fr)); }
+.panel { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:16px 18px; box-shadow:var(--shadow); min-width:0; }
+.panel.span2 { grid-column:1 / -1; }
+.panel h3 { margin:0 0 2px; font-size:15px; }
+.panel .sub { color:var(--muted); font-size:12.5px; margin:0 0 12px; line-height:1.45; }
+.panel .foot { color:var(--muted); font-size:12px; margin:10px 0 0; line-height:1.45; }
+.panel.danger-zone { border-color:var(--crit); }
+.panel.danger-zone h3 { color:var(--crit); }
+.btn.danger { background:var(--crit); color:#fff; border-color:var(--crit); }
+.btn.danger:hover { filter:brightness(1.1); }
+
+/* Stat tiles. A single number is a stat tile, not a one-bar bar chart. */
+.tiles { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); }
+.tile { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px 16px; }
+.tile .k { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing.04em; }
+.tile .v { font-size:30px; line-height:1.15; margin:4px 0 2px; font-variant-numeric:proportional-nums; }
+.tile .d { color:var(--muted); font-size:12.5px; }
+
+/* --------------------------------------------------------------- alerts */
+.alert { display:flex; gap:11px; align-items:flex-start; padding:11px 13px; border-radius:8px;
+  border:1px solid var(--line); background:var(--surface); margin-bottom:8px; }
+.alert .ico { flex:0 0 auto; font-size:15px; line-height:1.35; }
+.alert.act { border-left:3px solid var(--crit); }
+.alert.watch { border-left:3px solid var(--warn-c); }
+.alert .msg { font-size:13.5px; }
+.alert .act-text { color:var(--muted); font-size:12.5px; display:block; margin-top:3px; }
+.alert .tag { font-weight:600; }
+
+/* ---------------------------------------------------------------- tables */
+table.dt { width:100%; border-collapse:collapse; font-size:13px; }
+table.dt th, table.dt td { padding:6px 9px; border-bottom:1px solid var(--line); text-align:left; }
+table.dt th { color:var(--muted); font-weight:600; font-size:11.5px; text-transform:uppercase;
+  letter-spacing.03em; position:sticky; top:0; background:var(--surface); }
+table.dt td.num, table.dt th.num { text-align:right; font-variant-numeric:tabular-nums; }
+table.dt tr.suppressed td { color:var(--muted); font-style:italic; }
+.scrollx { overflow-x:auto; }
+.scrolly { max-height:420px; overflow-y:auto; }
+
+/* Every chart has a table twin. Colour is never the only encoding. */
+.tablecard { display:none; }
+body.tables .chartcard { display:none; }
+body.tables .tablecard { display:block; }
+
+/* ----------------------------------------------------------------- chart */
+.chart { width:100%; overflow:visible; display:block; }
+.chart text { font:11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; fill:var(--chart-muted); }
+.chart text.val { fill:var(--ink); font-variant-numeric:tabular-nums; }
+.chart text.lbl { fill:var(--ink); }
+.chart .gridline { stroke:var(--grid); stroke-width:1; }
+.chart .axis { stroke:var(--axis); stroke-width:1; }
+.chart .hit { fill:transparent; cursor:default; }
+.chart .hit:hover ~ * .chart g.mark:hover { opacity:1; }
+
+.legend { display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--muted); margin:0 0 8px; }
+.legend span { display:inline-flex; align-items:center; gap:6px; }
+.legend i { width:10px; height:10px; border-radius:2px; display:inline-block; }
+
+/* Scale legend for sequential encodings. A heatmap without one is unreadable. */
+.scalelegend { display:flex; align-items:center; gap:7px; font-size:11.5px; color:var(--muted); margin-top:9px; }
+.scalelegend .swatches { display:flex; gap:2px; }
+.scalelegend .swatches i { width:22px; height:10px; display:inline-block; }
+
+#tip { position:fixed; pointer-events:none; z-index:60; background:var(--surface);
+  border:1px solid var(--line); border-radius:7px; padding:7px 10px; font-size:12.5px;
+  box-shadow:0 3px 12px rgba(0,0,0.16); max-width:290px; opacity:0; transition:opacity .1s; }
+#tip.on { opacity:1; }
+#tip .t { font-weight:600; margin-bottom:2px; }
+#tip .r { color:var(--muted); }
+
+/* ----------------------------------------------------------- progress bars */
+.pbar { display:block; height:9px; border-radius:5px; background:var(--surface-2); overflow:hidden; }
+.pbar > i { display:block; height:100%; background:var(--s1); border-radius:5px; }
+.pbar.gap > i { background:var(--warn-c); }
+.pbar.done > i { background:var(--ok); }
+
+/* --------------------------------------------------------------- findings */
+.finding { border:1px solid var(--line); border-radius:var(--radius); background:var(--surface);
+  padding:15px 17px; margin-bottom:11px; }
+.finding h4 { margin:0 0 6px; font-size:14.5px; }
+.finding p { margin:0 0 7px; font-size:14px; line-height:1.55; }
+.finding .meta { color:var(--muted); font-size:12.5px; line-height:1.5; }
+.finding .where { display:inline-block; margin-top:7px; font-size:11.5px; color:var(--muted);
+  background:var(--surface-2); border-radius:5px; padding:2px 7px; }
+
+#reportbox { width:100%; min-height:64vh; font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;
+  padding:14px; border:1px solid var(--line); border-radius:var(--radius);
+  background:var(--surface); color:var(--ink); resize:vertical; }
+
+.empty { color:var(--muted); font-size:13.5px; padding:18px 0; }
+.hint { color:var(--muted); font-size:12.5px; }
+
+@media print {
+  #filters, #tabs, #hdr.noprint { display:none !important; }
+  .panel { break-inside:avoid; }
+}
+
+/* -------------------------------------------------------------- Editor tab */
+/* Google-Forms-style question builder. Structural edits (add/remove/reorder,
+   change type) re-render the whole body; text edits write straight into the
+   in-memory document without a redraw, so an input never loses focus or
+   cursor position mid-sentence -- see dashboard.js for why. */
+
+.editortop{
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  padding:12px 0; border-bottom:1px solid var(--line); margin-bottom:4px;
+  position:sticky; top:0; background:var(--bg); z-index:5;
+}
+.editorstatus{ flex:1 1 auto; font-size:13px; color:var(--muted); min-width:220px; }
+#edErrors .alert{ margin-bottom:14px; }
+
+/* A label inserted into the section list wherever the respondent branch
+   changes (routing, organization, practitioner, citizen) -- see
+   sectionBranch() in dashboard.js. Not a tab, just an in-flow marker so an
+   admin scrolling the merged questionnaire knows which branch they are in. */
+.edbranch{
+  font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+  color:var(--muted); margin:22px 0 8px; padding-top:14px; border-top:1px solid var(--line);
+}
+.edbranch:first-child{ margin-top:4px; padding-top:0; border-top:none; }
+
+.edsection{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  margin-bottom:14px; overflow:hidden;
+}
+.edsection > summary{
+  display:flex; align-items:center; gap:10px; padding:12px 14px; cursor:pointer;
+  list-style:none; background:var(--surface-2);
+}
+.edsection > summary::-webkit-details-marker{ display:none; }
+.edsection > summary::before{ content:"▸"; color:var(--muted); transition:transform .12s; flex:0 0 auto; }
+.edsection[open] > summary::before{ transform:rotate(90deg); }
+.edsecid{ width:56px; font-weight:700; font-size:12.5px; text-align:center;
+  background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:5px; }
+.edsectitle{ flex:1 1 auto; font-weight:650; font-size:14.5px;
+  background:transparent; border:1px solid transparent; border-radius:6px; padding:5px 7px; }
+.edsectitle:hover, .edsectitle:focus{ border-color:var(--line); background:var(--surface); }
+.edcount{ font-size:12px; color:var(--muted); flex:0 0 auto; white-space:nowrap; }
+.edmove{ display:flex; gap:4px; flex:0 0 auto; }
+.edquestions{ padding:14px; display:flex; flex-direction:column; gap:12px; }
+
+.iconbtn{ width:28px; height:28px; padding:0; display:inline-flex;
+  align-items:center; justify-content:center; font-size:13px; line-height:1; }
+.iconbtn.danger:hover{ border-color:var(--crit); color:var(--crit); }
+.iconbtn:disabled{ opacity:.35; cursor:not-allowed; }
+
+.edq{
+  border:1px solid var(--line); border-radius:9px; padding:12px 14px;
+  background:var(--bg);
+}
+.edqhead{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:9px; }
+.edqid{ width:74px; font-family:ui-monospace,monospace; font-size:12px; font-weight:700;
+  background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:5px 6px; }
+.edqhead select{ font-size:12.5px; padding:5px 6px; border:1px solid var(--line);
+  border-radius:6px; background:var(--surface); color:var(--ink); }
+.edcheck{ display:inline-flex; align-items:center; gap:5px; font-size:12.5px; color:var(--muted); }
+.edlbl{ display:block; font-size:11.5px; color:var(--muted); text-transform:uppercase;
+  letter-spacing:.03em; margin:8px 0 4px; }
+.edlbl textarea, .edlbl input{ display:block; width:100%; font-size:14px;
+  font-family:inherit; margin-top:3px; padding:7px 9px; border:1px solid var(--line);
+  border-radius:7px; background:var(--surface); color:var(--ink); }
+.edlbl textarea{ resize:vertical; }
+
+.edoptions{ display:flex; flex-direction:column; gap:6px; margin-top:6px; }
+.edoptrow{ display:grid; grid-template-columns:90px 1fr 30px; gap:6px; align-items:center; }
+.edoptval{ font-family:ui-monospace,monospace; font-size:12px; padding:6px 7px;
+  border:1px solid var(--line); border-radius:6px; background:var(--surface); color:var(--ink); }
+.edoptlabel{ font-size:13.5px; padding:6px 8px; border:1px solid var(--line);
+  border-radius:6px; background:var(--surface); color:var(--ink); }
+.edgridcols{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:8px; }
+.edgridcols > div > b{ font-size:12px; color:var(--muted); }
+.edscalebar{ display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; align-items:end; }
+.edscalebar label{ font-size:11.5px; color:var(--muted); display:flex; flex-direction:column; gap:3px; }
+.edscalebar input{ padding:6px 8px; border:1px solid var(--line); border-radius:6px;
+  background:var(--surface); color:var(--ink); font-size:13px; }
+
+@media (max-width:720px){
+  .edgridcols{ grid-template-columns:1fr; }
+  .edoptrow{ grid-template-columns:76px 1fr 26px; }
+}

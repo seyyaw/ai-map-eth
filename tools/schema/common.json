@@ -1,0 +1,592 @@
+{
+  "project": "AI-MAP Ethiopia",
+  "title": "Mapping Artificial Intelligence Adoption in Ethiopia",
+  "version": "0.5-draft",
+  "date": "2026-09",
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "native": "English",
+      "status": "source"
+    }
+  ],
+  "instruments": [
+    {
+      "code": "ORG",
+      "file": "questionnaire.json",
+      "audience": "Organisations (public, private, academic, health, education)",
+      "target_n": 400,
+      "modes": [
+        "web",
+        "enumerator",
+        "offline-pdf",
+        "telegram"
+      ],
+      "est_minutes": 30
+    },
+    {
+      "code": "IND",
+      "file": "questionnaire.json",
+      "audience": "Individual professionals, researchers, students, educators",
+      "target_n": 1500,
+      "modes": [
+        "web",
+        "telegram"
+      ],
+      "est_minutes": 15
+    },
+    {
+      "code": "CIT",
+      "file": "questionnaire.json",
+      "audience": "General public / citizen pulse",
+      "target_n": 3000,
+      "modes": [
+        "web",
+        "telegram",
+        "ivr",
+        "intercept"
+      ],
+      "est_minutes": 7
+    }
+  ],
+  "consent": {
+    "controller": "[HOST INSTITUTION]: named data controller; DPO contact: [EMAIL]",
+    "text": "You are invited to take part in AI-MAP Ethiopia, an independent research study mapping how artificial intelligence is actually being adopted across Ethiopia. Your participation is voluntary and you may stop at any time or skip any question. We do not ask for your name or ID. Responses are stored securely and reported only in aggregate; anonymised data will be published openly so that others can verify and reuse the findings. Processing is carried out in line with the Personal Data Protection Proclamation No. 1321/2024. Contact details, if you choose to give them, are stored separately from your answers and deleted after the follow-up period.",
+    "affirm": "I have read the above, I am 18 or older, and I agree to take part."
+  },
+  "maturity_ladder": {
+    "scale": "0-5",
+    "levels": [
+      {
+        "level": 0,
+        "name": "Unaware",
+        "criteria": "No awareness of AI relevance to the organisation's work."
+      },
+      {
+        "level": 1,
+        "name": "Aware / exploring",
+        "criteria": "Discussed, read about, or attended training. No pilot started."
+      },
+      {
+        "level": 2,
+        "name": "Piloting",
+        "criteria": "At least one time-bounded trial with real or test data. Not in production."
+      },
+      {
+        "level": 3,
+        "name": "Deployed in one function",
+        "criteria": "At least one nameable AI system in production use in one department, with identifiable users, a go-live date and an owner."
+      },
+      {
+        "level": 4,
+        "name": "Scaled",
+        "criteria": "AI systems in production across two or more functions, with a budget line, monitoring, and defined ownership."
+      },
+      {
+        "level": 5,
+        "name": "Core to operating model",
+        "criteria": "AI is embedded in core service delivery; withdrawal would materially disrupt operations; governance and model monitoring are formalised."
+      }
+    ],
+    "scoring_note": "The reported maturity level is COMPUTED from the D5 behavioural checklist, not taken from the D4 self-rating. Both are stored. Scoring is GATED, not additive: a level is only awarded if the structural evidence for it is present (see computed_rule). A simple point total would let an organisation reach 'deployed' on training and planning alone, which is exactly the over-claiming this instrument exists to detect. The gap between self-rated and computed maturity is a primary reported outcome (methodology §3.3, §10).",
+    "computed_rule": {
+      "description": "Applied in order; the highest satisfied level wins. Item codes refer to ORG.D5 options.",
+      "gates": [
+        {
+          "level": 1,
+          "requires": "any item ticked (excluding 'none' and the planted item e14)"
+        },
+        {
+          "level": 2,
+          "requires": "e3: at least one pilot run with real data"
+        },
+        {
+          "level": 3,
+          "requires": "e4: at least one AI system in production use TODAY"
+        },
+        {
+          "level": 4,
+          "requires": "e4 AND (e9 OR (e6 AND e7)): production in 2+ departments, or a budget line plus production monitoring"
+        },
+        {
+          "level": 5,
+          "requires": "level 4 satisfied AND e13 AND (e7 OR e11): withdrawal would disrupt service, with monitoring or a written AI policy"
+        }
+      ],
+      "points_note": "maturity_points (the weighted sum of ticked items) is retained ALONGSIDE the gated level as a continuous index for regression models. It is not used to assign the level."
+    }
+  },
+  "quality_flags": {
+    "honeypot": "Hidden field; any value indicates a bot.",
+    "attention_check": "Item with an instructed response; failure flags the case.",
+    "planted_item": "Names a plausible but non-existent AI capability. Selecting it flags over-claiming. Reported as a data-quality statistic; cases are NOT silently dropped: analysis is reported with and without them.",
+    "speeder": "Completion time below one third of the pilot median flags the case.",
+    "definition_fail": "Respondent classified a rules-based dashboard/automation as AI in the definition gate (C2)."
+  },
+  "licence": "Instrument released CC BY 4.0. Please cite AI-MAP Ethiopia and retain this notice when reusing or adapting.",
+  "language_note": "This study is fielded in English only. Questions ABOUT language (ORG L1-L5, IND D1-D4, CIT C5-C6) remain: they are substantive research content, not translation. See the paper's limitations section for the sampling consequences of an English-only citizen instrument.",
+  "technical_ladder": {
+    "scale": "0-4",
+    "purpose": "Answers 'are we building AI or only adopting it'. Deliberately ORTHOGONAL to the adoption maturity ladder: an organisation can be practically deep and technically shallow (a bank running vendor SaaS across the whole branch network) or technically deep and practically shallow (a lab that trains models nothing depends on). Plotting the two axes together is what separates real national capability from procurement.",
+    "levels": [
+      {
+        "level": 0,
+        "name": "None",
+        "criteria": "No AI in use."
+      },
+      {
+        "level": 1,
+        "name": "Consume",
+        "criteria": "Off-the-shelf AI used as supplied: a public chatbot, a vendor feature switched on. No configuration beyond settings."
+      },
+      {
+        "level": 2,
+        "name": "Configure",
+        "criteria": "The system is integrated and tailored: prompts, retrieval over own documents, APIs wired into a workflow, but no model weights are changed."
+      },
+      {
+        "level": 3,
+        "name": "Adapt",
+        "criteria": "An existing model has been fine-tuned, retrained or distilled on the organisation's own or Ethiopian data."
+      },
+      {
+        "level": 4,
+        "name": "Produce",
+        "criteria": "A model has been trained from scratch, or a novel architecture or method developed, by the organisation."
+      }
+    ],
+    "computed_rule": {
+      "description": "Gated, like the maturity ladder. Applied in order; the highest satisfied level wins. Item codes refer to ORG.T2.",
+      "gates": [
+        {
+          "level": 1,
+          "requires": "t1: an off-the-shelf AI product or service is in use"
+        },
+        {
+          "level": 2,
+          "requires": "t2 OR t3: integrated via API into a workflow, or retrieval over the organisation's own documents"
+        },
+        {
+          "level": 3,
+          "requires": "t4 OR t5: a model fine-tuned or retrained on own data, or trained on Ethiopian-language data"
+        },
+        {
+          "level": 4,
+          "requires": "t6 AND (t4 OR t5): a model trained from scratch, and evidence of the adaptation capability beneath it"
+        }
+      ],
+      "note": "Level 4 requires level-3 evidence as well. Training from scratch without any fine-tuning capability is far more likely to be a misunderstanding of the question than a genuine national capability, and the pairing catches it."
+    }
+  },
+  "readiness_index": {
+    "purpose": "Five dimensions scored identically for every sector, so 'which sector is ahead' has a defensible answer rather than an impression. Each is normalised 0-100 and reported SEPARATELY as a profile; a single composite is reported only alongside the five components, never instead of them.",
+    "dimensions": [
+      {
+        "id": "infrastructure",
+        "label": "Infrastructure readiness",
+        "definition": "Compute, connectivity, power and hosting available to the organisation.",
+        "items": [
+          "G1",
+          "G2",
+          "G3",
+          "G4",
+          "B3",
+          "B4",
+          "B5"
+        ]
+      },
+      {
+        "id": "data",
+        "label": "Data readiness",
+        "definition": "Whether usable, governed, shareable data exists at all.",
+        "items": [
+          "B1",
+          "B2",
+          "F1",
+          "F2",
+          "F3",
+          "F5",
+          "F7"
+        ]
+      },
+      {
+        "id": "expertise",
+        "label": "Expertise readiness",
+        "definition": "People who can build, run and govern AI, and whether they stay.",
+        "items": [
+          "A4",
+          "H1",
+          "H2",
+          "H3",
+          "H4",
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "id": "economic",
+        "label": "Economic readiness",
+        "definition": "Money, foreign exchange and procurement capacity to buy and sustain AI.",
+        "items": [
+          "A7",
+          "A8",
+          "J1",
+          "J2",
+          "J3",
+          "J4",
+          "J7"
+        ]
+      },
+      {
+        "id": "governance",
+        "label": "Governance readiness",
+        "definition": "Policy, accountability and the ability to answer for an automated decision.",
+        "items": [
+          "E6",
+          "F3",
+          "F4",
+          "I1",
+          "I8",
+          "K3"
+        ]
+      }
+    ],
+    "method": "Each item is rescaled to 0-1 with its own documented direction, averaged within dimension (equal weights, stated as a choice not a discovery), multiplied by 100. Sector scores are reported with confidence intervals and with organisation-size composition shown, because a sector of large banks is not comparable to a sector of small clinics without saying so. A sensitivity analysis reports how the sector ranking changes under alternative weightings.",
+    "caution": "Composite indices invite spurious precision. Rank differences smaller than the confidence interval are reported as ties, and the five-dimension profile is always shown alongside any headline number.",
+    "crosswalk": {
+      "purpose": "Each dimension is mapped to an established index so the framework is an ADAPTATION rather than an invention. Publishing the crosswalk is what lets a reader check that we have not simply defined the dimensions to suit the answer.",
+      "map": {
+        "infrastructure": "Oxford Insights GAIRI 'AI Infrastructure' pillar (compute capacity, enabling technical infrastructure); IMF AIPI 'digital infrastructure'",
+        "data": "Oxford Insights GAIRI 'Data Quality' sub-dimension; UNESCO RAM technological/infrastructural dimension",
+        "expertise": "IMF AIPI 'human capital and labour-market policies'; UNCTAD Frontier Technologies Readiness Index 'skills'",
+        "economic": "UNCTAD FTRI 'industrial capacity' and 'access to finance'; World Bank FAT survey finance-obstacle items",
+        "governance": "UNESCO RAM legal/regulatory dimension; Oxford Insights GAIRI 'Governance' pillar"
+      }
+    },
+    "bands": [
+      {
+        "max": 25,
+        "label": "Nascent",
+        "meaning": "Preconditions largely absent."
+      },
+      {
+        "max": 50,
+        "label": "Emerging",
+        "meaning": "Some preconditions in place, unevenly."
+      },
+      {
+        "max": 75,
+        "label": "Establishing",
+        "meaning": "Most preconditions in place; gaps remain in specific dimensions."
+      },
+      {
+        "max": 100,
+        "label": "Advanced",
+        "meaning": "Preconditions broadly in place for this context."
+      }
+    ],
+    "robustness": {
+      "required": true,
+      "checks": [
+        "Arithmetic versus GEOMETRIC aggregation across dimensions. Geometric limits compensability, so a sector cannot mask absent governance with strong infrastructure. Both are reported; if the sector ranking changes between them, that is itself the finding.",
+        "Equal weights versus alternative weightings; rank intervals reported.",
+        "Scores recomputed excluding each dimension in turn.",
+        "Results reported with and without over-claim-flagged respondents."
+      ],
+      "normalisation_note": "Items are scaled against a FIXED theoretical range, never the observed sample minimum and maximum. Sample-relative normalisation would make the 2028 wave incomparable with this one, which defeats the purpose of a baseline."
+    },
+    "reporting_rule": "Every sector score is published in the same table as its N, its sampling frame and its response rate, and with the size composition of the responding organisations. A sector of large banks is not comparable to a sector of small clinics unless that is said out loud. Where a dimension does not apply to a sector, it is reported as not applicable rather than imputed."
+  },
+  "short_form": {
+    "enabled_for": [
+      "CIT",
+      "IND",
+      "ORG"
+    ],
+    "selector": "core",
+    "label": "Quick version",
+    "long_label": "Full version",
+    "est_minutes": {
+      "CIT": 4,
+      "IND": 8,
+      "ORG": 12
+    },
+    "note": "Questions carrying \"core\": true. Chosen so that every headline estimate and every weighting variable survives the cut: demographics, device and connectivity, awareness, use, language, and the attitude items. Recorded on each response as form=short so the two can be compared and pooled item-by-item."
+  },
+  "recruitment": {
+    "note": "Recorded on every response so the dual-frame design in docs/study-design-decisions.md §1 is analysable. Arm is a design variable, not a channel: the same Telegram bot serves both list and referral arms.",
+    "arms": [
+      {
+        "code": "list",
+        "label": "List-based frame",
+        "applies_to": [
+          "ORG",
+          "IND"
+        ],
+        "description": "Sampled from an enumerable register: NBE, MoE/HERQA, MoH, federal and regional bodies, ICT association membership."
+      },
+      {
+        "code": "referral",
+        "label": "Referral / respondent-driven",
+        "applies_to": [
+          "IND",
+          "CIT"
+        ],
+        "description": "Recruited by an existing respondent's invitation code. Recruitment chains are stored so RDS estimators and degree weights can be applied."
+      },
+      {
+        "code": "booster",
+        "label": "Probability-sampled booster",
+        "applies_to": [
+          "CIT"
+        ],
+        "description": "Enumerator-administered, drawn from CSA enumeration areas with a deliberate rural majority. The anchor the online panel is calibrated to."
+      },
+      {
+        "code": "open",
+        "label": "Open / self-selected",
+        "applies_to": [
+          "IND",
+          "CIT"
+        ],
+        "description": "Arrived via a public link with no invitation code. Analysable but never weightable on its own."
+      }
+    ]
+  },
+  "utaut": {
+    "source": "Venkatesh et al. (2003); extended with algorithmic aversion after Ayeni et al. (MWAIS 2024)",
+    "instrument": "IND",
+    "item": "PU1",
+    "outcome": "PU2",
+    "constructs": {
+      "performance_expectancy": {
+        "rows": [
+          "pe1",
+          "pe2"
+        ],
+        "reverse": false
+      },
+      "effort_expectancy": {
+        "rows": [
+          "ee1",
+          "ee2"
+        ],
+        "reverse": false
+      },
+      "social_influence": {
+        "rows": [
+          "si1",
+          "si2"
+        ],
+        "reverse": false
+      },
+      "facilitating_conditions": {
+        "rows": [
+          "fc1",
+          "fc2"
+        ],
+        "reverse": false
+      },
+      "algorithmic_aversion": {
+        "rows": [
+          "aa1",
+          "aa2",
+          "aa3"
+        ],
+        "reverse": false
+      }
+    },
+    "scale_points": 5,
+    "note": "Construct means are reported on the 1-5 response scale. The three aversion rows are worded TOWARD aversion -- agreeing with 'I would rather rely on a person's judgement' means more aversion -- so they are scored as given, not reverse-coded. A high utaut_algorithmic_aversion therefore means high aversion. The `reverse` flag exists for any construct added later whose items are keyed the other way; it is the single thing most easily got wrong when these scales are re-used, so it is data, not code."
+  },
+  "validators": {
+    "_note": "One rule per format, used by BOTH renderers. The pattern is written in the subset of regex that JavaScript and Python agree on, so the web form and the Telegram bot accept exactly the same answers -- a contact that one channel takes and the other rejects is a contact the study cannot follow up.",
+    "email": {
+      "pattern": "^[^@\\s]+@[^@\\s.]+\\.[^@\\s]{2,}$",
+      "message": "That does not look like an email address. Example: name@example.com",
+      "placeholder": "name@example.com",
+      "inputmode": "email"
+    },
+    "phone": {
+      "pattern": "^\\+?[0-9][0-9 -]{6,17}[0-9]$",
+      "message": "That does not look like a phone number. Ethiopian mobile numbers look like 0912 345 678 or +251 91 234 5678.",
+      "placeholder": "0912 345 678",
+      "inputmode": "tel",
+      "note": "Deliberately permissive about country: a large share of the practitioner sample is diaspora, and a rule that only accepted +251 would silently exclude exactly the respondents section F is about."
+    }
+  },
+  "pillars": {
+    "_note": "Added when the instrument was reorganised around four content pillars plus a fifth cross-cutting module. Sections not listed here are either respondent screening/demographics or the pre-existing adoption/technical-depth/readiness engineering, which sits alongside the pillars rather than inside one of them.",
+    "policy": {
+      "label": "Policy",
+      "question": "Is there a policy, who made it, who should make it, and what should it contain?",
+      "sections": {
+        "ORG": [
+          "I",
+          "YP"
+        ],
+        "IND": [
+          "PG"
+        ],
+        "CIT": [
+          "ZD"
+        ]
+      }
+    },
+    "status": {
+      "label": "Status of AI",
+      "question": "What kinds of AI are in use, by whom, and in which domains?",
+      "sections": {
+        "ORG": [
+          "AT",
+          "D",
+          "T",
+          "E",
+          "YH",
+          "YF",
+          "YA",
+          "YI",
+          "YE",
+          "YS",
+          "YG"
+        ],
+        "IND": [
+          "PAT",
+          "PB",
+          "PU"
+        ],
+        "CIT": [
+          "ZC"
+        ]
+      }
+    },
+    "ethics": {
+      "label": "Ethical use",
+      "question": "In sensitive domains -- health, finance, hiring, policing -- what safeguards exist?",
+      "sections": {
+        "ORG": [
+          "ET"
+        ],
+        "IND": [
+          "PET"
+        ],
+        "CIT": [
+          "ZD"
+        ]
+      }
+    },
+    "blockers": {
+      "label": "Issues and blockers",
+      "question": "Infrastructure, power, data, expertise: what actually stops adoption?",
+      "sections": {
+        "ORG": [
+          "G",
+          "K"
+        ],
+        "IND": [
+          "PC"
+        ],
+        "CIT": [
+          "ZB"
+        ]
+      }
+    },
+    "global": {
+      "label": "The global picture",
+      "question": "Who controls AI globally, what is the risk of not adopting it, and what would adopting it cost in money and people?",
+      "sections": {
+        "ORG": [
+          "GV"
+        ],
+        "IND": [
+          "PGV"
+        ],
+        "CIT": [
+          "ZGV"
+        ]
+      }
+    }
+  },
+  "volumes": {
+    "_note": "A light mapping of schema sections onto the four planned research volumes, for navigation only. A section can serve more than one volume.",
+    "I": {
+      "label": "The state of AI in Ethiopia",
+      "sections": {
+        "ORG": [
+          "AT",
+          "D",
+          "T",
+          "E",
+          "YH",
+          "YF",
+          "YA",
+          "YI",
+          "YE",
+          "YS",
+          "YG"
+        ],
+        "IND": [
+          "PAT",
+          "PB",
+          "PU"
+        ],
+        "CIT": [
+          "ZC"
+        ]
+      }
+    },
+    "II": {
+      "label": "AI adoption and value in practice",
+      "sections": {
+        "ORG": [
+          "D",
+          "T",
+          "J",
+          "K"
+        ],
+        "IND": [
+          "PF",
+          "PG"
+        ],
+        "CIT": []
+      }
+    },
+    "III": {
+      "label": "Public priorities, language, and access",
+      "sections": {
+        "ORG": [
+          "L"
+        ],
+        "IND": [
+          "PD"
+        ],
+        "CIT": [
+          "ZB",
+          "ZC",
+          "ZD",
+          "ZE"
+        ]
+      }
+    },
+    "IV": {
+      "label": "Institutional and investment choices",
+      "sections": {
+        "ORG": [
+          "I",
+          "YP",
+          "G",
+          "H",
+          "J",
+          "F"
+        ],
+        "IND": [
+          "PG"
+        ],
+        "CIT": [
+          "ZD"
+        ]
+      }
+    }
+  }
+}

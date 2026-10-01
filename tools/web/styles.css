@@ -1,0 +1,503 @@
+/* ===========================================================================
+   AI-MAP Ethiopia: questionnaire styles.
+
+   Theming has two independent axes, both stored in localStorage:
+
+     data-appearance = light | dark        (resolved from the user's choice of
+                                            light / dark / system)
+     data-bg         = paper | warm | sand | sage | mist | contrast
+
+   LIGHT IS THE DEFAULT. There is deliberately no bare
+   `@media (prefers-color-scheme: dark)` rule: the document must render light
+   for a first-time visitor whose OS is set to dark, and only follow the system
+   when they explicitly choose "System". app.js resolves that and stamps
+   data-appearance on <html> before first paint.
+   =========================================================================== */
+
+/*  (- light palettes -) */
+:root,
+[data-appearance="light"]                     { --bg:#fbfaf8; --surface:#ffffff; --surface-2:#f6f4f0;
+                                                --ink:#1b1a18; --muted:#6b6862; --line:#e3dfd8;
+                                                --accent:#0b6b53; --accent-ink:#ffffff;
+                                                --accent-soft:#e6f1ed; --warn:#8a5a00;
+                                                --warn-soft:#fdf3e2; --shadow:0 1px 2px rgba(20,18,14.05);
+                                                --gradient-start:#0b6b53; --gradient-end:#0d8a6a;
+                                                --success:#10b981; --success-soft:#d1fae5; }
+[data-appearance="light"][data-bg="warm"]     { --bg:#faf5ec; --surface:#fffdf9; --surface-2:#f4ede0; --line:#e7dccb; }
+[data-appearance="light"][data-bg="sand"]     { --bg:#f4efe4; --surface:#fdfaf3; --surface-2:#ece4d4; --line:#ded2bd; }
+[data-appearance="light"][data-bg="sage"]     { --bg:#f1f5f1; --surface:#fbfdfb; --surface-2:#e6ede6; --line:#d6e0d6; }
+[data-appearance="light"][data-bg="mist"]     { --bg:#f0f4f7; --surface:#fbfcfe; --surface-2:#e4ebf1; --line:#d3dde5; }
+[data-appearance="light"][data-bg="contrast"] { --bg:#ffffff; --surface:#ffffff; --surface-2:#f2f2f2;
+                                                --ink:#000000; --muted:#3a3a3a; --line:#000000;
+                                                --accent:#00543f; --accent-soft:#dcefe8; --shadow:none; }
+
+/*  (- dark palettes -) */
+[data-appearance="dark"]                      { --bg:#16171a; --surface:#1e2024; --surface-2:#25282d;
+                                                --ink:#eceae6; --muted:#9d9a94; --line:#31343a;
+                                                --accent:#3fae8d; --accent-ink:#0d1512;
+                                                --accent-soft:#1a2f28; --warn:#d9a441;
+                                                --warn-soft:#2c2314; --shadow:0 1px 2px rgba(0,0,0.4);
+                                                --gradient-start:#3fae8d; --gradient-end:#4ec9a6;
+                                                --success:#34d399; --success-soft:#064e3b; }
+[data-appearance="dark"][data-bg="warm"]      { --bg:#1b1815; --surface:#241f1a; --surface-2:#2c2620; --line:#3a332b; }
+[data-appearance="dark"][data-bg="sand"]      { --bg:#1d1a15; --surface:#26221b; --surface-2:#2f2a21; --line:#3e372c; }
+[data-appearance="dark"][data-bg="sage"]      { --bg:#141a16; --surface:#1c231e; --surface-2:#232b25; --line:#2e382f; }
+[data-appearance="dark"][data-bg="mist"]      { --bg:#14181c; --surface:#1c2126; --surface-2:#232a30; --line:#2e363d; }
+[data-appearance="dark"][data-bg="contrast"]  { --bg:#000000; --surface:#000000; --surface-2:#141414;
+                                                --ink:#ffffff; --muted:#d0d0d0; --line:#ffffff;
+                                                --accent:#5fd6b0; --accent-ink:#000000;
+                                                --accent-soft:#0d2b22; --shadow:none; }
+
+:root { --radius:10px; --maxw:760px; }
+
+/* Respect a reduced-motion preference: transitions here are decoration only. */
+@media (prefers-reduced-motion: reduce) { *, *:before, *:after { transition:none !important; animation:none !important; } }
+
+*{box-sizing:border-box}
+html{ -webkit-text-size-adjust:100%; }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Ethiopic","Abyssinica SIL",sans-serif;
+  transition:background-color .18s ease, color .18s ease;
+  background-image:radial-gradient(circle at 20% 80%, var(--accent-soft) 0%, transparent 50%),
+                   radial-gradient(circle at 80% 20%, var(--accent-soft) 0%, transparent 50%);
+  background-attachment:fixed;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* Visible focus everywhere: the questionnaire is fully keyboard-operable. */
+:focus-visible{ outline:2.5px solid var(--accent); outline-offset:2px; border-radius:4px; }
+
+/* Skip link for screen-reader and keyboard users. */
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);
+  padding:10px 16px;z-index:100;border-radius:0 0 6px 0}
+.skip:focus{left:0}
+
+/* ------------------------------------------------------------ header */
+#hdr{position:sticky;top:0;background:var(--surface);border-bottom:1px solid var(--line);z-index:10;
+  backdrop-filter:blur(8px);background:color-mix(in srgb, var(--surface) 85%, transparent)}
+#hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+.brand{font-weight:650;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.hdr-right{display:flex;align-items:center;gap:8px}
+
+select,input,textarea{font:inherit;color:inherit;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;padding:9px 11px}
+textarea{width:100%;min-height:110px;resize:vertical}
+input[type=text],input[type=email],input[type=number],input[type=month]{width:100%}
+
+.iconbtn{background:transparent;border:1px solid var(--line);border-radius:8px;color:inherit;
+  cursor:pointer;font:inherit;font-size:15px;line-height:1;padding:8px 10px}
+.iconbtn:hover{border-color:var(--accent)}
+
+.pill{font-size:12px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);
+  color:var(--muted);white-space:nowrap}
+.pill.off{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
+.pill.saved{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+
+/* ------------------------------------------------------------ progress */
+#progwrap{background:var(--surface);border-bottom:1px solid var(--line)}
+#progwrap .wrap{padding-top:9px;padding-bottom:10px}
+.prog-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.prog-top strong{color:var(--ink);font-weight:600}
+.prog-pct{font-variant-numeric:tabular-nums;font-weight:650;color:var(--accent)}
+#progtrack{height:8px;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:99px;overflow:hidden}
+#progfill{height:100%;width:0;background:linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  border-radius:99px;transition:width .35s cubic-bezier(.4,0.2,1);
+  box-shadow:0 0 8px rgba(11,107,83,0.3)}
+/* Section ticks: one segment per section, filled as each is completed. */
+#progsteps{display:flex;gap:3px;margin-top:6px}
+#progsteps i{flex:1;height:3px;border-radius:99px;background:var(--surface-2);
+  border:1px solid var(--line);transition:background-color .25s ease}
+#progsteps i.done{background:var(--accent);border-color:var(--accent)}
+#progsteps i.current{background:var(--accent);border-color:var(--accent);opacity.5}
+
+/* Within-section position: one question is shown at a time, so the respondent
+   needs to see where they are inside the section as well as overall. */
+.prog-sub{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:7px;
+  font-size:12px;color:var(--muted)}
+#subdots{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+#subdots i{width:7px;height:7px;border-radius:50%;background:var(--surface-2);
+  border:1px solid var(--line);display:block;transition:background-color .2s ease}
+#subdots i.done{background:var(--accent);border-color:var(--accent)}
+#subdots i.current{background:var(--accent);border-color:var(--accent);
+  transform:scale(1.45)}
+
+/* ------------------------------------------------------------ layout */
+main{padding:26px 0 64px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;margin-bottom:18px;box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0.1)}
+h1{font-size:26px;line-height:1.25;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:20px;margin:0 0 10px}
+h3{font-size:16px;margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 20px}
+.fine{font-size:13px;color:var(--muted)}
+a{color:var(--accent)}
+
+/* The instrument picker uses the same .opt radio rows as every other
+   single-choice question, so the landing screen reads as a question rather than
+   as three navigation cards. */
+#pickfs{border:0;margin:0;padding:0}
+#pickfs legend{padding:0;margin-bottom:4px}
+.opt .optsub{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.opt.sel .optsub{color:var(--accent)}
+
+.secmeta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  font-size:12px;text-transform:uppercase;letter-spacing.09em;color:var(--muted);margin-bottom:12px}
+
+/* ------------------------------------------------------------ questions */
+.q{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;margin-bottom:14px;box-shadow:var(--shadow);scroll-margin-top:150px}
+.q.invalid{border-color:var(--warn)}
+.qhead{display:flex;gap:10px;align-items:baseline}
+.qnum{font-size:12px;font-weight:650;color:var(--accent);background:var(--accent-soft);
+  border-radius:5px;padding:2px 6px;flex:none;letter-spacing.02em}
+.q .qtext{font-size:17px;font-weight:560;margin:0 0 6px;line-height:1.4}
+.q .qhelp{font-size:14px;color:var(--muted);margin:0 0 14px}
+.req-star{color:var(--warn);font-weight:700}
+
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.opt{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border:1px solid var(--line);
+  border-radius:8px;cursor:pointer;transition:all .15s ease;position:relative;overflow:hidden}
+.opt:hover{border-color:var(--accent);background:var(--surface-2);transform:translateX(4px)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 2px 8px rgba(11,107,83,0.15)}
+.opt.sel::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
+.opt input{margin:3px 0 0;accent-color:var(--accent);flex:none}
+.opt span{flex:1}
+.opt kbd{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);
+  border:1px solid var(--line);border-radius:4px;padding:3px 5px;background:var(--surface-2);flex:none}
+.opt.sel kbd{color:var(--accent);border-color:var(--accent)}
+
+.scale{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.scale button{flex:1;min-width:56px;padding:12px 4px;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface);color:inherit;cursor:pointer;font:inherit}
+.scale button:hover{border-color:var(--accent)}
+.scale button.sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.scale-ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
+
+.gridwrap{overflow-x:auto;margin-top:12px;-webkit-overflow-scrolling:touch}
+table.grid{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+table.grid th,table.grid td{border-bottom:1px solid var(--line);padding:9px 7px;text-align:center}
+table.grid th:first-child,table.grid td:first-child{text-align:left;min-width:190px;font-weight:400}
+table.grid thead th{font-size:12px;color:var(--muted);font-weight:500;vertical-align:bottom}
+table.grid tbody tr:hover{background:var(--surface-2)}
+table.grid tbody tr.answered td:first-child{color:var(--accent)}
+table.grid input{accent-color:var(--accent)}
+
+.rep{border:1px dashed var(--line);border-radius:8px;padding:14px;margin-top:10px}
+.rep h4{margin:0 0 10px;font-size:14px;color:var(--muted);font-weight:500}
+.rep .fld{margin-bottom:11px}
+.rep .fld label{display:block;font-size:14px;margin-bottom:5px}
+
+/* ------------------------------------------------------------ nav */
+.navbtns{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
+.counter{font-size:13px;color:var(--muted)}
+.btn{background:linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color:var(--accent-ink);border:1px solid var(--accent);border-radius:8px;
+  padding:11px 22px;font:inherit;font-weight:560;cursor:pointer;transition:all .2s ease;
+  box-shadow:0 2px 4px rgba(11,107,83,0.2)}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 4px 8px rgba(11,107,83,0.3)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);filter:none}
+.btn:disabled{opacity.4;cursor:not-allowed;filter:none}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.err{color:var(--warn);font-size:14px;margin-top:9px;font-weight:500}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* Live region for screen-reader announcements; visually hidden. */
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ------------------------------------------------------------ dialogs */
+dialog{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+  color:var(--ink);max-width:460px;width:calc(100% - 32px);padding:24px;box-shadow:0 8px 32px rgba(0,0,0.18)}
+dialog:backdrop{background:rgba(0,0,0.45)}
+dialog h3{margin:0 0 6px;font-size:18px}
+
+.setgroup{margin-top:18px}
+.setgroup>label{display:block;font-size:13px;font-weight:600;margin-bottom:8px;color:var(--muted);
+  text-transform:uppercase;letter-spacing.06em}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;padding:9px 6px;border:1px solid var(--line);border-radius:8px;background:var(--surface);
+  color:inherit;cursor:pointer;font:inherit;font-size:14px}
+.seg button:hover{border-color:var(--accent)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sw{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;
+  border:1px solid var(--line);border-radius:8px;background:var(--surface);color:inherit;
+  cursor:pointer;font:inherit;font-size:12px}
+.sw:hover{border-color:var(--accent)}
+.sw[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+.sw i{width:100%;height:26px;border-radius:5px;border:1px solid var(--line);display:block}
+
+/* Only shown for questions the schema marks optional, so skipping is a
+   deliberate act rather than the default. */
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:13px;color:var(--muted);
+  text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.linkbtn:hover{color:var(--accent)}
+
+footer{padding:24px 0 40px}
+
+@media (max-width:560px){
+  .card.q{padding:18px}
+  h1{font-size:22px}
+  .navbtns{flex-wrap:wrap}
+  .navbtns .btn{flex:1;min-width:120px}
+  .counter{order:3;width:100%;text-align:center}
+  .brand{font-size:15px}
+  .swatches{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ------------------------------------------------------------ progress: time left */
+/* Added with the short form. `.prog-right` keeps "about 5 min left" and the
+   percentage on one baseline at the right of the progress header. */
+.prog-right{display:inline-flex;align-items:baseline;gap:10px}
+.prog-left{color:var(--muted);font-size:12.5px}
+
+/* ------------------------------------------------------------ animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.q { animation: fadeInUp 0.4s ease-out; }
+.opt { animation: slideIn 0.3s ease-out; }
+.btn:not(:disabled):hover { animation: pulse 0.6s ease-in-out; }
+
+/* Success states */
+.success-flash {
+  background: var(--success-soft) !important;
+  border-color: var(--success) !important;
+  transition: all 0.3s ease;
+}
+
+/* Loading states */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Length choice on the picker, and the invitation block on the done screen. */
+#lenfs{border:0;padding:0;margin:18px 0 0}
+#lenhint{margin:6px 0 0}
+#invitebox{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+#invitebox h3{margin:0 0 4px;font-size:15px}
+#invitelink{display:inline-block;background:var(--surface-2);border-radius:6px;
+  padding:6px 9px;font-size:13px;word-break:break-all;margin-bottom:8px}
+
+/* ===========================================================================
+   Question-type cues, larger question text, and the multi-select Done button.
+
+   The Telegram bot carries the same glyph and the same wording for each type,
+   because a respondent who switches channels should not be relearning the
+   interface. What the web adds on top is colour and size, which Telegram gives
+   a bot no way to set.
+   =========================================================================== */
+
+.qbadge{
+  display:flex; align-items:center; gap:7px;
+  font-size:12.5px; font-weight:600; letter-spacing.02em;
+  color:var(--muted); margin:0 0 10px;
+  text-transform:uppercase;
+}
+.qbadge-ico{ font-size:14px; line-height:1; }
+.qbadge-max{
+  margin-left:auto; text-transform:none; font-weight:500;
+  background:var(--surface-2); border-radius:20px; padding:2px 9px;
+}
+
+/* One hue per kind of answer. These are cues, never the only signal: the glyph
+   and the wording carry the meaning on their own, which is what keeps the page
+   readable in the high-contrast palette and for a colourblind respondent. */
+.qbadge:before{
+  content:""; width:3px; height:15px; border-radius:2px;
+  background:currentColor; opacity.55; flex:0 0 auto;
+}
+.t-single      { color:#2a78d6; }
+.t-multi.t-checklist   { color:#0b6b53; }
+.t-likert_grid.t-matrix      { color:#7a4bb5; }
+.t-scale       { color:#b5651d; }
+.t-text.t-longtext    { color:#5a6472; }
+.t-number      { color:#5a6472; }
+.t-email       { color:#a0522d; }
+.t-phone       { color:#0e7490; }
+.t-repeatable  { color:#7a4bb5; }
+.t-consent     { color:#8a5a00; }
+
+[data-appearance="dark"] .t-single     { color:#6ba6e8; }
+[data-appearance="dark"] .t-multi,
+[data-appearance="dark"] .t-checklist  { color:#4cc79f; }
+[data-appearance="dark"] .t-likert_grid,
+[data-appearance="dark"] .t-matrix     { color:#b190e0; }
+[data-appearance="dark"] .t-scale      { color:#e0a05a; }
+[data-appearance="dark"] .t-email      { color:#d19060; }
+[data-appearance="dark"] .t-phone      { color:#4fb8cc; }
+
+/* The high-contrast palette drops the hues entirely rather than washing them
+   out: at that setting the glyph and the label are doing the work anyway. */
+[data-bg="contrast"] .qbadge{ color:var(--ink) !important; }
+
+/* The question itself, a step larger than body text. It is the thing being
+   asked; it should not be the same size as the note under it. */
+.qtext{ font-size:1.22em; line-height:1.4; font-weight:650; }
+.qhelp{ font-size.97em; line-height:1.5; }
+
+/* ------------------------------------------------------------ "Other, please specify" */
+.otherbox{
+  margin:8px 0 2px; padding:11px 13px;
+  background:var(--surface-2); border-radius:9px;
+  border-left:3px solid var(--accent);
+}
+.otherlab{ display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+.otherbox input{ width:100%; }
+
+/* ------------------------------------------------------------ format complaints */
+.fielderr{ color:var(--warn); font-size:13px; margin:6px 0 0; font-weight:600; }
+input.bad{ border-color:var(--warn); box-shadow:0 0 0 2px var(--warn-soft); }
+
+/* ------------------------------------------------------------ Done, on a multi-select only */
+/* A multi-select cannot know when the respondent has finished choosing, so the
+   button says so and counts. Filled and darker than the ordinary Next, because
+   it is the only control that ends an open-ended choice. */
+.btn.done{
+  background:var(--accent); color:var(--accent-ink);
+  box-shadow:0 0 0 3px var(--accent-soft);
+}
+.btn.done:hover{ filter:brightness(1.07); }
+
+/* ------------------------------------------------------------ grids */
+/* A ten-row grid asks ten questions off one stem. Undifferentiated rows read as
+   a wall of text, and the respondent cannot see which ones they have left --
+   the most common reason a grid is abandoned half-answered. Each row is
+   therefore numbered, banded, and confirmed once answered. */
+
+.gridcap{ display:flex; align-items:center; flex-wrap:wrap;
+  font-size:12.5px; color:var(--muted); margin:10px 0 2px; }
+.gridcap-n{ font-weight:700; color:var(--ink); }
+.gridtally{ color:var(--muted); font-variant-numeric:tabular-nums; }
+.gridtally.complete{ color:var(--accent); font-weight:650; }
+
+/* Zebra banding. Subtle enough to stay out of the way, strong enough that the
+   eye does not lose its place tracking across a wide row on a phone. */
+table.grid tbody tr:nth-child(even){ background:var(--surface-2); }
+table.grid tbody tr{ transition:background .12s; }
+table.grid tbody tr:hover{ background:var(--accent-soft); }
+
+/* The row number: this row is a question, and it is the nth of them. */
+.rownum{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:22px; height:22px; margin-right:9px; padding:0 5px;
+  border-radius:6px; background:var(--surface); border:1px solid var(--line);
+  font-size:11.5px; font-weight:700; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.rowlabel{ font-weight:500; }
+
+/* Answered rows are confirmed rather than merely recoloured: the tick is the
+   signal, the colour is reinforcement, so it still reads in high contrast and
+   for a colourblind respondent. */
+table.grid tbody tr.answered td:first-child{ color:var(--ink); }
+table.grid tbody tr.answered .rownum{
+  background:var(--accent); border-color:var(--accent); color:var(--accent-ink);
+}
+table.grid tbody tr.answered .rownum > i{ display:none; }
+table.grid tbody tr.answered .rownum:after{ content:"✓"; font-size:12px; font-style:normal; }
+.rownum > i{ font-style:normal; }
+
+/* A grid stopped by validation shows WHICH rows are missing, not just that the
+   question is incomplete. */
+.q.invalid table.grid tbody tr:not(.answered){
+  background:var(--warn-soft);
+  box-shadow:inset 3px 0 0 var(--warn);
+}
+.q.invalid table.grid tbody tr:not(.answered) .rownum{ border-color:var(--warn); color:var(--warn); }
+
+/* The stem stays visible above a long grid while the rows scroll past it. */
+.q:has(table.grid) .qtext{ position:sticky; top:0; z-index:1;
+  background:var(--surface); padding:4px 0; }
+
+/* ------------------------------------------------------------ completion */
+/* The thanks lands first and large; the practical detail follows underneath.
+   Previously this was an <h2> the same size as a section heading, which after
+   twenty minutes of questions reads as one more step rather than the end. */
+
+.card.done{ text-align:center; padding-top:34px; padding-bottom:30px; }
+.done-mark{ font-size:54px; line-height:1; margin:0 0 10px; }
+.done-title{
+  font-size:2.1em; line-height:1.15; margin:0 0 8px; font-weight:700;
+  letter-spacing:-0.01em;
+}
+.done-sub{ font-size:1.05em; color:var(--muted); margin:0 auto; max-width:38em; }
+
+.done-next{
+  text-align:left; margin:26px auto 0; max-width:40em;
+  border-top:1px solid var(--line); padding-top:20px;
+}
+.done-next h3{ font-size:14px; text-transform:uppercase; letter-spacing.05em;
+  color:var(--muted); margin:0 0 12px; font-weight:650; }
+.done-list{ list-style:none; margin:0; padding:0; }
+.done-list li{ display:flex; gap:11px; align-items:flex-start; margin-bottom:12px;
+  font-size:14.5px; line-height:1.5; }
+.done-list li > span:first-child{ flex:0 0 auto; font-size:17px; line-height:1.3; }
+
+.done-actions{ justify-content:center; margin-top:24px; }
+#invitebox{ text-align:left; max-width:40em; margin-left:auto; margin-right:auto; }
+
+@media (max-width:520px){
+  .done-title{ font-size:1.7em; }
+  .done-mark{ font-size:44px; }
+}
+
+/* ------------------------------------------------------------- reviewing */
+/* Shown only while revising an already-submitted response. Keep and Finish are
+   both needed: without Keep, changing one answer near the end means clicking
+   through everything before it; without Finish, the only way out of a review is
+   to reach the last question, which is exactly what someone who came back to fix
+   one thing will not do. */
+#reviewbar{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  flex-wrap:wrap; margin-top:18px; padding:13px 15px;
+  background:var(--accent-soft); border:1px solid var(--accent);
+  border-radius:var(--radius);
+}
+.reviewnote{ font-size:13.5px; font-weight:600; }
+body.reviewing #progwrap{ box-shadow:inset 0 -2px 0 var(--accent); }
+
+/* The returning-respondent offer, above the picker. */
+.priorbox{
+  border:1px solid var(--accent); background:var(--accent-soft);
+  border-radius:var(--radius); padding:15px 17px; margin:0 0 20px;
+}
+.priorbox h3{ margin:0 0 6px; font-size:15px; }
+.priorbox .fine{ margin:0 0 10px; }

@@ -1,0 +1,1287 @@
+Artificial intelligence (AI) has emerged as a prominent outcome of technological
+progress, significantly impacting our world today. AI refers to the innovation
+that enables machines to replicate tasks traditionally performed by the human
+brain through digital systems. While AI has not yet completely replaced human
+capabilities, it has enhanced the reliability and efficiency of numerous human
+activities. Tasks like decision-making, public speaking, and language translation,
+which were once exclusively performed by humans, are now often supported
+or handled by AI. As a result, AI technology has become an integral part of
+daily life, streamlined interactions and become widely accepted and preferred
+due to its ability to modernize and simplify various aspects of our lives.
+
+Since AI’s introduction on the global stage, countries worldwide have adopted
+its applications, ranging from minor entertainment tools to critical national
+security and intelligence operations. Alongside its adoption, nations have also
+recognized the challenges posed by AI and are actively developing policies
+and strategies to address them. These measures include infrastructure
+development, data governance, incentives and support programs, human
+resource development, fostering cooperative systems, and establishing ethical
+and legal frameworks. By implementing and monitoring these strategies,
+countries aim to ensure the responsible and effective use of AI technologies.
+
+In our nation Ethiopia, numerous initiatives are underway to promote the
+development and adoption of AI technology. Key actions taken include
+establishing dedicated institutions, enhancing human capital in the
+sector, assessing the sector’s capacity for growth and benefit, preparing
+implementation plans, and conducting research. However, further steps are
+needed to build a competitive capacity that ensures AI technology is used
+broadly across social, economic, and political domains, while also safeguarding
+national security. Developing and implementing a comprehensive policy to
+guide the sector is one such step. The creation of this policy will contribute
+significantly to achieving sustainable development goals at both national and
+global levels.
+
+   34                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+Consequently, this policy has been formulated to address the current state
+of AI in our nation and to outline the key policy directions for future growth,
+including areas such as data governance, human resource development,
+research and development, support and incentives, infrastructure, law and AI
+ethics, as well as cooperation and coordination. The policy will be implemented
+nationwide through collaboration with international institutions, partners,
+and stakeholders. To ensure its success, the policy will be supported by a
+robust implementation strategy, coupled with regular monitoring and
+evaluation processes. The implementation will also consider the fundamental
+principles of support and governance, ensuring alignment with best practices
+and national priorities.
+
+2. ARTIFICIAL INTELLIGENCE POLICY
+   CONCEPTUAL BACKGROUND
+The development and application of AI in our nation are still in their
+infancy, with significant challenges stemming from the lack of robust data
+infrastructure and high- quality data. This limitation has adversely affected
+the training and optimization of AI models.
+
+Furthermore, the limited AI infrastructure and inadequate internet
+connectivity in our nation have hindered the widespread implementation of
+AI solutions. Start-ups focusing on AI technology face numerous challenges,
+including the early stage of AI platform development, a lack of financial and
+technical support, and the absence of other enabling conditions. Additionally,
+the shortage of skilled professionals in the AI field has significantly impacted
+research and development, as well as the growth of creativity and innovation
+within the sector.
+
+The absence of a regulatory framework for AI development and application,
+coupled with insufficient capacity to enforce such regulations, has led to gaps
+in areas such as data privacy, ethical AI use, and legal accountability. These
+challenges have further slowed down AI adoption and growth. To guide the
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                35
+                                                     ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+government in addressing these issues, it is crucial to establish a comprehensive
+AI platform and leverage the technology’s potential for national growth.
+
+Considering these challenges, several key actions can serve as solutions to foster
+AI development. First, investing in data collection, storage, and management
+systems to develop an integrated data infrastructure is essential, alongside
+promoting collaboration to gather high-quality data. Second, resources
+must be allocated to enhance AI infrastructure and internet connectivity
+to improve nationwide accessibility to AI technologies. Third, supporting
+AI-focused start-ups can be achieved by developing incubation centers,
+organizing advisory programs, and fostering collaboration among academia,
+industry, private enterprises and the government. Fourth, addressing the need
+for skilled personnel in the AI sector requires investment in education and
+training programs to cultivate relevant expertise. Finally, ensuring accountable
+and sustainable AI growth necessitates tackling issues of data privacy,
+ethics, and accountability through the formulation and implementation of a
+comprehensive AI regulatory framework. By collectively implementing these
+measures, we can create an enabling environment for AI innovation and
+adoption in our nation.
+
+3. THE NEED FOR THE POLICY, PRINCIPLES, AND
+   OBJECTIVES
+    3.1. THE NEED FOR THE POLICY
+The adoption of a national AI policy presents significant benefits. Crafting an AI
+policy establishes the direction necessary to derive effective benefits from the
+technology across areas such as innovation, agricultural productivity, education,
+healthcare, service delivery, and other key sectors. Such a policy plays a critical
+role in creating a framework to mitigate risks and challenges associated with
+AI, including biases in AI products and services, discrimination, data privacy
+breaches, security threats, and adverse environmental impacts. Moreover,
+the policy will serve as a foundational document that ensures AI products
+
+
+   36                                             የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+and services developed, adapted, and implemented in the country align with
+human rights, societal values, and uphold both rights and responsibilities.
+By defining the relationships and partnerships between government bodies,
+private institutions, educational and research entities, and other stakeholders,
+the policy will facilitate the implementation of AI and enhance international
+engagement through a structured communication framework.
+
+The Global AI Index Report assesses and reports on the progress of countries
+in AI development, ranking them annually based on their achievements.
+According to this report, Ethiopia currently ranks quite low. To improve this
+ranking, one crucial step is to develop a comprehensive policy framework to
+govern AI effectively. Such a policy, by establishing clear guidance for the AI
+sector, will significantly contribute to improving the country’s standing in
+the report. Additionally, it will lay the foundation for global cooperation and
+partnerships within the AI sector.
+
+As a sovereign nation, Ethiopia requires a policy that addresses critical
+issues and implementation strategies necessary for fostering a robust AI
+development, governance, and administration system. This system aims to
+support the country’s broader development, democratization, and security
+efforts, ultimately benefiting its citizens. Thus, this policy will be instrumental
+in advancing Ethiopia’s goals in the AI sector, while also serving as a roadmap
+for achieving the digital Ethiopia strategy by 2025.
+
+The adoption and implementation of this policy are crucial for realizing
+the aforementioned priorities and fulfilling the commitment to advancing
+AI development in Ethiopia. In conjunction with existing policy and legal
+frameworks, the national AI policy will play an essential role in advancing
+the AI sector, given the key issues it addresses. Recognizing the potential
+contribution of AI to national growth and prosperity, the government should
+prioritize the implementation of this policy by enhancing its focus and
+resource allocation to the sector.
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                  37
+                                                 ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    3.2. VISION, PRINCIPLES
+   3.2.1. VISION
+The vision is to see Ethiopia become the centre of AI development excellence
+in Africa by 2035.
+
+   3.2.2. PRINCIPLES
+         • Conducive environment shall be created to enable the private
+           sector to play a leading role in the development and application
+           of AI.
+         • Efficiency, accountability and transparency shall be ensured
+           in relation to resource allocation and utilization for the
+           implementation of the policy.
+         • Strong cooperation and partnership shall be established among
+           stakeholders and associate bodies in the AI sector.
+         • The implementation of the policy shall consider the changing
+           situations and opportunities at the national and the global levels.
+         • The implementation process of the AI policy shall ensure
+           inclusiveness.
+         • The application and implementation of AI in our nation shall
+           respect the values, ethics, customs, and traditions of our society
+           and it shall be beneficial.
+         • The AI policy shall be implemented in accordance with the
+           Constitution, other laws, and policy principles.
+
+
+
+
+  38                                          የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    3.3. OBJECTIVES
+This policy shall have the following specific objectives:
+          • Promoting the culture of using AI technology;
+          • Making the resource obtained from AI contribute to the overall
+            national production and creating the capacity that makes
+            Ethiopia a destination for AI development in Africa;
+          • Building conducive environment for AI development and growth;
+          • Leading the development of the sector by establishing necessary
+            monitoring system;
+          • Encouraging job creation and the use of AI research and
+            development for problem- solving;
+          • Promoting participation of the private sector in AI development
+            and also encouraging beginners;
+          • Creating the capacity to supply AI products and services to local
+            and external markets.
+
+4. BASIC POLICY ISSUES AND DIRECTIONS
+    4.1. HUMAN RESOURCE DEVELOPMENT
+To effectively harness AI technology in our nation, it is crucial to cultivate
+a skilled human resource base capable of its adoption, utilization, and
+development. Given the novelty of AI in our society, there exists a significant
+awareness gap. Additionally, challenges related to knowledge, skills, and
+attitudes necessary for the effective use and advancement of AI are apparent.
+To bridge these gaps and overcome these challenges, the following policy
+directives will be implemented.
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                               39
+                                              ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+4.1.1. PRODUCING CITIZENS WITH AI UNDERSTANDING
+       AND THE CAPACITY TO USE THE TECHNOLOGY
+     • Activities which increase the AI awareness of the society shall be
+       performed;
+     • Tasks that will build the capacity of citizens to use AI shall be
+       undertaken;
+     • Practice-oriented system of education shall be created to adapt
+       the AI technology in the country;
+
+4.1.2. PRODUCING SUFFICIENT COMPETENT
+       PROFESSIONALS IN THE AI SECTOR
+     • Higher education and training institutions shall be made to train
+       sufficient number of experts in the AI sector in quality;
+     • Programs that can increase the number of researchers in the AI
+       sector shall be implemented;
+     • A system that enables lifelong learning shall put in place to enable
+       citizens to continuously develop their capacity in the sector;
+     • Internationally accepted short-term and medium-term system of
+       training shall be established in identified AI target areas;
+
+4.1.3. DEVELOPING HUMAN RESOURCE THAT CAN LEAD AI
+       COMPETENTLY
+     • Leadership competency framework that enables leading the AI
+       sector at all levels shall be prepared.
+     • Tasks shall be carried out to improve and develop the capacity to
+       lead AI continuously.
+
+
+
+
+40                                         የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+   4.1.4. CREATING A SYSTEM WHERE SPECIAL TRAINING
+          AND EDUCATION IS GIVEN TO CITIZENS WHO HAVE
+          UNIQUE TALENTS IN RELATION TO AI TO SUPPORT
+          THEM TO SUCCEED IN THE SECTOR:
+          • A system that attracts and makes productive citizens who have
+            unique AI skills shall be established;
+          • Efforts shall be made to become globally competitive by producing
+            successful human resource that can support the economy of the
+            country;
+
+    4.2. AI INFRASTRUCTURE DEVELOPMENT
+Countries that have excelled in AI have successfully established the necessary
+infrastructure, largely by integrating the technology within private sector
+institutions and gradually building advanced computational capabilities. In
+some cases, progress in AI was achieved primarily due to significant government
+investments aimed at developing the required technological infrastructure.
+
+To foster AI growth, it is essential to leverage existing information technology
+infrastructure through collaboration with educational, research and
+technology institutions. It is also important to develop shared infrastructure,
+especially those requiring
+
+substantial resources, by partnering with other entities or by securing them
+through cooperative initiatives and donations. Competitiveness in the AI
+sector can be further enhanced by fostering relationships and partnerships
+with developed countries that have extensive experience in AI, and by swiftly
+addressing the challenges that arise in this area. Therefore, to expand AI
+infrastructure and bridge existing gaps, the following policy measures should
+be implemented.
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                41
+                                             ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+4.2.1. ENRICHING AI SURVLANCE INFRASTRUCTURE
+     • AI based road surveillance technologies shall be installed in main
+       cities and on major roads in our nation;
+     • AI based monitoring and regulatory technologies that can be
+       used in relation to services rendered by security institutions and
+       other concerned bodies shall be put in place;
+     • Infrastructure that enables us to use AI to prevent dangers to the
+       country’s infrastructure and security shall be built.
+
+4.2.2. BUILDING AI INFRASTRUCTURE
+     • Standards shall be issued for building AI infrastructure at the
+       national level;
+     • Construction of data centres with high computational power
+       shall be undertaken;
+     • A framework for the supply of adequate computing resource for
+       AI development shall be prepared at the national level;
+
+4.2.3. PROMOTING UTILIZATION OF AI INFRASTRUCTURE
+     • A system shall be established to connect AI infrastructures;
+     • A system that facilitates the use of AI infrastructure in common
+       shall be established;
+
+4.2.4. ENCOURAGING THE PRIVATE SECTOR TO PARTICIPATE
+       IN BUILDING AI INFRASTRUCTURE
+     • A system that enables domestic and foreign investors to
+       participate in AI infrastructure building shall be put in place;
+     • Financial institutions shall be made to participate in AI
+       infrastructure building by linking AI technology to business;
+
+
+42                                        የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    4.3. DATA MANAGEMENT
+Data accessibility is fundamental for the growth and advancement of AI.
+Consequently, high-quality data curated by government agencies, private
+institutions, and individuals has played a crucial role in the successes observed
+in countries with thriving AI sectors.
+
+However, in our nation, there are significant challenges hindering the
+development of the AI sector. These include limited awareness regarding data
+handling and utilization, insufficient availability of organized digital data,
+inadequate analysis of existing data, the absence of a data-sharing system, and
+the lack of an inclusive data collection methodology.
+
+To foster AI development, it is imperative for all government and private
+institutions, as well as different segments of society and individuals, to adopt
+standardized practices for data collection, cleansing, sharing, and management.
+The government must take responsibility for ensuring the availability of
+quality data by establishing a legal framework for data development, use, and
+management; building implementation capacity; issuing relevant standards;
+and creating supportive administrative structures.
+
+In this regard, the following policy directions should be implemented to
+address the challenges and support AI growth:
+
+   4.3.1. COLLECTING AND ORGANIZING QUALITY DATA FROM
+          VARIOUS SOURCES
+          • National data collection system that is based on fairness shall be
+            established;
+          • AI database shall be built in government and private institutions;
+            a system for data organization shall also be established;
+          • A system that enables identification of data types that can put
+            our nation at the forefront in Africa shall be established;
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                 43
+                                                  ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+          • National crowd data sourcing platform shall be established to
+            enable citizens to give information;
+          • Various data markets and incentives shall be implemented to
+            share data;
+
+   4.3.2. DEVELOPING STANDARDIZED DATA
+          • A system for issuing national AI data quality measurement shall
+            be established;
+          • National interest-based data storage platform shall be created;
+   4.3.3. ENSURING DATA DISTRIBUTION, SHARING AND FAIR
+          ACCESSIBILITY
+          • A system for data sharing shall be designed;
+          • A system that brings about economic benefit by adding value to
+            data shall be created;
+          • A system that allows a special data sharing for AI-based researches
+            shall be established;
+
+    4.4. RESEARCH AND DEVELOPMENT
+Globally, the AI sector is experiencing rapid growth, with new innovations
+emerging across various institutions and countries to modernize and simplify
+human life. Consequently, many nations are investing significant resources
+to enhance their research and development capabilities within the AI sector.
+
+In our nation, however, the research ecosystem supporting AI development
+and innovation remains in its infancy. To foster effective use of AI research
+and innovation for development, a robust system must be in place to support
+research and development initiatives. AI research in Ethiopia should be geared
+primarily toward addressing social and economic challenges, contributing
+to the achievement of national development goals. Additionally, it is crucial
+
+
+   44                                          የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+to strengthen the capacity of research institutions to facilitate focused AI
+development and innovation. This requires the establishment of a research
+platform that continuously fosters a conducive environment for AI research
+and innovation.
+
+Furthermore, research initiatives must be conducted collaboratively among
+industries, higher education institutions, and research organizations. The
+primary objective of this policy is to address existing challenges, ensuring
+the success of research endeavors. Therefore, to advance AI research and
+development and bridge existing gaps, the following policy directions must
+be implemented:
+
+   4.4.1. CONDUCTING PROBLEM-SOLVING AND PRACTICE
+          ORIENTED AI RESEARCH
+         • AI researches that will meet the development needs of our nation
+           shall be undertaken;
+         • AI research outputs shall be put to use by transferring them to
+           the society;
+         • Conducive environment shall be created for AI research;
+         • Support and incentive framework shall be prepared for
+           researchers;
+
+   4.4.2. MAKING ETHIOPIA THE DESTINATION OF AI
+          RESEARCH AND DEVELOPMENT IN AFRICA
+         • A system shall be created to establish African centre of excellence
+           for AI research and development
+         • Joint research and development shall be carried out on major
+           socio-economic issues in Africa;
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                              45
+                                                  ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+   4.4.3. UNDERTAKING TECHNOLOGY TRANSFER AND
+          DEVELOPMENT THROUGH AI
+          • AI technology transfer and development shall be undertaken;
+          • A system shall be established to identify AI technologies from
+            abroad and to import and adapt them;
+
+   4.4.4. BUILDING THE CAPACITY TO PREDICT AND PREVENT
+          NATURAL AND MAN-MADE DANGERS WITH THE
+          SUPPORT OF AI
+          • A system that enables us to prevent natural and man-made
+            dangers before they occur with the support of AI technology
+            shall be established;
+          • When dangers occur, the necessary procedure for giving solution
+            shall be created with the support of AI;
+
+   4.4.5. PROMOTING THE CONTRIBUTION OF THE PRIVATE
+          SECTOR TO AI RESEARCH AND DEVELOPMENT
+          • A system shall be establish to enable the private sector to
+            participate in AI research and development programs;
+          • A framework that attracts the private sector to participate in AI
+            research and development shall be prepared;
+
+    4.5. SUPPORT AND INCENTIVES
+Globally, while AI research, innovation, and development are still in their
+early stages, the sector is experiencing rapid growth and receiving significant
+attention and support across numerous countries. However, AI institutions in
+our nation face challenges in maintaining operations and fostering growth due
+to the lack of an effective monitoring and support framework.
+
+
+
+   46                                          የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+In Ethiopia, it is crucial to prioritize the AI sector, given its potential to
+enhance productivity across multiple industries, thereby contributing to our
+overall economic growth. To achieve this, a comprehensive system of support
+and incentives must be established, engaging stakeholders in a meaningful and
+inclusive manner.
+
+Consequently, initiatives will be undertaken to involve the private sector in
+AI research and development, aiming to drive innovation and create new
+employment opportunities within the AI field. These efforts will be aligned
+with ensuring equitable access to and
+
+benefits from available support and incentive mechanisms. In this context, the
+following policy directions will be implemented.
+
+Moving forward, these initiatives are expected to create a dynamic ecosystem
+that encourages AI advancement, ensuring Ethiopia is well-positioned to
+harness the potential of this transformative technology.
+
+   4.5.1. SUPPORTING AI-BASED INNOVATIONS AND NEW
+          ENTERPRISES
+          • Support mechanisms shall be implemented for new enterprises
+            and individuals that have AI related innovative ideas;
+          • Support for market linkage and inputs shall be given from the
+            government and the private sector to enterprises that work in
+            the AI sector;
+          • A system shall be established to expand financial supply options
+            and access to appropriate funds and incentives for AI-based
+            innovations and new enterprises;
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                              47
+                                                    ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+   4.5.2. ENCOURAGING AND ATTRACTING DOMESTIC AND
+          FOREIGN PRIVATE INVESTMENT IN THE AI SECTOR
+          • A system that enables the private sector and the government to
+            invest in cooperation and coordination in the AI sector and share
+            benefits therefrom shall be implemented;
+          • Measures that encourage and support private organizations and
+            government institutions to use AI products widely and inculcate
+            them into their systems shall be implemented;
+
+   4.5.3. USING THE AI TO EXPORT SKILLS, RESEARCH
+          OUTPUTS, AND INNOVATIONS TO FOREIGN MARKETS
+          AND TO SUBSTITUTE IMPORTED ITEMS
+          • Incentive and support system shall be established for private
+            organizations which export to foreign markets different AI
+            research outputs, trained human resources, and innovative
+            technologies;
+          • Incentive and support system shall be established for organizations
+            which produce AI products that substitute imported items;
+
+    4.6. COOPERATION AND LINKAGE
+Given the potential of AI to drive comprehensive national growth, as well as
+the need for our nation to benefit from global advancements in the AI sector,
+it is crucial to enhance international collaboration.
+
+However, efforts to identify the existing gaps in AI development and utilization-
+crucial for fostering international partnerships—are still in their infancy.
+Additionally, the nascent nature of the AI sector in our nation, coupled with
+the lack of a well-established culture of collaboration among our institutions,
+has prevented us from achieving the desired level of coordination in AI
+development and governance. This has led to instances of duplicated efforts
+
+
+   48                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+and inefficient resource utilization. To address these challenges, the following
+policy directions should be pursued:
+
+   4.6.1. CREATING EFFECTIVE COOPERATION AND LINKAGE
+          AMONG DOMESTIC INSTITUTIONS
+          • In order to make domestic institutions promote AI that can be
+            implemented in areas of common interest and targeted national
+            development sectors, a system that enables us to carry out jobs
+            that link and coordinate these institutions and also enable them
+            to share resources shall be created;
+          • Measures shall be taken to ensure that the sector is led based on
+            the idea of benefit-sharing by developing the culture of linkage
+            and cooperation among domestic institutions;
+          • By creating partnership and coordination among domestic
+            institutions, AI product and productivity shall be increased; a
+            system for conducting joint researches shall be established;
+
+   4.6.2. MAKING ETHIOPIANS WHO LIVE ABROAD AND
+          FOREIGNERS WHO ARE ETHIOPIAN BY BIRTH
+          PARTICIPATE IN AI DEVELOPMENT AND BENEFIT
+          • A system shall be established to enable Ethiopians who live abroad
+            and foreigners who are Ethiopian by birth to participate in and
+            benefit from researches conducted, capacity building trainings
+            given, and measures taken for technology and knowledge transfer
+            in relation to AI development;
+          • Conducive situation shall be created to enable Ethiopians
+            who live abroad and foreigners who are Ethiopian by birth to
+            participate in cooperative agreements concluded in our nation
+            with foreign institutions, organizations, and partners in relation
+            to AI development;
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                49
+                                                       ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+           • A special support and incentive system shall be established to
+             encourage Ethiopians who live abroad and foreigners who are
+             Ethiopian by birth to participate in AI investment;
+
+   4.6.3. BUILDING NATIONAL CAPACITY IN RELATION TO AI
+          DEVELOPMENT AND ADMINISTRATION THROUGH
+          INTERNATIONAL, REGIONAL AND SUB-REGIONAL
+          RELATIONSHIPS AND COOPERATION
+           • To strengthen international, regional and sub-regional cooperative
+             tasks, the government shall established international, regional
+             and sub-regional relationships and cooperation
+           • Bilateral and multilateral agreements shall be concluded to
+             create new strategic cooperation and links that are based on
+             major development needs and to strengthen the existing ones
+           • Conducive environmental shall be created to enable Ethiopian
+             researchers in the area of AI to undertake joint researches,
+             experience-sharing, and technology transfer with foreign
+             researchers
+
+    4.7. IMPLEMENTING AI DEVELOPMENT THAT
+         IS INCLUSIVE, FAIR, TRANSPARENT,
+         SUSTAINABLE, ETHICAL AND COMPATIBLE
+         WITH SOCIETAL VALUES
+With the rapid expansion of AI technology, numerous legal and ethical
+challenges have emerged concerning individual rights, data protection, cultural
+and religious values, and other essential societal principles. To address these
+risks, it is crucial to develop an inclusive, transparent, fair, and sustainable legal
+and ethical framework, particularly focusing on data security, governance, and
+monitoring systems. Achieving this requires collaboration and partnerships
+among scientists, researchers, data engineers, and industry stakeholders. The
+
+
+   50                                               የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+government has a significant role in driving this initiative, while the private
+sector and other related entities are also expected to contribute meaningfully.
+Therefore, under this policy framework, the following key measures and
+directions should be implemented.
+
+   4.7.1. REALIZING AI TECHNOLOGY SYSTEM THAT IS
+          ETHICAL AND COMPATIBLE WITH SOCIETAL VALUES
+          • AI technology that respects humanity and equality in the process
+            of AI technology production, development, implementation and
+            distribution shall be implemented
+          • New findings that are created by using the AI technology shall
+            be ensured to comply with and respect the society’s cultural life,
+            tradition, linguistic diversity, religious norms, and others values
+          • Swift corrective measures shall be taken when violations of rights
+            and related harm occur due to AI technology
+
+   4.7.2 ESTABLISHING INCLUSIVE, FAIR, TRANSPARENT, AND
+         SUSTAINABLE AI TECHNOLOGY IMPLEMENTATION
+         PROCESS
+          • When AI technology is implemented, measures shall be taken
+            to ensure that all languages and cultures in Ethiopia obtain
+            proportional recognition and receive equal benefit.
+          • In accordance with the principle of “AI for All”, measures shall be
+            taken to ensure that the technology is invented for every section
+            of the community, in particular, by considering those who have
+            special needs and seek special attention.
+          • Measures shall be taken to ensure that credible information is
+            used when AI is implemented; measures shall be taken to ensure
+            that stored data are kept safely.
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                               51
+                                                   ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+          • Anyone shall be made to have the right to make final decision in
+            respect of the fate of any data collected, stored and distributed
+            regarding his personal affairs.
+
+    4.8. AI DEVELOPMENT RISKS AND REMEDIES
+AI holds significant potential for accelerating growth across sectors such
+as healthcare, education, agriculture, and finance. However, in developing
+countries like Ethiopia, there are considerable risks that need careful
+management to ensure the technology is used for equitable and sustainable
+development. Consequently, the key risks associated with implementing AI,
+along with their respective mitigation strategies, are outlined below:
+
+   4.8.1. DATA PRIVACY AND SECURITY
+The implementation of AI systems often necessitates access to extensive
+datasets, which may include sensitive personal information. One of the
+major challenges for future AI development will be the ability to differentiate
+between authentic information and intentionally misleading content, thereby
+distinguishing truth from misinformation. As machines become increasingly
+capable of anticipating our needs, concerns about privacy, autonomy, and the
+implications of AI development are likely to intensify, alongside the risks of
+unwanted surveillance.
+
+If cybersecurity is not effectively guaranteed, public trust in AI systems
+may erode due to data breaches and unauthorized disclosure of sensitive
+information. Therefore, it is crucial to adopt the following key policy measures
+to address these issues:
+          • General data protection laws and regulations which ensure the
+            existence of informed consent during data collection process,
+            transparency, and accountability shall be implemented
+          • Public awareness about data rights and privacy shall be created
+
+
+
+   52                                           የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+          • Cyber security infrastructure shall be established; a strong system
+            that can safeguard confidential information from breaches shall
+            be put in place
+          • Experts shall be trained on current cyber security issues;
+            measures shall be taken to work collaboratively with concerned
+            institution to implement regular security audits.
+
+   4.8.2 ISSUES OF ETHICS AND BIAS
+AI systems can perpetuate and amplify existing societal biases, leading to
+unjust outcomes. With the projected expansion of AI, individuals increasingly
+immersed in virtual environments may struggle to distinguish between
+virtual experiences and real- life interactions. This challenge is particularly
+pronounced in developing countries, where social inequalities are prevalent.
+Without ethical guidelines, AI can be misused in harmful ways: autonomous
+weapons could consistently strike targets, pervasive nano and micro-
+machines could exacerbate environmental damage, and machines capable
+of pre-emptively understanding human behavior or accessing information
+autonomously could pose severe risks to privacy. These scenarios could
+further marginalize vulnerable populations and lead to ethical violations.
+Consequently, the following policy measures should be adopted to address
+these challenges effectively.
+          • AI ethical guidelines which stipulate fairness, accountability, and
+            transparency shall be prepared
+          • By emphasizing the need for interaction in the real world and
+            mental health care, measures shall be taken to ensure that virtual
+            spaces are used responsibly
+          • A system that enables regular examination of the application of
+            AI systems shall be established
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                               53
+                                                    ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+   4.8.3. ECONOMIC IMPACT
+AI-supported automation, especially in tasks traditionally requiring direct
+human involvement, can now be performed autonomously by AI. This
+development raises concerns about potential job displacement for many
+workers. As AI technology advances, employees lacking relevant skills in the
+sector risk being marginalized.
+
+Additionally, this trend could lead to a reduction in the required workforce.
+To mitigate these challenges, the following policy recommendations have been
+outlined:
+          • In order to make people use the new job opportunities created
+            by the AI, AI related educational and training programs shall
+            be designed and delivered and linkage shall be created with
+            educational institutions and industries
+          • A system of scholarship and incentive shall be established to
+            enable students to learn in AI and related fields
+          • To support workers who are evicted from work, the concerned
+            government institution shall be made to work on ensuring the
+            implementation of social security and work transition programs
+          • By ensuring that AI projects benefit all sections of the society and
+            focusing on inclusive development that addresses differences,
+            strong technology infrastructure including reliable internet
+            connectivity and electricity supply shall be built to regulate
+            and evaluate the impact that AI has on different sections of the
+            society
+
+   4.8.4. SOCIAL AND CULTURAL IMPACT
+The widespread application of AI products could have significant social and
+cultural implications, particularly in developing countries. These changes may
+affect societal dynamics and traditional cultural practices. In this context, the
+development of AI systems with cognitive capabilities surpassing those of
+
+   54                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+humans could introduce challenges related to regulation, ethics, and social
+consequences.
+
+The adoption of AI has the potential to exacerbate digital divides, increasing
+disparities between urban and rural areas, as well as between different
+socioeconomic groups. Preventive measures are necessary to avoid further
+marginalization of underprivileged communities.
+
+To address these challenges, the following policy recommendations are
+proposed.
+          • Develop the practice of integrating cultural traditions and
+            knowledge with AI technologies and establishing a system that
+            increases societal participation in AI projects to ensure that
+            cultural heritage is maintained
+          • Research shall be conducted on safe AI design principles;
+            machines shall be made to cede priority to human values and
+            goals.
+          • Strict control and management frameworks shall be
+            implemented; regulations, directives and programs that can
+            solve ethical problems and ensure responsible AI development
+            and fair accessibility of AI technologies and digital infrastructure
+            shall also be implemented
+          • By focusing on areas where there are no sufficient services,
+            infrastructure shall be built in a way that enables us to maintain
+            balanced digital allocation
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                55
+                                                  ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+5. KEY RESULTS OF THE POLICY
+    5.1. INCREASING NATIONAL DATA
+         DEVELOPMENT AND BENEFIT
+To advance data development at both individual and institutional levels,
+quality data must be systematically collected. A system should be established
+to ensure the responsible and accountable distribution of collected data.
+Additionally, practices that support data-driven decision-making should
+be promoted. Appropriate incentive mechanisms need to be introduced to
+reward individuals and institutions involved in data collection. Furthermore,
+those engaged in data collection, storage, and distribution should be provided
+with economic benefits to encourage ongoing contributions.
+
+    5.2. BUILDING ESSENTIAL INFRASTRUCTURE
+         FOR AI DEVELOPMENT AND GROWTH AND
+         INCREASING COMPETITIVENESS
+Institutions are encouraged to invest in building essential infrastructure
+to foster AI development and enhance the sector’s competitiveness. This
+entails the development of datacenters, cloud computing platforms, research
+facilities, high-performance computing systems, and network infrastructure.
+Investment in these areas will expand AI infrastructure to support a variety of
+projects and provide accessible platforms for conducting research.
+
+Overall, contributing to AI infrastructure development generates knowledge,
+attracts investment, creates business opportunities and promotes
+collaboration. The cumulative impact of these efforts fosters the growth
+and broader adoption of AI infrastructure. Consequently, this contributes
+to greater awareness and increased competitiveness for industries and the
+general public.
+
+
+
+
+   56                                          የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    5.3. PRODUCTIVITY OF AND BENEFITS FROM
+         RESEARCHES AND DEVELOPMENT
+AI research and development will be made competitive by promoting problem-
+solving AI research and development capacity and also by developing and
+transferring technologies. A system for the protection of intellection property
+right for national and international research outputs will be established. In
+addition, research outputs will be made to be presented in a manner that
+supports the country’s socio-economic growth.
+
+    5.4. DEVELOPING COMPETENT AND
+         ADEQUATE HUMAN RESOURCE IN THE AI
+         SECTOR
+In Ethiopia, harnessing the power of AI technology to drive wealth creation,
+job opportunities, and socio-economic growth requires first and foremost the
+development of a robust and skilled workforce. To achieve this, expanding
+access to quality AI education and training across all levels is essential,
+ensuring that students and trainees are equipped with the skills to compete
+on a global stage. Human resource development should be aligned with the
+country’s economic growth objectives by providing targeted education and
+training programs that meet emerging needs.
+
+Furthermore, by cultivating a significant number of highly skilled AI
+professionals and empowering individuals capable of leading the sector, Ethiopia
+can effectively position itself to harness AI for substantial social and economic
+benefits. This comprehensive approach to human capital development in the
+AI sector will ensure that the technology plays a transformative role in the
+nation’s growth journey.
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                 57
+                                                     ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    5.5. CREATING LEGAL FRAMEWORK FOR AI
+         REGULATION AND ETHICS
+A comprehensive legal framework will be established to regulate potential legal
+breaches associated with AI technology. This framework will be developed and
+implemented in accordance with recognized ethical standards within the AI
+industry, promoting ethical AI practices to prevent ethical violations. It will
+ensure the protection of personal data, facilitate data sharing systems, and
+establish guidelines for private sector engagement in the AI space, detailing
+the responsibilities they must uphold. Additionally, the framework will govern
+the certification of AI products and services, both domestically developed and
+imported. It will also provide incentives for newcomers in the AI field and
+ensure that AI products and services are designed in a manner that respects
+national security, sovereignty, and the cultural values of society.
+
+6. ESTABLISHING THE AUTHORITY FOR POLICY
+   ADOPTION
+The National AI Policy has been developed under the leadership of the
+Ethiopian Artificial Intelligence Institute. It will take effect following approval
+by the Council of Ministers, in alignment with Council of Ministers Regulation
+No. 510/2022. The policy will be applicable to all AI technology initiatives
+carried out at federal, regional, and city administration levels across Ethiopia.
+
+7. POLICY IMPLEMENTATION STRATEGY
+    7.1. ORGANS WHICH IMPLEMENT THE POLICY
+         AND THEIR RESPONSIBILITIES
+The rapid growth and widespread adoption of AI technology across
+various sectors has brought both opportunities and challenges. However,
+its implementation can lead to unintended adverse impacts. Therefore, it is
+
+
+   58                                             የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+crucial to regulate the pace and extent of AI deployment to prevent potential
+social and technical issues. To maximize the benefits and minimize the negative
+impacts of AI, it is essential to understand the scope and nature of potential
+risks. Addressing these risks requires the development and implementation
+of effective monitoring systems, administrative procedures, and appropriate
+structures.
+
+The AI governance framework should be designed to lead, support, and monitor
+the implementation of AI policies. Although the system will be established
+at all levels of administration, the key players include the government, AI
+institutions, stakeholders, private sector partners, and associated bodies
+with a direct relationship to the AI sector. Policy implementation will require
+interaction across technical, financial, legal, organizational, infrastructural, and
+operational domains, involving research and support systems. Responsibilities
+of the main stakeholders are outlined as follows:
+
+Ethiopian Artificial Intelligence Institute: Upon the adoption of
+the national policy, the Institute will coordinate, monitor, and evaluate its
+implementation, propose amendments, and request appropriate resource
+allocation from the government. The private sector is expected to take
+a leading role in AI development, particularly in data generation, research
+and development, technology transfer, infrastructure, human resource
+development, and AI products and services. The Institute will also establish
+regulatory systems, issue licenses for private developers, certify AI products
+and services developed or imported into the country, and monitor the policy’s
+effectiveness through a dedicated monitoring and evaluation framework.
+
+Ministry of Innovation and Technology: Within its mandate in science,
+technology, and innovation, the Ministry will create systems that facilitate
+the ethical adaptation of AI methodologies in new products and information
+communication systems. It will also support and encourage emerging
+technology innovators to adopt AI methodologies.
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                   59
+                                                    ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+Ministry of Health: The Ministry will establish data management and
+sharing systems to support the development and implementation of AI
+products that enhance public health services, pandemic response capabilities,
+and clinical services. Additionally, the Ministry will implement AI-developed
+systems to improve healthcare delivery.
+
+Ministry of Agriculture: The Ministry will establish data handling and
+sharing systems to facilitate the use of AI products in areas such as natural
+resource conservation, livestock and crop protection, food security, productivity
+enhancement of industrial inputs, and farmer information exchange. It will
+also implement AI-driven systems to improve service delivery.
+
+Biotechnology Institute: In light of its research activities, the Institute will
+establish mechanisms to leverage AI methodologies for conducting research
+and producing more reliable results. It will ensure that legally recognized AI
+ethical principles are upheld throughout the research process.
+
+Information Network Security Agency (INSA): The Agency will
+develop systems to adapt and implement AI technologies that enhance service
+reliability and efficiency, particularly in ensuring information security, data
+confidentiality, integrity, and accessibility, as well as in responding to sudden
+cyber threats and providing certification for information technology products
+and services.
+
+Ministry of Education: The Ministry will develop systems to collect and
+organize data effectively, automate administrative tasks, evaluate student
+performance, assess educational reforms, and combat fraudulent educational
+credentials. It will also oversee educational institutions, ensuring the proper
+implementation of AI technologies in the education sector.
+
+Ministry of Labor and Skills: The Ministry will be responsible for
+retraining workers displaced due to AI adoption, enabling them to transition
+to employment in other sectors.
+
+
+   60                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+Customs Commission: The Commission will ensure fair trade practices,
+support AI Institute decisions on regulating imported AI technologies, assess
+tariffs, and establish a system for collecting and organizing customs data to
+serve as inputs for AI solutions.
+
+Other AI Actors and Stakeholders: The national AI policy primarily
+involves government and private institutions that influence AI development,
+including those in tourism, finance, foreign affairs, industry, defense, transport
+and logistics, meteorology, and other sectors. To avoid duplication of efforts
+and resource wastage, effective collaboration and linkages between these
+institutions are essential. All institutions involved in the AI sector should
+actively contribute to human resource development, research and development,
+infrastructure building, productivity enhancement, and data management.
+
+Community: The community plays a crucial role by embracing AI
+products and adopting a culture of technological acceptance to achieve more
+efficient and effective services. Active community participation in planning,
+implementation, monitoring, and evaluation will contribute to a more inclusive
+and participatory development of the AI sector.
+
+    7.2. LEGAL FRAMEWORKS AND PROCEDURES
+         TO IMPLEMENT THE POLICY
+Following the expansion of the AI technology, various legal and ethical
+violations are observed in relation to individual rights, data protection, religion
+and culture, and other similar key societal vlaues. As a result, it is essnetial to
+prepare uniform and all inclusive legal frameworks and ethical principles in
+a participatory, transparent, fair and sustainabnle manner to avoid the risks
+associated with the implementation of the AI technology mainly in relation
+to data security, administration, and monitoring systems. Thus, following the
+adoption of this policy, the following laws are expected to be issued.
+          • A proclamation that is based on the process of AI technology
+            development and implementation in our nation shall be enacted
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                  61
+                                                    ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+          • A proclamation shall be prepared to regulate AI technology data
+            management, imported AI products and services, domestically
+            developed and used AI products and services, licensing and
+            renewal, inspection, monitoring and evaluation, support and
+            incentives, and other simialr matters
+          • Regulations shall be issued to govern the sharing of AI related
+            government and private infrastructures
+          • Directives shall be issued to provide for the list of AI products
+            and services that can be imported, domestically developed and
+            used and to regulate the manner in which these products can be
+            put to use
+          • Other laws may be prepared when deemed necessary and exisitng
+            ones may be amended
+
+    7.3. POLICY IMPLEMENTATION PROGRAMS
+Human Resource Development Program: This initiative aims to cultivate
+citizens who understand and have the capacity to utilize AI, increase the
+number of skilled professionals in the AI sector, and develop leadership
+capabilities within AI fields. Additionally, it seeks to establish a system that
+provides specialized training and education for individuals with exceptional
+AI talents, creating a platform to support their success in the sector. In
+partnership with the Ministry of Education and other relevant educational
+and training institutions, the AI Institute will establish a system to meet the
+nation’s human resource needs. This program will primarily be implemented
+in collaboration with the Ministry of Education, Ministry of Labour and Skills,
+Ministry of Innovation and Technology, and various educational and research
+institutions.
+
+Data Management Program: This program focuses on ensuring the collection
+and organization of quality data from diverse sources, developing standardized
+data practices, and facilitating data distribution, sharing, and equitable access
+to support national AI development. A system will be established to collect
+
+   62                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+data from both private and government institutions, organize it, and make
+it available as an input for AI development, considering the specific nature of
+the data. Collaboration between federal and regional institutions, ministries,
+accountable agencies, and research centers will be key to achieving these goals.
+
+Research and Development Promotion Program: To position Ethiopia as a
+hub for AI research and development in Africa, a conducive environment
+will be established for conducting applied, problem-solving AI research. This
+includes promoting AI technology transfer and development, building capacity
+for predicting and mitigating natural and man- made risks through AI,
+encouraging private sector involvement in AI research and development, and
+providing support to emerging AI developers. These measures will collectively
+contribute to a robust R&D ecosystem in the country.
+
+AI Infrastructure Expansion Program: To expand AI infrastructure, key
+measures will be taken to develop and promote the use of necessary AI-
+related infrastructure, including surveillance and observation systems, while
+encouraging participation from various enterprises. The AI Institute will
+collaborate with the Ministry of Innovation and Technology and ethio telecom
+to build and implement the required infrastructure effectively.
+
+    7.4. SYSTEM OF MONITORING AND EVALUTION
+         TO ENSURE IMPLEMNTATION OF THE
+         POLICY
+Following the adoption and implementation of this AI policy, a monitoring and
+evaluation system will be established to assess whether the implementation
+aligns with the policy directives and key sectoral objectives, and to ensure
+the necessary legal frameworks, operational systems, and institutional
+arrangements are in place. To achieve this effectively, it is essential to establish
+a robust system for implementation, monitoring, and evaluation, supported
+by clear parameters to track key policy issues.
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                   63
+                                                  ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+Regular monitoring through key performance indicators and assessment
+parameters will provide valuable insights into the relevance of fundamental
+concepts, while helping to identify areas requiring improvement. Additionally,
+fostering collaboration among government entities, private sectors,
+stakeholders, academic institutions, and industries will play a crucial role
+in leveraging diverse expertise and resources for AI development. Moreover,
+assessing the impact of AI implementation on socio-economic development,
+job creation, and ethical considerations on a regular basis is crucial for
+informed decision- making.
+
+By adhering to comprehensive implementation, monitoring, and evaluation
+procedures, challenges faced by society can be addressed, and sustainable
+development can be promoted. Ultimately, this will allow for the effective
+utilization of AI’s potential to drive progress.
+
+Overall, in order to implement this AI policy, the following follow up and
+monitoring systems shall be implemented:
+    • A document which contains support and follow up standards and
+      performance indicators shall be prepared with the participation of
+      all organs and by consulting international assessment indicators.
+      The document shall adopt a coordinated system among federal and
+      regional institutions, private institutions, and other stakeholders to
+      facilitate the implementation of the policy in a uniform manner.
+    • Follow up of execution of short-term plan, medium-term plan, and
+      long-term plan and evaluation of the execution shall be conducted
+      in the sector; to realize this, standardized and AI supported follow
+      up and monitoring system shall be established; strong organizational
+      structure filled with trained human resource shall be put in place.
+    • The outcome of the policy shall be evaluated every three years and the
+      information obtained from such evaluation shall be used as an input
+      to improve the next tasks. The result achieved due to the policy shall
+      be implemented based on current situation and the advancement of
+
+   64                                          የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+       the technology and by using all-inclusive data collection methods and
+       different national and international research works.
+    • A system shall be established to enable conducting AI conference at
+      the national level in which institutions in AI sector and stakeholders
+      participate to evaluate the annual implementation of the AI policy and
+      its level of growth.
+    • When it is found necessary, the policy shall be amended
+
+8. RELATED POLICIES
+    8.1. PRODUCTION SECTORS AND
+         INFRASTRUCTURE POLICIES
+In our nation, AI technology plays a significant role in enhancing productivity
+across various sectors, particularly in agriculture, rural development, and
+manufacturing. In agriculture, AI can help mitigate challenges such as low
+crop yields, inefficiencies in animal production, climate change risks, and
+product wastage, ultimately increasing overall productivity. To ensure the
+sustainable growth and competitiveness of our manufacturing industries, the
+adoption of advanced technologies is crucial. Enhancing the capabilities of the
+manufacturing sector through AI integration is essential to boost quality and
+productivity.
+
+To foster tourism development, it is necessary to implement coordinated
+efforts for information generation and distribution that promote tourism
+policies, destinations, and resources. Therefore, the AI policy should be
+harmonized with existing policies in agriculture, manufacturing, and tourism
+to maximize impact. Furthermore, aligning infrastructure policies to support
+smart infrastructure development, including traffic management, power
+distribution, maintenance of buildings and roads, water and electricity
+installations, and urban planning, will significantly contribute to the effective
+implementation of the AI policy.
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                 65
+                                                    ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+    8.2. SOCIAL AND HUMAN RESOURCE
+         DEVELOPMENT POLICIES
+The key policies encompassed within this sector include health, education and
+training, cultural development, youth and sports, tourism development, social
+security, gender, and other related policies. The AI policy aligns closely with
+health policy by managing citizens’ medical data, supporting public health
+research, and expediting healthcare service delivery, thereby ensuring citizens
+receive appropriate care to remain productive.
+
+To ensure that the education and training policy contributes effectively to
+the advancement of AI in our nation, curricula must be designed to facilitate
+the transfer of relevant knowledge and skills, thereby fostering a competent
+and competitive workforce. The cultural policy aims to foster a society
+that embraces the use of emerging AI technologies by eliminating outdated
+practices that may impede AI development. The youth and sports policy, by
+creating an environment conducive to innovation, is expected to build capacity
+for leveraging AI in all forms of competition, enhancing competitiveness. The
+social security and AI policies can be integrated to gather insights on citizens’
+needs for shelter, healthcare, food, and other essentials, and to address these
+needs effectively. The women’s policy emphasizes the need for measures to
+enhance women’s participation and benefits through the use of AI technologies.
+
+    8.3. SCIENCE, TECHNOLOGY AND INNOVATION
+         POLICY
+The Science, Technology, and Innovation Policy aims to enhance the sector’s
+contribution to job creation, wealth generation, and overall national economic
+growth by fostering an enabling environment. To achieve this mission,
+eight strategic goals have been established. These goals focus on human
+resource development; technology development, transfer, and knowledge
+management; research and development; fostering innovation and enterprise
+competitiveness; financial and capital support; providing incentives and
+
+   66                                            የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+support mechanisms; ensuring quality and safeguarding intellectual property;
+fostering cooperation and linkages; and promoting environmental, social, and
+cultural development. Given the overlap between the AI policy and the Science,
+Technology, and Innovation Policy, it is essential to ensure collaborative and
+coordinated implementation efforts. Specifically, effective alignment is needed
+in areas such as research, human resources, technology transfer, as well as
+support and incentive structures.
+
+    8.4. JUSTICE, ADMINISTRATION, AND RISK
+         MANAGEMENT POLICIES
+In this policy document, it is assumed that this policy will be implemented in
+coordination with existing national policies that address priority areas such as
+risk and hazard management. Regarding the prediction of natural and human-
+induced hazards, proactive measures must be taken to prevent, protect,
+prepare, and respond swiftly before such events result in the loss of natural
+resources, human lives, and damage to infrastructure, which could lead to
+social, political, and economic consequences. Similarly, enhancing recovery
+from such hazards requires the improvement of meteorological services based
+on climate and weather data. Protecting property and human life from these
+dangers will further support the nation’s developmental efforts. Achieving
+these goals effectively involves increasing the role of AI technologies and
+aligning this policy with other relevant national policies.
+
+The criminal justice policy of the Federal Democratic Republic of Ethiopia
+plays a crucial role in ensuring that the implementation of AI is inclusive,
+transparent, fair, accountable, sustainable, and respects individuals’ data
+protection rights. Likewise, the peace policy contributes significantly to
+fostering national stability, thereby creating a conducive environment for AI
+development. The government service and administration policy will support
+the efficient organization and procedures of the AI sector and will contribute
+to the development of incentives for professionals in this field. Finally, the
+foreign relations policy will be instrumental in attracting investment into the
+AI sector.
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                67
+                                                 ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+9. DEFINITION OF WORDS AND CONCEPTS
+“Artificial Intelligence” refers to software systems designed to enable
+machines to emulate human intelligence, including performing tasks,
+learning from interactions, solving problems, reasoning, and comprehending
+natural language.
+
+“Machine” refers to any electronic device, such as computers, robots,
+sensors, or other hardware components, that includes a processing unit.
+
+“Data” refers to raw information in various forms, including text, numerical
+values, audio, video, images, or signals, which is collected, stored, and
+analyzed to support AI development, enabling it to comprehend, process,
+calculate, and make informed decisions.
+
+“Computational Resource” refers to elements of hardware and software
+infrastructure that facilitate problem-solving and solution generation
+through the collection, analysis, and storage of data.
+
+“Infrastructure” refers to facilities essential for conducting effective AI
+research, including computational resources, data centers, and similar
+support systems.
+
+“Hub” refers to a centralized facility that meets the high standards required
+by AI technology, providing resources for research, development, laboratories,
+and skilled human capital.
+
+“Development” refers to all activities aimed at promoting, adapting,
+training, producing, implementing, and regulating AI technology within the
+country.
+
+“Technology Transfer and Development”      refers to the process of
+acquiring, formulating, adapting, implementing, contextualizing, and
+
+
+
+ 68                                           የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ
+ብሔራዊ የአርቲፊሻል ኢንተለጀንስ ፖሊሲ
+
+
+ enhancing AI technology from countries with existing expertise or from
+ well-resourced institutions in the field.
+
+ “Research and Development (R&D)”           refers to conceptual analysis,
+ technical surveys, and experimentation related to AI, as well as research
+ and innovation efforts that aim to make technology practical and solve real-
+ world problems.
+
+ “Innovation”   refers to modifications made to existing products by
+ incorporating new designs and values to transform ideas into tangible
+ products or services.
+
+ “Environment” refers to a conducive setting equipped with technology,
+ human talent, and resources, featuring both legal and technical frameworks
+ to support the implementation and application of AI technologies.
+
+ “Institutions” refers to public and private entities engaged in AI development.
+
+
+
+
+የኢትዮጵያ ፌዴራላዊ ዴሞክራሲያዊ ሪፐብሊክ                                                69
+የኢትዮጵያ አርቲፊሻል ኢንተለጀንስ
+       ኢንስቲትዩት

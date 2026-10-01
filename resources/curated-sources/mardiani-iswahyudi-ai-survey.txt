@@ -1,0 +1,489 @@
+West Science Interdisciplinary Studies  
+Vol. 01, No. 08, August  and 2023 : pp. 606-618   
+  
+Journal homepage : https://wsj.westscience -press.com/index.php/wsis  Mapping the Landscape of Artificial Intelligence Research:  
+A Bibliometric Approach  
+ 
+Eri Mardiani1, Muhammad Subhan Iswahyudi2  
+1 Universitas Nasional : erimardiani1@gmail.com   
+2 Indonesian Center for Team Coaching Studies (ICTCS) : msubhan.iswahyudi@gmail.com   
+ 
+ABSTRACT  
+This research study employs a comprehensive bibliometric approach, enhanced by the utilization of VOS 
+viewer, to map the expansive landscape of artificial intelligence (AI) research. Through the meticulous 
+collection, pre -processing, and analysis of a diverse d ataset, this study uncovers the multifaceted dimensions 
+that define AI research. The analysis encompasses publication trends, authorship dynamics, citation patterns, 
+and emergent research themes. The integration of VOS viewer’s visualization capabilities e nriches the 
+exploration by offering intuitive representations of collaboration networks, citation maps, and thematic 
+clusters. The results highlight the growth trajectory of AI research, the collaborative networks among 
+researchers and institutions, the in fluence of seminal works, and the emergence of thematic trends. Moreover, 
+the study contextualizes the findings, discussing their implications for interdisciplinary collaboration, ethical 
+considerations, and the societal impact of AI research. Ultimately, this research contributes to a comprehensive 
+understanding of AI research dynamics, guiding future exploration, collaboration, and innovation within this 
+rapidly evolving domain.  
+Keywords:  Mapping, Landscape, Artificial Intelligence, Bibliometric   
+1. INTRODUCTION
+Artificial Intelligence (AI) has indeed become an omnipresent force that is reshaping various 
+aspects of modern society. Its applications span across numerous domains, including healthcare, 
+education, construction, transportation, robotics, and industrial automation [1], [2] . AI and machine 
+learning (ML) algorithms are being employed to complement human decision -making in diverse 
+tasks [3]. Moreover, explainable artificial intelligence (XAI) has gained significant attention in recent 
+years, as it aims to make AI systems more understandable and interpretable for humans [3]. 
+Interdisciplinary collaborations have become crucial in AI research, as they help address larger -scale 
+and longer -time horizon challenges in both foundational and use -inspired AI research [4], [5] . The 
+U.S. National Science Foundation's National AI Research Institutes Program is an example of such 
+interdisciplinary collaborations, which act as nexus points to address some of society's grand 
+challenges [6]. AI is also playing a significant role in healthcare, with applications in various domains 
+such as nursing [7], [8] . AI-powered health technologies are becoming increasingly prevalent in 
+clinical settings worldwide, with the potential to transform the health system and improve patient 
+care [9]. In liver magnetic resonance imaging, AI algorithms have shown promise in tasks such as 
+detection, segmentation, image synthesis, and artifact detection [10]. In the field of education, AI has 
+been applied to mathematics education, where it has been used for diagnosing individual students' 
+learning problems and providing personalized support [11]. AI algorithms have also been employed 
+in the management of load frequency control in hydro systems, contributing to cleaner and emission -
+free energy sources [12]. In summary, AI is transforming various aspects of modern society through 
+its diverse applications and interdisciplinary collaborations. As AI technology continues to advance, 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 607 
+it is expected to play an even more significant role in shaping the future of numerous domains and 
+improving the quality of life [13]–[15]. 
+This research paper embarks on a journey to map the vast landscape of AI research, using a 
+rigorous bibliometric approach. The ultimate goal is to dissect the dynamic evolution of AI research, 
+identify leading authors and institutions, unearth influential publications, and shed light on 
+emerging subfields. Through this systematic analysis, we intend to unravel the intricate tapestry of 
+AI research, highlighting its past, present, and potential future trajectory.  
+ 
+2. LITERATURE REVIEW  
+Artificial Intelligence (AI) has indeed become one of the most transformative and rapidly 
+evolving fields in contemporary science and technology. Its growth and impact have led to a surge 
+in research activity, producing a vast and intricate body of knowled ge. AI has been applied in 
+various domains, including healthcare, finance, cybersecurity, and supply chain management, 
+among others [16]–[20]. The development of AI has been marked by several significant milestones, 
+such as the advent of smartphones in 2007, which contributed substantially to the generation of 'big 
+data' and the efficacy of machine learning [21]. AI's influence on society has been profound, with 
+social and economic changes brought about by its use [22]. The rapid emergence and continuous 
+evolution of technologies have led to the need for comprehensive and in -depth surveys of AI's role 
+in different fields, such as the Metaverse [23]. AI's impact on employment, incomes, and growth has 
+been a topic of debate among economists and researchers [24]. While traditional economic models 
+suggest a positive net effect on employment and incomes, concerns have been raised that AI might 
+lead to different outcomes due to its non -rival and scalable nature [25]. However, there is still limited 
+empirical evidence relating AI or Machine Learning (ML) to employment and incomes [25]. In 
+summary, AI has become a transformative force in various fields, leading to a surge in research and 
+a vast body of knowledge. Its impact on society and the economy has been significant, but the long -
+term effects on employment and incomes are still a s ubject of ongoing research and debate.  
+ 
+3. METHODS  
+The research methodology used in this study adopts a comprehensive bibliometric 
+approach, which is enhanced by the use of VOSviewer, a specialized software designed to visualize 
+and analyze bibliometric data [26], [27] . This section outlines the steps taken to collect, pre-process , 
+and analyze  the data, with emphasis on the integration of VOSviewer to enhance visualization and 
+generate insights in the artificial intelligence (AI) research landscape.  
+Data Collection  
+The foundation of bibliometric analysis rests on the collection of comprehensive data sets. 
+To capture the breadth and depth of AI research, this study extensively searched leading scientific 
+databases, including IEEE Xplore, ACM Digital Library, PubMed, a nd arXiv. These datasets cover a 
+diverse range of publication types, such as journal articles, conference papers, and reviews. The 
+temporal coverage spans from the beginning of AI research to the present, to ensure a thorough 
+understanding of its evolution . 
+ 
+ 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 608 
+Table 1.  Metric Data  
+Publication years  : 1974-2023  
+Citation years  : 49 (1974-2023)  
+Paper  : 980  
+Citations  : 71671  
+Cites/year  : 1462.67  
+Cites/paper  : 73.13  
+Cites/author  : 31160.01  
+Papers/author  : 366.83  
+Author/paper  : 3.38  
+h-index  : 95 
+g-index  : 260  
+hI,norm  : 58 
+hI,annual  : 1.18  
+hA-index  : 56 
+Papers with ACC  :1,2,5,10,20:774,669,472,313,160  
+Source: Result Application Publish or Perish,2023  
+ 
+Data Processing  
+Ensuring data accuracy and consistency is paramount. In this step, rigorous data pre -
+processing was performed. Duplicate entries were identified and removed, to ensure that each 
+publication was only represented once. Author names and affiliations are stand ardized to reduce 
+variation and ambiguity. Any potential data quality issues, such as missing information or 
+discrepancies, are carefully addressed to maintain the integrity of the data set.  
+4. RESULTS AND DISCUSSION  
+ 
+Figure 1.  Mapping Results  
+
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 609 
+The integration of VOSviewer enhances the understanding of these findings. Collaborative 
+networks, citation maps, and keyword visualizations offer intuitive representations that resonate 
+with researchers, policymakers, and the public. These visualizations serve as powerful tools for 
+knowledge dissemination and communication, facilitating informed decision -making and 
+engagement.  
+ 
+ 
+Figure 2.  Research  Trend  
+The analysis of publication trends reveals the evolutionary trajectory of AI research. Over 
+time, a consistent increase in the annual publication count is observed, reflecting the growing 
+prominence and sustained interest in AI. Periods of rapid expansion are often associated with 
+breakthroughs in AI technology, such as advancements in deep learning and reinforcement learning. 
+These trends underscore the dynamic nature of the field and its transformative impact across 
+domains.  
+Table 2.  Cluster Results  
+Cluster  Total Items  Most frequent 
+keywords 
+(occurrences)  Keyword  
+1 9 Artificial Intelligence 
+Technology Business 
+(30), Industry (20)  Artificial intelligence technology, business, 
+deep learning, future direction, gap, global 
+research, industry, machine, work  
+2 8 Big Data (25), 
+Sustainability (15)  Big data, impact, knowledge domain, 
+pandemic, role, scientific mapping, 
+sustainability, tourism  
+3 8 Intellectual 
+Landscape (20), 
+Knowledge Mapping 
+(25) Artificial intelligence application, cluster, 
+computer science, healthcare, intellectual 
+landscape, knowledge mapping, relationship, 
+science mapping  
+
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 610 
+4 8 Web (20)  Artificial neural network, data mining, 
+intellectual structure, network map, pattern, 
+present study, section, web  
+5 5 Blockchain (30)  Blockchain, fintech, innovation, internet, 
+smart city  
+Source: Result Application VoS Viewer’s,2023  
+The identified clusters offer a panoramic view of the diverse facets of AI research. Each 
+cluster highlights specific themes and intersections that contribute to the broader AI landscape. 
+Notably, the clusters reflect the interdisciplinary nature of AI, sp anning business, sustainability, 
+intellectual landscapes, web presence, and emerging technologies like blockchain. These clusters 
+provide valuable insights for researchers, policymakers, and practitioners alike. They offer a 
+structured understanding of AI' s multidimensional impacts and applications, guiding strategic 
+decisions, interdisciplinary collaborations, and research priorities. The diverse range of themes 
+within the clusters underscores AI's far -reaching influence, from shaping industries to advanci ng 
+sustainability and innovation. The utilization of VOSviewer's visualization capabilities adds depth 
+to the cluster analysis, enhancing the communication of complex relationships and trends. These 
+visualizations aid in comprehending the connections betwe en keywords, themes, and disciplines, 
+fostering a more nuanced understanding of AI research's intricate landscape.  
+Future Directions and Interdisciplinary Avenues:  
+The insights derived from these clusters open doors to future directions in AI research. The 
+themes identified in each cluster could serve as launching pads for interdisciplinary collaborations 
+and innovative projects. Cross -pollination between clusters, s uch as combining AI technology with 
+sustainability strategies, presents exciting avenues for research at the nexus of diverse domains.  
+ 
+Figure 3.  Visualization Cluster  
+ 
+In conclusion, the discussion of the clusters underscores the multidimensional nature of AI 
+research. Each cluster encapsulates specific themes, offering a comprehensive view of AI's 
+
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 611 
+intersections with business, sustainability, knowledge mapping, web presence, and innovation. 
+These insights provide a foundation for informed decision -making, collaborative efforts, and the 
+advancement of AI research in an ever -evolving landscape.  
+ 
+Figure 4.  Authors  Collaboration  
+ 
+Prominent authors and institutions within the AI research landscape are identified through 
+authorship analysis. Collaborative networks are visualized, highlighting clusters of researchers and 
+institutions that frequently collaborate. The visualization also illuminates interdisciplinary 
+connections, underscoring the collaborative nature of AI research and its converg ence with fields 
+such as computer science, engineering, and cognitive science.  
+Table 3.  Citations Analysis  
+Citation  Author/Year  Title  
+11044  [28] Software survey: VOSviewer, a computer program for bibliometric 
+mappng  
+7601  [29] Business Intellgence and analysis: From big data to big impact  
+3727  [30] Bibliometric methods in management and organization  
+2674  [31] How to conduct a bibliometric analysis: An overview and guidelines  
+2405  [32] Social network analysis: a powerful strategy, also for the information 
+sciences  
+2193  [33] Science mapping software tools: Review, analysis, and cooperative 
+study among tools  
+2069  [34] Visualing knowledge domains  
+1798  [35] Bibliometric studies of research collaboration: A review  
+1462  [36] A bibliometric analysis of 30 years of research and theory on corporate 
+social responsibility and corporate social performance  
+1173  [37] The structure of scientic literatures I: Identifying and graphing 
+specialties  
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 612 
+Source: Result Application Publish or Perish,2023  
+ 
+The cited works offer diverse insights into bibliometric analysis, business intelligence, 
+visualization tools, social network analysis, and the structure of scientific literature. Despite some 
+not being AI -specific, their methodologies, principles, and applications hold relevance for the AI 
+research landscape. These influential works collectively contribute to the methodo logical foundation 
+and interdisciplinary understanding of AI research.  
+In conclusion, the citation analysis highlights the significant contributions of seminal works 
+to the understanding and advancement of AI research. These works, spanning bibliometric analysis, 
+business intelligence, visualization, social network analysis, and research collaboration, collectively 
+shape the scholarly discourse, methodologies, and tools that researchers rely on within the dynamic 
+AI landscape. The cited works  offer diverse insights into bibliometric analysis, business intelligence, 
+visualization tools, social network analysis, and the structure of scientific literature. Despite some 
+not being AI -specific, their methodologies, principles, and applications hold relevance for the AI 
+research landscape. These influential works collectively contribute to the methodological foundation 
+and interdisciplinary understanding of AI research. The citation analysis highlights the significant 
+contributions of seminal works to  the understanding and advancement of AI research. These works, 
+spanning bibliometric analysis, business intelligence, visualization, social network analysis, and 
+research collaboration, collectively shape the scholarly discourse, methodologies, and tools that 
+researchers rely on within the dynamic AI landscape.  
+Table 4.  Keywords Analysis  
+Most occurrences  Fewer occurrences  
+Occurrences  Term  Occurrences  Term  
+59 Big data  19 Blockchain  
+50 Science mapping  18 Artificial neural network  
+39 Industry  17 Network map  
+36 Machine  16 Internet  
+27 Knowledge mapping  15 Tourism  
+24 Innovation  14 Smart city  
+24 Pattern  13 Intellectual structure  
+24 Role  12 Knowledge domain  
+23 Impact  11 Pandemic  
+22 Gap  10 Data mining  
+ Source: Result Application VoS Viewer’s,2023  
+The analysis of keyword occurrences provides valuable insights into the thematic landscape 
+of the artificial intelligence (AI) research domain. The most frequent and fewer occurrences of 
+keywords offer a comprehensive view of the prominent and emerging research trends within the 
+field.  
+ 
+ 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 613 
+Most Occurrences of Keywords:  
+The analysis reveals several keywords that frequently appear in AI research publications. 
+These keywords represent key themes that have captured the attention of researchers and 
+practitioners in the AI domain.  
+"Big Data" (Occurrences: 59):  
+The prominence of "Big Data" signifies the significant role data plays in shaping AI research. 
+The analysis indicates the growing recognition of the importance of data -driven approaches in 
+developing AI technologies, applications, and solutions.  
+"Science Mapping" (Occurrences: 50):  
+The occurrence of "Science Mapping" reflects the emphasis on mapping and analyzing the 
+intellectual structure of AI research. Researchers use science mapping techniques to uncover the 
+relationships between research areas, institutions, and scholars, contri buting to a more holistic 
+understanding of the AI landscape.  
+"Industry" (Occurrences: 39):  
+The keyword "Industry" highlights the close alignment between AI research and its practical 
+applications across various sectors. The focus on AI's impact on industries underscores the 
+transformative potential of AI technologies in reshaping business proces ses and driving innovation.  
+"Machine" (Occurrences: 36):  
+The occurrence of "Machine" emphasizes the central role of machine learning within AI 
+research. This keyword reflects the widespread exploration of algorithms, models, and 
+methodologies that enable machines to learn and adapt from data, fueling AI advancem ents.  
+"Knowledge Mapping" (Occurrences: 27):  
+"Knowledge Mapping" signifies the interest in visualizing and analyzing the intellectual 
+landscape of AI research. This keyword aligns with the emergence of tools and methodologies, like 
+VOSviewer, that facilitate the exploration of relationships, clusters , and trends within research 
+domains.  
+"Innovation" (Occurrences: 24):  
+The recurring keyword "Innovation" underscores AI's transformative potential and its 
+capacity to drive novel solutions across industries. The focus on innovation highlights the dynamic 
+nature of AI research as it continually adapts to meet evolving challenges.  
+Fewer Occurrences of Keywords:  
+While these keywords have fewer occurrences, they still provide valuable insights into 
+emerging or specialized themes within the AI research landscape.  
+"Blockchain" (Occurrences: 19):  
+Despite having fewer occurrences, "Blockchain" signifies the exploration of decentralized 
+and secure data management within AI applications. This emerging theme suggests that researchers 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 614 
+are investigating the integration of blockchain technology to enhance data integrity and security in 
+AI systems.  
+"Artificial Neural Network" (Occurrences: 18):  
+The keyword "Artificial Neural Network" indicates a focus on a specific subset of machine 
+learning techniques. This neural network -based approach plays a crucial role in various AI 
+applications, including natural language processing, image recognition, and  pattern recognition.  
+"Network Map" (Occurrences: 17):  
+"Network Map" highlights the visualization of networks and relationships within AI 
+research. This theme aligns with the interest in understanding collaborative networks, intellectual 
+structures, and knowledge flows within the AI research landscape.  
+"Internet" (Occurrences: 16):  
+The occurrence of "Internet" reflects the exploration of AI's interaction with online platforms, 
+data sources, and internet -based applications. This theme indicates the significance of AI in shaping 
+online experiences and interactions.  
+"Tourism" (Occurrences: 15):  
+The presence of "Tourism" suggests a specialized focus within AI research, indicating its 
+application in the tourism industry. This emerging theme demonstrates AI's potential to enhance 
+experiences, services, and operations in the tourism sector.  
+"Smart City" (Occurrences: 14):  
+The recurring keyword "Smart City" reflects the exploration of AI technologies in urban 
+planning and development. This theme highlights the integration of AI to create more efficient, 
+sustainable, and technology -driven urban environments.  
+"Intellectual Structure" (Occurrences: 13):  
+"Intellectual Structure" signifies the interest in analyzing and understanding the conceptual 
+framework of AI research. This theme aligns with efforts to uncover underlying patterns, 
+connections, and thematic clusters within the field.  
+"Knowledge Domain" (Occurrences: 12):  
+The occurrence of "Knowledge Domain" suggests an emphasis on delineating and 
+categorizing specific domains within AI research. This theme reflects efforts to define and explore 
+the boundaries of different subfields within the broader AI landscape.  
+"Pandemic" (Occurrences: 11):  
+The occurrence of "Pandemic" indicates a topical focus on understanding AI's role in 
+addressing challenges posed by global pandemics. This theme suggests researchers' interest in 
+exploring AI applications for healthcare, disease prediction, and crisis mana gement.  
+"Data Mining" (Occurrences: 10):  
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 615 
+The recurring keyword "Data Mining" underscores the importance of extracting insights and 
+patterns from large datasets. This theme aligns with the fundamental role of data analysis techniques 
+in driving AI research and applications.  
+Discussion of Keyword Occurrences:  
+The keyword occurrences reflect the multidimensional nature of AI research. The most 
+frequent keywords highlight established themes, including big data, science mapping, and industry 
+applications. These themes underscore AI's pervasive impact on research and industry.  
+The fewer occurrences of keywords indicate emerging or specialized research areas, such as 
+blockchain integration, artificial neural networks, and smart city applications. These themes 
+illustrate the ongoing evolution of AI research, as researchers explore  novel applications, 
+methodologies, and technologies.  
+In conclusion, the keyword analysis reveals a rich tapestry of themes within the AI research 
+landscape. The most frequent and fewer occurrences collectively provide a comprehensive overview 
+of the prominent and emerging research directions within AI. These  insights guide researchers, 
+policymakers, and practitioners in understanding the evolving landscape and its implications for 
+various domains and industries.  
+5. CONCLUSION  
+In conclusion, this research study illuminates the artificial intelligence (AI) research 
+landscape through the lens of bibliometric analysis, enriched by the visualization capabilities of 
+VOSviewer. The holistic analysis of publication trends, authorship d ynamics, citation patterns, and 
+emerging research themes provides a panoramic view of AI's evolution. The identified clusters shed 
+light on diverse aspects, including AI's impact on business, sustainability, knowledge mapping, web 
+presence, and innovation.  Seminal works and influential papers have been highlighted, showcasing 
+the methodological foundations, interdisciplinary connections, and theoretical underpinnings that 
+have guided AI research. The keyword analysis unveils the thematic landscape, ranging from 
+established themes like big data and industry applications to emerging areas such as blockchain 
+integration and artificial neural networks. These insights collectively shape the trajectory of AI 
+research, guiding researchers, practitioners, and policy makers in navigating the complex and 
+dynamic terrain. The integration of VOSviewer's visualization tools enhances the study's depth and 
+accessibility, providing dynamic representations of collaboration networks, citation flows, and 
+thematic clusters. These  visualizations foster deeper insights and facilitate effective communication 
+of research trends and relationships.  
+As AI continues to drive transformative changes across industries and disciplines, the 
+findings of this research contribute to informed decision -making, interdisciplinary collaboration, 
+and ethical considerations. The insights gained empower researchers to  identify future trajectories, 
+discover emerging frontiers, and collectively advance the boundaries of AI knowledge. In the rapidly 
+evolving landscape of AI research, this study serves as a foundational resource, offering a 
+comprehensive understanding of i ts evolution, trends, and implications. The insights presented 
+herein serve as a compass guiding researchers, policymakers, and stakeholders towards meaningful 
+contributions, innovation, and responsible development within the AI domain.  
+ 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 616 
+REFERENCES  
+[1] M. R. Islam, M. U. Ahmed, S. Barua, and S. Begum, “A systematic review of explainable 
+artificial intelligence in terms of different application domains and tasks,” Applied Sciences , 
+vol. 12, no. 3, p. 1353, 2022.  
+[2] S. G. Tzafestas, “Synergy of IoT and AI in modern society: The robotics and automation case,” 
+Robot. Autom. Eng. J , vol. 31, pp. 1 –15, 2018.  
+[3] M. R. Islam, M. U. Ahmed, S. Barua, and S. Begum, “A systematic review of explainable 
+artificial intelligence in terms of different application domains and tasks,” Applied Sciences , 
+vol. 12, no. 3, p. 1353, 2022.  
+[4] S. Zilberstein, “Developing Artificial Intelligence for Good: Interdisciplinary Research 
+Collaborations and the Making of Ethical AI,” in Proceedings of the 2022 AAAI/ACM Conference 
+on AI, Ethics, and Society , 2022, p. 920.  
+[5] J. Donlon and A. Goel, “Looking back, looking ahead: Strategic initiatives in AI and NSF’s AI 
+Institutes Program,” AI Mag , 2023.  
+[6] J. Donlon and A. Goel, “Looking back, looking ahead: Strategic initiatives in AI and NSF’s AI 
+Institutes Program,” AI Mag , 2023.  
+[7] C. Buchanan, M. L. Howitt, R. Wilson, R. G. Booth, T. Risling, and M. Bamford, “Predicted 
+influences of artificial intelligence on the domains of nursing: scoping review,” JMIR Nurs , 
+vol. 3, no. 1, p. e23939, 2020.  
+[8] S. Supriandi, “PENGARUH MODAL SOSIAL, KAPABILITAS FINANSIAL, ORIENTASI 
+KEWIRAUSAHAAN TERHADAP DAYA SAING BISNIS BERKELANJUTAN SERTA 
+IMPLIKASINYA PADA KINERJA UMKM INDUSTRI KULINER DI KOTA SUKABUMI.” 
+Nusa Putra, 2022.  
+[9] C. Buchanan, M. L. Howitt, R. Wilson, R. G. Booth, T. Risling, and M. Bamford, “Predicted 
+influences of artificial intelligence on the domains of nursing: scoping review,” JMIR Nurs , 
+vol. 3, no. 1, p. e23939, 2020.  
+[10] C. E. Hill, L. Biasiolli, M. D. Robson, V. Grau, and M. Pavlides, “Emerging artificial 
+intelligence applications in liver magnetic resonance imaging,” World J Gastroenterol , vol. 27, 
+no. 40, p. 6825, 2021.  
+[11] G.-J. Hwang and Y. -F. Tu, “Roles and research trends of artificial intelligence in mathematics 
+education: A bibliometric mapping analysis and systematic review,” Mathematics , vol. 9, no. 
+6, p. 584, 2021.  
+[12] A. Panwar, V. Agarwal, and G. Sharma, “Frequency Control Studies of Hydro System using 
+AI Applications,” in 2021 International Conference on Artificial Intelligence, Big Data, Computing 
+and Data Communication Systems (icABCD) , IEEE, 2021, pp. 1 –5. 
+[13] U. B. Jaman, “Legal Analysis of The Impact of Industrial Development on The Environment,” 
+The Easta Journal Law and Human Rights , vol. 1, no. 03, pp. 87 –92, 2023.  
+[14] Y. Iskandar, A. Ardhiyansyah, and U. B. Jaman, “The Effect of Leadership, Supervision, and 
+Work Motivation of the Principal on Teacher Professionalism at SMA Yadika Cicalengka, 
+Bandung Regency,” in International Conference on Education, Humanities, Social Science (ICEHoS 
+2022) , Atlantis Press, 2023, pp. 460 –468. 
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 617 
+[15] A. Ardhiyansyah and U. B. Jaman, “Omnichannel Changing Hedonic Motivational Behavior? 
+Creating Shopping Experience and Satisfaction Against Consumer Loyalty,” The Es Economics 
+and Entrepreneurship , vol. 1, no. 03, pp. 114 –124, 2023.  
+[16] M. Zawish et al., “AI and 6G into the Metaverse: Fundamentals, Challenges and Future 
+Research Trends,” arXiv preprint arXiv:2208.10921 , 2022.  
+[17] S. Makridakis, “The forthcoming Artificial Intelligence (AI) revolution: Its impact on society 
+and firms,” Futures , vol. 90, pp. 46 –60, 2017.  
+[18] L. R. Lamb, C. D. Lehman, A. Gastounioti, E. F. Conant, and M. Bahl, “Artificial intelligence 
+(AI) for screening mammography, from the AJR Special Series on AI Applications,” American 
+Journal of Roentgenology , vol. 219, no. 3, pp. 369 –380, 2022.  
+[19] Z. Zhang, H. Al Hamadi, E. Damiani, C. Y. Yeun, and F. Taher, “Explainable artificial 
+intelligence applications in cyber security: State -of-the-art in research,” IEEE Access , 2022.  
+[20] Z. Shao, S. Yuan, Y. Wang, and J. Xu, “Evolutions and trends of artificial intelligence (AI): 
+research, output, influence and competition,” Library Hi Tech , vol. 40, no. 3, pp. 704 –724, 2021.  
+[21] J. J. Bryson, “The past decade and future of AI’s impact on society,” Towards a new 
+enlightenment , pp. 150–185, 2019.  
+[22] J. J. Bryson, “The past decade and future of AI’s impact on society,” Towards a new 
+enlightenment , pp. 150–185, 2019.  
+[23] M. Zawish et al., “AI and 6G into the Metaverse: Fundamentals, Challenges and Future 
+Research Trends,” arXiv preprint arXiv:2208.10921 , 2022.  
+[24] B. Martens and S. Tolan, “Will this time be different? A review of the literature on the Impact 
+of Artificial Intelligence on Employment, Incomes and Growth,” 2018.  
+[25] B. Martens and S. Tolan, “Will this time be different? A review of the literature on the Impact 
+of Artificial Intelligence on Employment, Incomes and Growth,” 2018.  
+[26] Y. Iskandar, J. Joeliaty, U. Kaltum, and H. Hilmiana, “Bibliometric Analysis on Social 
+Entrepreneurship Specialized Journals,” Journal: WSEAS TRANSACTIONS ON 
+ENVIRONMENT AND DEVELOPMENT , pp. 941–951, 2021.  
+[27] M. Lin, N. Li, R. Sarikas, and A. Djatej, “Cross -National Distribution of Research Outputs in 
+Accounting: A Bibliometric Analysis,” Journal of Accounting and Taxation , vol. 2, no. 1, pp. 18 –
+36, 2022.  
+[28] N. Van Eck and L. Waltman, “Software survey: VOSviewer, a computer program for 
+bibliometric mapping,” Scientometrics , vol. 84, no. 2, pp. 523 –538, 2010.  
+[29] H. Chen, R. H. L. Chiang, and V. C. Storey, “Business intelligence and analytics: From big 
+data to big impact,” MIS quarterly , pp. 1165 –1188, 2012.  
+[30] I. Zupic and T. Čater, “Bibliometric methods in management and organization,” Organ Res 
+Methods , vol. 18, no. 3, pp. 429 –472, 2015.  
+[31] N. Donthu, S. Kumar, D. Mukherjee, N. Pandey, and W. M. Lim, “How to conduct a 
+bibliometric analysis: An overview and guidelines,” J Bus Res , vol. 133, pp. 285 –296, 2021.  
+[32] E. Otte and R. Rousseau, “Social network analysis: a powerful strategy, also for the 
+information sciences,” J Inf Sci , vol. 28, no. 6, pp. 441 –453, 2002.  
+[33] M. J. Cobo, A. G. López-Herrera, E. Herrera-Viedma, and F. Herrera, “Science mapping 
+software tools: Review, analysis, and cooperative study among tools,” Journal of the American 
+Society for information Science and Technology , vol. 62, no. 7, pp. 1382 –1402, 2011.  
+West Science Interdisciplinary Studies    
+Vol. 01, No. 08, August and 2023 : pp. 606-618 
+ 618 
+[34] K. Börner, C. Chen, and K. W. Boyack, “Visualizing knowledge domains,” Annual review of 
+information science and technology , vol. 37, no. 1, pp. 179 –255, 2003.  
+[35] K. Subramanyam, “Bibliometric studies of research collaboration: A review,” J Inf Sci , vol. 6, 
+no. 1, pp. 33 –38, 1983.  
+[36] F. G. A. De Bakker, P. Groenewegen, and ..., “A bibliometric analysis of 30 years of research 
+and theory on corporate social responsibility and corporate social performance,” Business & 
+…, 2005, doi: 10.1177/0007650305278086.  
+[37] H. Small and B. C. Griffith, “The structure of scientific literatures I: Identifying and graphing 
+specialties,” Sci Stud (St Bonaventure) , vol. 4, no. 1, pp. 17 –40, 1974.  
+  

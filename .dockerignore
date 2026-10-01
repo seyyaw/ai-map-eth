@@ -1,0 +1,32 @@
+# Keep the image to what the two processes actually run.
+.venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+
+# The paper and its sources are the research output, not the runtime.
+paper/
+sources/
+docs/
+analysis/
+
+# Dev-only tooling. The parity test drives a browser and the seeder is for demos;
+# neither belongs in a production image, and the seeder in particular must never
+# be one careless `docker compose exec` away from the collection database.
+tools/scripts/test_channels.py
+tools/scripts/seed_demo.py
+scripts/
+
+# Never bake a database or a secret into an image.
+tools/data/
+backups/
+.env
+*.db
+*.db-wal
+*.db-shm
+
+# Local artefacts
+.DS_Store
+*.log
+deploy/

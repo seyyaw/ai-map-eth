@@ -1,0 +1,32 @@
+# /etc/systemd/system/aimap-bot.service
+#   sudo systemctl daemon-reload && sudo systemctl enable --now aimap-bot
+#
+# Long polling: the bot makes only OUTBOUND connections to Telegram, so it needs
+# no public IP, no open port and no TLS certificate of its own.
+[Unit]
+Description=AI-MAP Ethiopia Telegram survey bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+User=aimap
+Group=aimap
+WorkingDirectory=/srv/aimap
+EnvironmentFile=/etc/aimap/aimap.env
+ExecStart=/srv/aimap/.venv/bin/python tools/telegram_bot/bot.py
+Restart=always
+RestartSec=10
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/aimap/tools/data
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

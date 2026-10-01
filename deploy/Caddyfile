@@ -1,0 +1,36 @@
+# Caddy obtains and renews a TLS certificate automatically.
+#   sudo caddy run --config /etc/caddy/Caddyfile
+#
+# Replace the hostname with your own.
+survey.example.et {
+    encode zstd gzip
+
+    # Admin endpoints are for the research team only. Restrict them at the edge
+    # as well as by token: defence in depth, and it keeps the token out of logs
+    # of scanners probing /admin.
+    # Both the admin API *and* the dashboard page. The server gates the page
+    # itself, but there is no reason to let a scanner discover it either.
+    @admin path /admin/* /dashboard.html /dashboard.js /dashboard.css
+    handle @admin {
+        # Replace with the office/VPN ranges that should reach the exports.
+        @blocked not remote_ip 10.0.0.0/8 192.168.0.0/16
+        respond @blocked 404
+        reverse_proxy 127.0.0.1:8000
+    }
+
+    handle {
+        reverse_proxy 127.0.0.1:8000
+    }
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "no-referrer"
+    }
+
+    log {
+        output file /var/log/caddy/aimap.log
+        # Do not log query strings: enumerator links may carry stratum tokens.
+        format json
+    }
+}

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-appearance="light" data-bg="paper">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="color-scheme" content="light dark"/>
+<title>AI-MAP Ethiopia: Survey</title>
+<script>
+/* Applied before first paint so the page never flashes the wrong theme.
+   Light is the default: a first-time visitor on a dark OS still gets light
+   until they explicitly choose System or Dark. */
+(function () {
+  try {
+    var pref = localStorage.getItem('aimap_theme') || 'light';
+    var bg = localStorage.getItem('aimap_bg') || 'paper';
+    var dark = pref === 'dark' ||
+      (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var r = document.documentElement;
+    r.setAttribute('data-appearance', dark ? 'dark' : 'light');
+    r.setAttribute('data-bg', bg);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230b6b53'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header id="hdr">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> AI-MAP Ethiopia</div>
+    <div class="hdr-right">
+      <span id="netstat" class="pill" role="status">…</span>
+      <button type="button" id="settings" class="iconbtn" aria-label="Appearance settings" title="Appearance">◐</button>
+    </div>
+  </div>
+</header>
+
+<!-- Survey completion progress. Hidden on the picker screen. -->
+<div id="progwrap" hidden>
+  <div class="wrap">
+    <div class="prog-top">
+      <span id="progsec"></span>
+      <span class="prog-right">
+        <!-- Time remaining sits beside the percentage because they answer
+             different questions: "how far am I" and "can I finish this now".
+             The second is the one that decides whether someone keeps going. -->
+        <span class="prog-left" id="progleft"></span>
+        <span class="prog-pct" id="progpct">0%</span>
+      </span>
+    </div>
+    <div id="progtrack" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+         aria-valuenow="0" aria-label="Survey completion">
+      <div id="progfill"></div>
+    </div>
+    <div id="progsteps" aria-hidden="true"></div>
+    <div class="prog-sub">
+      <span id="subcount"></span>
+      <span id="subdots" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+  <!-- Shown only while the questionnaire is unpublished. Checked once, silently,
+       on load (GET /api/schema/state) -- if published, this never appears and
+       the page goes straight into the picker below, exactly as it always did.
+       "Conduct" previews whatever draft the admin is currently working on, so
+       they can walk through their own changes before anyone else sees them. -->
+  <section id="modegate" class="card" hidden>
+    <h1>AI-MAP Ethiopia</h1>
+    <p class="lede">This questionnaire has not been published yet.</p>
+    <div class="row" style="margin-top:22px;flex-direction:column;gap:14px">
+      <button type="button" class="btn" id="gateBuild" style="width:100%;padding:16px">
+        🛠 Build the questionnaire</button>
+      <button type="button" class="btn ghost" id="gateConduct" style="width:100%;padding:16px">
+        ▶ Conduct the questionnaire (preview the current draft)</button>
+    </div>
+    <p class="fine" style="margin-top:18px">Building requires the admin sign-in. Once the
+      questionnaire is published, this choice disappears for everyone and opening the page
+      goes straight to the questionnaire.</p>
+  </section>
+
+  <section id="picker" class="card" hidden>
+    <div style="text-align:center;margin-bottom:24px">
+      <div style="font-size:48px;margin-bottom:16px">🇪🇹</div>
+      <h1>Mapping Artificial Intelligence Adoption in Ethiopia</h1>
+      <p class="lede">Help shape Ethiopia's AI future. Your voice matters in this independent research study.</p>
+      <div style="display:flex;justify-content:center;gap:16px;margin:20px 0;flex-wrap:wrap">
+        <div style="text-align:center;padding:12px;background:var(--accent-soft);border-radius:8px;min-width:80px">
+          <div style="font-size:24px;font-weight:bold;color:var(--accent)">5</div>
+          <div style="font-size:12px;color:var(--muted)">Minutes</div>
+        </div>
+        <div style="text-align:center;padding:12px;background:var(--accent-soft);border-radius:8px;min-width:80px">
+          <div style="font-size:24px;font-weight:bold;color:var(--accent)">100%</div>
+          <div style="font-size:12px;color:var(--muted)">Anonymous</div>
+        </div>
+        <div style="text-align:center;padding:12px;background:var(--accent-soft);border-radius:8px;min-width:80px">
+          <div style="font-size:24px;font-weight:bold;color:var(--accent)">Open</div>
+          <div style="font-size:12px;color:var(--muted)">Results</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbtns">
+      <span></span>
+      <button type="button" id="pnext" class="btn">Start →</button>
+    </nav>
+    <p class="fine">🔒 Anonymous · ⏱️ Voluntary · 📊 Results published openly under CC BY 4.0 · ⚖️ Processed in line with Proclamation No. 1321/2024.</p>
+    <p><button type="button" id="startover" class="linkbtn" hidden>Start over (clear saved answers on this device)</button></p>
+  </section>
+
+  <section id="survey" hidden>
+    <div id="secmeta" class="secmeta"></div>
+
+    <!-- The length choice, offered once (right after the routing question) for
+         whichever branch defines a short form. The short form is the same
+         questionnaire with the non-core items routed out, so the two pool item
+         by item in analysis; it is not a different survey. Kept as a sibling of
+         #qform, which is cleared on every normal render, so toggling it does
+         not depend on the question-rendering path. -->
+    <fieldset id="lenfs" hidden>
+      <legend class="qtext" id="lenlbl">How much time do you have?</legend>
+      <div class="seg" role="group" aria-labelledby="lenlbl" id="lenseg">
+        <button type="button" data-form="short" aria-pressed="false">Quick version</button>
+        <button type="button" data-form="full" aria-pressed="true">Full version</button>
+      </div>
+      <p class="fine" id="lenhint"></p>
+    </fieldset>
+
+    <form id="qform" novalidate></form>
+    <nav class="navbtns">
+      <button type="button" id="back" class="btn ghost">← Back</button>
+      <span id="counter" class="counter"></span>
+      <button type="button" id="next" class="btn">Next →</button>
+    </nav>
+    <p class="fine" id="hint"></p>
+    <p><button type="button" id="skip" class="linkbtn" hidden>Skip this question</button></p>
+
+    <!-- Shown only while reviewing an already-submitted response. Keep moves on
+         without touching the answer; Finish saves and stops wherever you are. -->
+    <div id="reviewbar" hidden>
+      <span class="reviewnote">Reviewing your answers. Change anything you like.</span>
+      <span class="row">
+        <button type="button" id="keepbtn" class="btn ghost">Keep this answer</button>
+        <button type="button" id="endreview" class="btn">Finish and save</button>
+      </span>
+    </div>
+  </section>
+
+  <!-- The completion screen. After twenty minutes of questions this is the only
+       part the respondent is owed something for, so it is built as an ending
+       rather than as one more card: the thanks lands first and large, the
+       practical detail follows underneath. -->
+  <section id="done" class="card done" hidden>
+    <p class="done-mark" aria-hidden="true">🎉</p>
+    <h2 class="done-title">Thank you</h2>
+    <p class="done-sub" id="donemsg"></p>
+
+    <div class="done-next">
+      <h3>What happens next</h3>
+      <ul class="done-list">
+        <li><span aria-hidden="true">📊</span><span>Your answers are combined with
+          everyone else's. Nothing you sent is published on its own.</span></li>
+        <li><span aria-hidden="true">🌍</span><span>The results are published openly
+          under CC BY 4.0, free for anyone to read, check and re-use.</span></li>
+        <li><span aria-hidden="true">🔒</span><span>We never asked for your name.
+          Any contact details you chose to give are stored separately from your
+          answers and deleted once follow-up closes.</span></li>
+      </ul>
+    </div>
+
+    <div class="row done-actions">
+      <button type="button" id="dl" class="btn ghost">Download my response (JSON)</button>
+      <button type="button" id="restart" class="btn ghost">Start another</button>
+    </div>
+
+    <!-- Invitation, for the respondent-driven arm. The code identifies this
+         RESPONSE, not this person, and recording who invited whom is what makes
+         the referral sample weightable rather than a convenience sample. -->
+    <div id="invitebox" hidden>
+      <h3>Invite someone</h3>
+      <p class="fine">This survey reaches people through people. Your invitation link
+        records that the next person came through you (not who you are), which is what
+        lets us correct for who an online survey would otherwise miss.</p>
+      <p><button type="button" class="btn" id="makeinvite">Create my invitation link</button></p>
+      <p id="inviteout" hidden>
+        <code id="invitelink"></code><br>
+        <button type="button" class="btn ghost" id="copyinvite">Copy link</button>
+      </p>
+    </div>
+  </section>
+</main>
+
+<p class="sr" id="live" role="status" aria-live="polite"></p>
+
+<footer class="wrap fine">
+  AI-MAP Ethiopia · instrument v0.3-draft · <a href="#" id="admin">enumerator tools</a>
+</footer>
+
+<!-- -------------------------------------------------------- settings -->
+<dialog id="setdlg" aria-labelledby="settitle">
+  <h3 id="settitle">Appearance</h3>
+  <p class="fine">Saved on this device only.</p>
+
+  <div class="setgroup">
+    <label id="themelbl">Theme</label>
+    <div class="seg" role="group" aria-labelledby="themelbl" id="themeseg">
+      <button type="button" data-theme="light"  aria-pressed="false">Light</button>
+      <button type="button" data-theme="dark"   aria-pressed="false">Dark</button>
+      <button type="button" data-theme="system" aria-pressed="false">System</button>
+    </div>
+  </div>
+
+  <div class="setgroup">
+    <label id="bglbl">Background</label>
+    <div class="swatches" role="group" aria-labelledby="bglbl" id="bgsw"></div>
+  </div>
+
+  <div class="setgroup">
+    <label id="textlbl">Text size</label>
+    <div class="seg" role="group" aria-labelledby="textlbl" id="textseg">
+      <button type="button" data-size="15" aria-pressed="false">Small</button>
+      <button type="button" data-size="16" aria-pressed="false">Normal</button>
+      <button type="button" data-size="18" aria-pressed="false">Large</button>
+      <button type="button" data-size="21" aria-pressed="false">Larger</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <button type="button" class="btn" id="setclose">Done</button>
+    <button type="button" class="btn ghost" id="setreset">Reset to default</button>
+  </div>
+</dialog>
+
+<!-- -------------------------------------------------------- enumerator -->
+<dialog id="admindlg" aria-labelledby="admtitle">
+  <h3 id="admtitle">Enumerator tools</h3>
+  <p class="fine">Responses are stored in this browser until submitted. Use this on shared or offline devices.</p>
+  <p><strong id="qcount">0</strong> response(s) held locally.</p>
+  <div class="row">
+    <button type="button" class="btn" id="flush">Try to submit all now</button>
+    <button type="button" class="btn ghost" id="exportall">Export all as JSON</button>
+    <button type="button" class="btn ghost" id="exportcsv">Export all as CSV</button>
+  </div>
+  <div class="row"><button type="button" class="btn ghost" id="closedlg">Close</button></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+Association for Information Systems Association for Information Systems 
+AIS Electr onic Libr ary (AISeL) AIS Electr onic Libr ary (AISeL) 
+MWAIS 2024 Pr oceedings Midwest (MW AIS) 
+6-18-2024 
+Adoption of Gener ative AI (Gen-AI) In Sub-Sahar an Africa: Adoption of Gener ative AI (Gen-AI) In Sub-Sahar an Africa: 
+Extension of the UT AUT Model Extension of the UT AUT Model 
+Foluso A yeni 
+Metr o State Univ ersity , foluso.a yeni@metr ostate.edu 
+Achanyi Ngufor 
+The IC T Univ ersity , achanyi.ngufor@ictuniv ersity .edu.cm 
+Esther Gani 
+Kaduna State Univ ersity , esther .gani@kasu.edu.ng 
+Victor Mbarika 
+East Car olina Univ ersity , mbarika v20@ecu.edu 
+Follow this and additional works at: https:/ /aisel.aisnet.or g/mwais2024 
+Recommended Citation Recommended Citation 
+Ayeni, F oluso; Ngufor , Achanyi; Gani, Esther; and Mbarika, Vict or, "Adoption of Gener ative AI (Gen-AI) In 
+Sub-Sahar an Africa: Extension of the UT AUT Model" (2024). MWAIS 2024 Pr oceedings . 31. 
+https:/ /aisel.aisnet.or g/mwais2024/31 
+This material is br ought t o you b y the Midwest (MW AIS) at AIS Electr onic Libr ary (AISeL). It has been accepted for 
+inclusion in MW AIS 2024 Pr oceedings b y an authoriz ed administr ator of AIS Electr onic Libr ary (AISeL). F or mor e 
+information, please contact elibr ary@aisnet.or g. 
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 1 Adoption of Generative AI (Gen -AI) In Sub -Saharan Africa: 
+Extension of the UTAUT Model  
+Foluso Ayeni  
+Metro State University  
+Foluso.ayeni@metrostate.edu  Achanyi Ngufor  
+ICT University  
+achanyi.ngufor@ictuniversity. edu.cm  
+Esther Gani  
+Kaduna State University  
+Esther.gani@kasu.edu.ng  Victor Mbarika  
+East Carolina University  
+Mbarikav20@ecu.edu  
+ABSTRACT  
+AI can improve intelligence and capabilities, paving the door for transformative outcomes in Africa's socioeconomic revolutio n. 
+The Unified Theory of Acceptance and Use of Technology (UTAUT) can be a useful framework for investigating the adoption 
+of gener ative artificial intelligence (Gen -AI) in Sub -Saharan Africa. UTAUT analyzes a variety of elements that influence 
+technology acceptance and use, such as performance expectancy, effort expectancy, social influence, and facilitating 
+conditions. These constru cts can shed light on the drivers and challenges affecting the application of generative AI in Africa. 
+To support Jain’s model, a uthors also argue that algorithmic aversion mediates the influence of performance expectancy and 
+the use of AI. An online surve y of African -based technology professionals using AI -enabled tools has been distributed and we 
+present initial results in this paper. We offer focused techniques to utilize generative AI's revolutionary potential for inn ovation, 
+economic growth, and social  development in Africa based on an in -depth examination of the constraints and opportunities.  
+Keywords  
+Gen-AI, UTAUT, Sub -Saharan Africa . 
+INTRODUCTION  
+Artificial intelligence (AI), particularly machine learning (ML), has made tremendous advances in data a nalysis and computing 
+in recent years. These advancements have enabled programs to operate intelligently, demonstrating the ability to grasp and 
+effectively process data (Sarker, 2021). Generative AI (Gen -AI) has emerged as a transformational technology wi th the 
+potential to disrupt numerous elements of the global economy and African society (Ferrag et al., 2023). Several prominent 
+corporations have made substantial contributions to the field of artificial intelligence (AI) research, which has revolutioni zed 
+various industries around the world. OpenAI (OpenAI et al., 2021), Google (Lin, 2023), Microsoft (Brühl, 2023), Meta, 
+Deepmind (Goldstein et al., 2023), Nvidia (Khalifa et al., 2023), IBM (Townsend & Hunt, 2019), and many others are 
+prominent players in creating generative AI.  
+OpenAI, a major organization dedicated to ensuring that artificial intelligence benefits all of humanity (ShneidermanBen, 
+2020), has been at the forefront of cutting -edge research, pioneering advancements in natural language process ing and 
+generative models. Google, a digital behemoth, has made amazing advances in AI research with projects such as Google Brain 
+(Sajjadi et al., 2018) and DeepMind (Serrano -Muoz et al., 2022), pushing the boundaries of machine learning and neural 
+networ ks. Microsoft (Dao, 2023), another significant competitor, has made significant investments in AI research, employing 
+cutting -edge approaches in fields such as computer vision (Chociej et al., 2019) and speech recognition (COA, 2020). These 
+firms, along wi th many others, have played an important role in defining the AI landscape and have enormous promise for 
+unlocking new opportunities for individuals, enterprises, and governments worldwide (Mhlanga, 2023; Salvaris et al., 2018).  
+In Sub -Saharan Africa, the use of AI -enabled tools is evolving at a very slow pace, millions of people are not even aware of 
+Generative AI tools ( Floyd , 2023). From the healthcare sector to education, agriculture, and infrastructure, Gen AI tools have 
+rapidly become consistent in th e lives of citizens. Although through the United Nations Sustainable Development Goals, AI is 
+beginning to make some level of impact , the majority of Sub -Saharan African nations currently lack comprehensive regulatory 
+frameworks that would effectively enco urage the development and collection of high -quality driven data, govern AI -driven 
+business models, and incentivize ethical AI.  
+Considering the above, this article aims to answer the following questions: (1) How can Generative AI be harnessed to address  
+societal, economic, and cultural challenges in Africa, considering local contexts, ethical implications, and the potential for 
+fostering innovation and sustainable development; (2) What stimulates the interests of Sub -Saharan African residents and 
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 2 Nationals to use Gen -AI tools?  (3) Can we use UTAUT to explain the adoption of Gen -AI tools in sub -Saharan Africa? (4) 
+What role does Algorithmic Aversion play in the adoption of Gen -AI? 
+The reluctance towards adopting AI can stem from its distinctive nature compar ed to other types of technology (Jain et al., 
+2022). (Venkatesh, 202 2) emphasizes the importance of identifying unique factors that influence the adoption of AI -based 
+technology, given its emerging form. Scholars have been pushed to think distinctly about traditional technology adoption 
+mode ls to consider the contextual factors and characteristics of these new technologies (Hong et al., 2014 ; Dwivedi et al., 2019 ; 
+Dwivedi et al., 2020 ). AI aversion can stem from its uniqueness. Thus, there is a need to look beyond existing models to see 
+its effects on users in Sub -Saharan Africa. Extending the UTAUT model will directly or indirectly increase our understand ing 
+of this technological and social phenomenon (Makarius et al., 2020)  
+UNIFIED THEORY  OF ACCEPTANCE AND U SE OF TECHNOLOGY   
+The Unified Theory of Acceptance and Use of Technology (UTAUT) (Williams et al., 2015)  is a wel l-known theoretical 
+framework that seeks to comprehend and explain people's acceptance and use of technology. UTAUT was developed by 
+Venkatesh et al. (2003) to provide a thorough understanding of technology adoption behavior. It incorporates and expands 
+numerous previous theories, including the Technology Acceptance Model (TAM) and the Theory of Reasoned Action (TRA).  
+(Cao et al., 2021; Jain et al., 2022) extended the approach by integrating an integrated AI acceptance -avoidance model in their 
+study  as see n in Figure 1 . This expanded model considers both positive and negative aspects that influence managers' attitudes 
+and behaviors toward the deployment of AI. Previous research has identified technology's detrimental consequences (Vinuesa 
+et al., 2020; Flor idi & Cowls, 2022 & Vimalkumar et al., 2021). As a result, when creating a model, it is critical to account the 
+unfavorable impressions of AI (Davenport et al., 2020; Wang & Siau, 2019 & Westerlund, 2019).  
+ 
+Figure 1. Proposed Research Model (Jain et al., 202 2) 
+UTAUT identifies four key factors that influence i ndividuals' acceptance and use of technology:  
+Performance Expectancy  
+This factor examines how strongly people believe that employing a specific technology would improve their performance and 
+help them reach their goals. It emphasizes on the perceived benefits and expected positive results of technology use (Whittaker 
+et al., 2018; Ain et al., 2016 & Malik et al., 2019). Although AI has been shown to improve performance expectancies, there i s 
+little empirical evidence of the role AI aversion plays in it s adoption (Jain et al., 2022). Owing to these, we propose the following 
+hypotheses:  
+H1: Performance expectancy will positively affect the use of Gen -AI in Sub -Saharan Africa  
+H9: AI aversion will mediate the influence of performance expectancy and the use  of Gen -AI in Sub -Saharan Africa  
+Effort Expectancy  
+The perceived ease of use and utility of technology is reflected in effort expectancy. It takes into account elements such as  the 
+complexity of learning and using technology, as well as individuals' con fidence in their capacity to do so (Rahi et al., 2019; 
+
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 3 Ragheb et al., 2022; Ain et al., 2016). Trust difficulties and misunderstandings can stymie AI adoption in Sub -Saharan Africa. 
+In light of this, the hypotheses listed below were formed.  
+H2: Effort Expe ctancy positively influences the use of Gen -AI tools  in Sub -Saharan Africa  
+H10: AI aversion will moderate the impact of effort expectation and the adoption of Gen -AI-enabled gadgets  in Sub -Saharan 
+Africa . 
+Social Influence  
+Social influence research looks at the impact of social norms, subjective norms, and other people's opinions and 
+recommendations on individuals' technology adoption decisions (Manca et al., 2019; Beldad & Hegner, 2018; Hong & Cho, 
+2023 ). It investigates the impact of social elements, such as peers, superiors, and influential individuals, on changing people's  
+views and intentions toward technology, particularly AI. This led to the hypotheses below:  
+H4: The use of Gen -AI tools in Sub -Saha ran Africa  is influenced positively by social influence.  
+H6: Social influence influences algorithmic aversion  in Sub -Saharan Africa . 
+Facilitating Conditions  
+The availability of appropriate resources, support, and infrastructure to assist technology adoption is referred to as facili tating 
+conditions (Kumar & Ayedee, 2021 & Grover et al., 2022). It takes into account things like technical support, training, corp orate 
+policies, and interoperability with existing systems. In Sub -Saharan Africa, government assistance for information technology 
+has a multiplier effect on the use of information technology tools (AbdulKareem et al., 2020; Beda, 2019). Th is assistance has 
+taken the shape of facilitating conditions. Today, policies in the form of supportive conditions for AI tools are being 
+implemented (Sy et al., 2019). This led to the following hypotheses:  
+H3: Facilitating conditions have a positive impact on the usage  behavior of Gen -AI products  in Sub -Saharan Africa .  
+H5: Facilitating conditions have an effect on algorithmic aversion  in Sub -Saharan Africa . 
+Algorithmic Aversion  
+This refers to people's reluctance or skepticism in relying on or accepting algorithmic dec ision -making systems (Hobson et al., 
+2023 & Oleksy et al., 2023). It derives from a lack of trust, concerns about openness, and apprehension about potential biase s 
+or errors in algorithmic processes (Mahmud et al., 2023). Algorithmic aversion can appear in  a variety of scenarios, including 
+the employment of AI tools in hiring processes, loan approvals, and recommendation systems (Bogert et al., 2021& Berger et 
+al., 2021).  
+Due to perceived limitations or ethical problems linked with algorithmic decision -making, individuals may choose human 
+judgment or traditional decision -making methods over algorithms (Cao et al., 2021). The necessity of addressing transparency, 
+fairness, and accountability (Hobson et al., 2023) in the design and deployment of algorithmic s ystems (Raji, 2020)  to 
+encourage confidence and acceptance (Cabiddu et al., 2022) among u sers is highlighted by algorithmic aversion. Based on this, 
+we hypothesize that  
+H7: The use of Gen -AI tools is influenced by Algorithmic Aversion  in Sub -Saharan Africa . 
+UTAUT (Gunasinghe & Nanayakkara, 2021) acknowledges that the influence and significanc e of these aspects varies among 
+contexts, user groups, and technologies. As a result, the framework allows for the incorporation of new moderators (Celik, 
+2016) to help explain the adoption behavior.  
+UTAUT gives useful insights into the elements influencin g individuals' adoption (Akinnuwesi et al., 2016) and usage of 
+technology by taking these four major factors into account. It has been frequently used to assist system design (Williams et al., 
+2015), and inform methods for fostering successful technology i mplementation (Maghazei et al., 2022) and utilization (Beaman 
+et al., 2021).  
+Collaboration  
+Collaborative tools have been used to test the collaborative climate amongst teams and management of tasks within industries 
+and organizations ( Larson & DeChurch, 2020 , Isaac et al., 2019 , 2019), however, there is little to no empirical lite rature that 
+assesses the collaborative experience of residents with the use of AI -enabled tools.  
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 4 H8: The use of Gen -AI tools in Sub -Saharan Africa  positively influences collaboration amongst residents . 
+RESEARCH DESIGN  
+This study proposes the use of the UT AUT model to test the adoption of Gen -AI tools, of course with the addition of algorithmic 
+aversion which adds value to the model. We believe that this model will help us understand the current state of Gen -AI tools 
+adoption in Sub -Saharan Africa. We are c urrently in the process of data collection from technology professionals  in Nigeria, 
+Cameroon,  and Uganda whose responses will allow us to strengthen our proposed model. To the best of our knowledge, this is 
+the first time this proposed model is being used  to test the adoption of Gen -AI in sub –Saharan Africa . People play a significant 
+role in the acceptance of new digital tools. In future work, we plan to conduct a user survey on what Gen -AI tools are used by 
+residents across the different sectors from educ ation, government, business, and healthcare. The survey could also identify 
+current challenges faced by residents.  
+As shown in Figure 2 below, preliminary data collection includes 54 technology professionals from Nigeria, Cameroon, and 
+Uganda. Of those 5 7, majority believe AI is easy to use and makes life better, AI also enhances communication and decision 
+making.  
+ 
+Figure 2. Survey Question on AI Aversion  
+CONCLUSION  
+Finally, this study underscores the revolutionary potential of generative AI in Africa, as well as the necessity for concentr ated 
+efforts to fully realize its benefits. Africa can use generative AI to drive innovation, economic growth, and societal improv ement 
+by tackling issues and executing smart actions. Africa stands to profit from advances in generative AI, and by encouraging 
+collaboration, investment, and skill building, we can harness its power for the continent's broader socioeconomic growth.  
+REFERE NCES  
+1. Abdulkareem, M., & Petersen, S. E. (2021). The Promise of AI in Detection, Diagnosis, and Epidemiology for Combating 
+COVID -19: Beyond the Hype. Frontiers in Artificial Intelli gence , 4. 
+https://www.frontiersin.org/articles/10.3389/frai.2021.652669   
+2. Ain, N., Kaur, K., & Waheed, M. (2016). The influence of learning value on learning management system use: An 
+extension of UTAUT2. Information Development , 32(5), 1306 –1321. https://d oi.org/10.1177/0266666915597546  
+3. Akinnuwesi, B. A., Olayanju, K. A., Aribisala, B. S., Fashoto, S. G., Mbunge, E., Okpeku, M., & Owate, P. (2023). 
+Application of support vector machine algorithm for early differential diagnosis of prostate cancer. Data Scie nce and 
+Management , 6(1), 1 –12. 
+
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 5 4. Beaman, L., BenYishay, A., Magruder, J., & Mobarak, A. M. (2021). Can Network Theory -Based Targeting Increase 
+Technology Adoption? American Economic Review , 111(6), 1918 –1943. https://doi.org/10.1257/aer.20200295  
+5. Beda, K. F.  G. (2019). Information and Communication Technologies in Africa: Levels, Trends and Perspectives. In G. 
+Mboup & B. Oyelaran -Oyeyinka (Eds.), Smart Economy in Smart African Cities: Sustainable, Inclusive, Resilient and 
+Prosperous  (pp. 447 –479). Springer. h ttps://doi.org/10.1007/978 -981-13-3471 -9_15  
+6. Beldad, A. D., & Hegner, S. M. (2018). Expanding the Technology Acceptance Model with the Inclusion of Trust, Social 
+Influence, and Health Valuation to Determine the Predictors of German Users’ Willingness to Con tinue using a Fitness 
+App: A Structural Equation Modeling Approach. International Journal of Human –Computer Interaction , 34(9), 882 –893. 
+https://doi.org/10.1080/10447318.2017.1403220  
+7. Brühl, V. (2023). Big Tech, the Platform Economy and the European Digital  Markets  (SSRN Scholarly Paper 4436564). 
+https://doi.org/10.2139/ssrn.4436564  
+8. Cabiddu, F., Moi, L., Patriotta, G., & Allen, D. G. (2022). Why do users trust algorithms? A review and conceptualization 
+of initial trust and trust over time. European Managemen t Journal , 40(5), 685 –706. 
+9. Cao, S., Nie, L., Sun, H., Sun, W., & Taghizadeh -Hesary, F. (2021). Digital finance, green technological innovation and 
+energy -environmental performance: Evidence from China’s regional economies. Journal of Cleaner Production , 327, 
+129458. https://doi.org/10.1016/j.jclepro.2021.129458  
+10. Celik, I., Dindar, M., Muukkonen, H., & Järvelä, S. (2022). The Promises and Challenges of Artificial Intelligence for 
+Teachers: A Systematic Review of Research. TechTrends , 66(4), 616 –630. https://d oi.org/10.1007/s11528 -022-00715 -y 
+11. Chociej, M., Welinder, P., & Weng, L. (2019). ORRB -- OpenAI Remote Rendering Backend  (arXiv:1906.11633). arXiv. 
+https://doi.org/10.48550/arXiv.1906.11633  
+12. Davenport, T., Guha, A., Grewal, D., & Bressgott, T. (2020). How ar tificial intelligence will change the future of 
+marketing. Journal of the Academy of Marketing Science , 48(1), 24 –42. https://doi.org/10.1007/s11747 -019-00696 -0 
+13. Dwivedi, Y. K., Hughes, D. L., Coombs, C., Constantiou , I., Duan, Y., Edwards, J. S., Gupta, B., Lal, B., Misra, S., 
+Prashant, P., Raman, R., Rana, N. P., Sharma, S. K., & Upadhyay, N. (2020). Impact of COVID -19 pandemic on 
+information management research and practice: Transforming education, work and life. International Journal of 
+Information Management , 55, 102211. https://doi.org/10.1016/j.ijinfomgt.2020.102211  
+14. Dwivedi, Y., Rana, N., Jeyaraj, A., Clement, M., & Williams, M. (2019). Re -examining the Unified Theory of Acceptance 
+and Use of Technology (UTAUT):  Towards a Revised Theoretical Model. Information Systems Frontiers , 21, 1–16. 
+https://doi.org/10.1007/s10796 -017-9774 -y 
+15. Ferrag, M. A., Debbah, M., & Al -Hawawreh, M. (2023). Generative AI for Cyber Threat -Hunting in 6G -enabled IoT 
+Networks  (arXiv:2303.11751). arXiv. https://doi.org/10.48550/arXiv.2303.11751  
+16. Floridi, L., & Cowls, J. (2022). A Unified Framework of Five Principles for AI in Society. In S. Carta (Ed.), Machine 
+Learning and the City  (1st ed., pp. 535 –545). Wiley. https://doi.org /10.1002/9781119815075.ch45  
+17. Floyd, R. (2023). Artificial intelligence for economic policymaking: the frontier of Africa’s economic 
+transformation.  
+18. Goldstein, J. A., Sastry, G., Musser, M., DiResta, R., Gentzel, M., & Sedova, K. (2023). Generative Language Models and 
+Automated Influence Operations: Emerging Threats and Potential Mitigations  (arXiv:2301.04246). arXiv. 
+https://doi.org/10.48550/arXiv.2301.04246  
+19. Grover, P., Kar, A. K., & Dwivedi, Y. (2022). The evolution of social media influence —A literature re view and research 
+agenda. International Journal of Information Management Data Insights , 2(2), 100116. 
+https://doi.org/10.1016/j.jjimei.2022.100116  
+20. Gunasinghe, A., & Nanayakkara, S. (2021). Role of technology anxiety within UTAUT in understanding non -user adoption 
+intentions to virtual learning environments: The state university lecturers’ perspective. International Journal of Technology 
+Enhanced Learning , 13(3), 284. https://doi.org/10.1504/IJTEL.2021.115978  
+21. Hobson, T., & Corry, O. (2023). Existential secu rity: Safeguarding humanity or globalising power? Global Policy , 14(4), 
+633–637. 
+22. Hong, D., & Cho, C. -H. (2023). Factors Affecting Innovation Resistance of Smartphone AI Voice Assistants. International 
+Journal of Human –Computer Interaction , 39(13), 2557 –2572. https://doi.org/10.1080/10447318.2022.2080899  
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 6 23. Hong, F. -Y., Huang, D. -H., Lin, H. -Y., & Chiu, S. -L. (2014). Analysis of the psychological traits, Facebook usage, and 
+Facebook addiction model of Taiwanese university students. Telematics and Informatics , 31(4), 597 –606. 
+https://doi.org/10.1016/j.tele.2014.01.001  
+24. Isaac, O., Abdullah, Z., Aldholay, A. H., & Abdulbaqi Ameen, A. (2019). Antecedents and outcomes of internet usage 
+within organisations in Yemen: An extension of the Unified Theory of Acceptance and  Use of Technology (UTAUT) 
+model. Asia Pacific Management Review , 24(4), 335 –354. https://doi.org/10.1016/j.apmrv.2018.12.003  
+25. Jain, R., Garg, N., & Khera, S. N. (2022). Adoption of AI -Enabled Tools in Social Development Organizations in India: 
+An Extension  of UTAUT Model. Frontiers in Psychology , 13, 893691.  
+26. Khalifa, M., Logeswaran, L., Lee, M., Lee, H., & Wang, L. (2023). Few -shot Reranking for Multi -hop QA via Language 
+Model Prompting. In A. Rogers, J. Boyd -Graber, & N. Okazaki (Eds.), Proceedings of the 61st Annual Meeting of the 
+Association for Computational Linguistics (Volume 1: Long Papers)  (pp. 15882 –15897). Association for Computational 
+Linguistics. https://doi.org/10.18653/v1/2023.acl -long.885  
+27. Kumar, M. A., & Ayedee, D. N. (2020). Technology Adopti on: A Solution for SMEs to Overcome Problems during COVID -
+19 (SSRN Scholarly Paper 3745814). https://papers.ssrn.com/abstract=3745814  
+28. Larson, L., & DeChurch, L. A. (2020). Leading teams in the digital age: Four perspectives on technology and what they 
+mean  for leading teams. The Leadership Quarterly , 31(1), 101377. https://doi.org/10.1016/j.leaqua.2019.101377  
+29. Lin, C. -C., Huang, A. Y. Q., & Lu, O. H. T. (2023). Artificial intelligence in intelligent tutoring systems toward sustainable 
+education: A systematic  review. Smart Learning Environments , 10(1), 41. https://doi.org/10.1186/s40561 -023-00260 -y 
+30. Lin, S. Y., Mahoney, M. R., & Sinsky, C. A. (2019). Ten Ways Artificial Intelligence Will Transform Primary Care. 
+Journal of General Internal Medicine , 34(8), 1626 –1630. https://doi.org/10.1007/s11606 -019-05035 -1 
+31. Maghazei, O., Lewis, M. A., & Netland, T. H. (2022). Emerging technologies and the use case: A multi‐year study of 
+drone adoption. Journal of Operations Management , 68(6–7), 560 –591. https://doi.org/10.1002/ joom.1196  
+32. Malik, A., De Silva, M. T. T., Budhwar, P., & Srikanth, N. R. (2021). Elevating talents’ experience through innovative 
+artificial intelligence -mediated knowledge sharing: Evidence from an IT -multinational enterprise. Journal of International 
+Management , 27(4), 100871. https://doi.org/10.1016/j.intman.2021.100871  
+33. Manca, F., Sivakumar, A., & Polak, J. W. (2019). The effect of social influence and social interactions on the adoption of 
+a new technology: The use of bike sharing in a student popula tion. Transportation Research Part C: Emerging 
+Technologies , 105, 611 –625. https://doi.org/10.1016/j.trc.2019.02.010  
+34. Mhlanga, D. (2023). Open AI in education, the responsible and ethical use of ChatGPT towards lifelong learning. 
+Education, the Responsible and Ethical Use of ChatGPT Towards Lifelong Learning (February 11, 2023) . 
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4354422  
+35. Oleksy, T., Wnuk, A., & Lassota, I. (2023). Attachment to real -world places and willingness to migrate to metaverse virtua l 
+worlds. Journal of Environmental Psychology , 92, 102161.  
+36. OpenAI, O., Plappert, M., Sampedro, R., Xu, T., Akkaya, I., Kosaraju, V., Welinder, P., D’Sa, R., Petron, A., Pinto, H. P. 
+d O., Paino, A., Noh, H., Weng, L., Yuan, Q., Chu, C., & Zaremba, W. (2021 ). Asymmetric self -play for automatic goal 
+discovery in robotic manipulation  (arXiv:2101.04882). arXiv. https://doi.org/10.48550/arXiv.2101.04882  
+37. Ragheb, M. A., Tantawi, P., Farouk, N., & Hatata, A. (2022). Investigating the acceptance of applying chat -bot (Artificial 
+intelligence) technology among higher education students in Egypt. International Journal of Higher Education 
+Management , 8(2). https://www.academia.edu/download/96162300/2022 -02-28-20-55-56-PM.pdf  
+38. Rahi, S., Othman Mansour, M. M., Alghizzawi, M ., & Alnaser, F. M. (2019). Integration of UTAUT model in internet 
+banking adoption context: The mediating role of performance expectancy and effort expectancy. Journal of Research in 
+Interactive Marketing , 13(3), 411 –435. https://doi.org/10.1108/JRIM -02-2018-0032  
+39. Raji. (2020). Closing the AI accountability gap | Proceedings of the 2020 Conference on Fairness, Accountability, and 
+Transparency . https://dl.acm.org/doi/abs/10.1145/3351095.3372873  
+40. Sajjadi, H., Delouei, A. A., Atashafrooz, M., & Sheikholeslami, M. (2018). Double MRT Lattice Boltzmann simulation of 
+3-D MHD natural convection in a cubic cavity with sinusoidal temperature distribution utilizing nanofluid. International 
+Journal of Heat and Mass Transfer , 126, 489 –503. https://doi.org/10.1016/j.ijheat masstransfer.2018.05.064  
+41. Salvaris, M., Dean, D., & Tok, W. H. (2018). Deep Learning with Azure: Building and Deploying Artificial Intelligence 
+Solutions on the Microsoft AI Platform . Apress. https://doi.org/10.1007/978 -1-4842 -3679 -6 
+Ayeni et al.   Adoption of Generative AI  
+Proceedings of the Nineteenth  Midwest Association for Information Systems Conference, Peoria, Illinois, May 16-17, 202 4 7 42. Sarker, I. H. (2021). M achine Learning: Algorithms, Real -World Applications and Research Directions. SN Computer 
+Science , 2(3), 160. https://doi.org/10.1007/s42979 -021-00592 -x 
+43. Serrano -Munoz, I., Ulbricht, A., Fritsch, T., Mishurova, T., Kromm, A., Hofmann, M., Wimpory, R. C., Ev ans, A., & 
+Bruno, G. (2021). Scanning Manufacturing Parameters Determining the Residual Stress State in LPBF IN718 Small Parts. 
+Advanced Engineering Materials , 23(7), 2100158. https://doi.org/10.1002/adem.202100158  
+44. Shneiderman, B. (2020). Human -Centered  Artificial Intelligence: Three Fresh Ideas. AIS Transactions on Human -
+Computer Interaction , 12(3), 109 –124. https://doi.org/10.17705/1thci.00131  
+45. Townsend, D. M., & Hunt, R. A. (2019). Entrepreneurial action, creativity, & judgment in the age of artificial  intelligence. 
+Journal of Business Venturing Insights , 11, e00126. https://doi.org/10.1016/j.jbvi.2019.e00126  
+46. Venkatesh, V. (2022). Adoption and use of AI tools: a research agenda grounded in UTAUT. Annals of Operations 
+Research, 308(1), 641 -652. 
+47. Venkatesh . (2023). AI and emerging technology adoption: A research agenda for operations management: International 
+Journal of Production Research: Vol 0, No 0 . https://www.tandfonline.com/doi/abs/10.1080/00207543.2023.2192309  
+48. Venkatesh, V., Raman, R., & Cruz -Jesus,  F. (2023). AI and emerging technology adoption: A research agenda for 
+operations management. International Journal of Production Research , 1 –11. 
+https://doi.org/10.1080/00207543.2023.2192309  
+49. Vimalkumar, M., Sharma, S. K., Singh, J. B., & Dwivedi, Y. K. (2 021). ‘Okay google, what about my privacy?’: User’s 
+privacy perceptions and acceptance of voice based digital assistants. Computers in Human Behavior , 120, 106763.  
+50. Vinuesa, R., Azizpour, H., Leite, I., Balaam, M., Dignum, V., Domisch, S., Felländer, A., La nghans, S. D., Tegmark, M., 
+& Fuso Nerini, F. (2020). The role of artificial intelligence in achieving the Sustainable Development Goals. Nature 
+Communications , 11(1), Article 1. https://doi.org/10.1038/s41467 -019-14108 -y 
+51. Wang, F. -Y., Miao, Q., Li, X., Wan g, X., & Lin, Y. (2023). What does ChatGPT say: The DAO from algorithmic 
+intelligence to linguistic intelligence. IEEE/CAA Journal of Automatica Sinica , 10(3), 575 –579. 
+52. Wang, W., & Siau, K. (2019). Artificial intelligence, machine learning, automation, rob otics, future of work and future of 
+humanity: A review and research agenda. Journal of Database Management (JDM) , 30(1), 61 –79. 
+53. Westerlund, M. (2019). The Emergence of Deepfake Technology: A Review. Technology Innovation Management Review , 
+9(11), 40 –53. ht tps://doi.org/10.22215/timreview/1282  
+54. Whittaker, M., Crawford, K., Dobbe, R., Fried, G., Kaziunas, E., Mathur, V., West, S. M., Richardson, R., Schultz, J., & 
+Schwartz, O. (2018). AI now report 2018 . AI Now Institute at New York University New York. 
+https://www.stc.org/roundtable/wp -content/uploads/sites/34/2019/06/AI_Now_2018_Report.pdf  
+55. Williams, A. I., Murtagh, D. J., Fayer, S. E., Andersen, S. L., Chevallier, J., Kövér, Á., Van Reeth, P., Humberston, J. W., 
+& Laricchia, G. (2015). Moderation and di ffusion of positrons in tungsten meshes and foils. Journal of Applied Physics , 
+118(10), 105302. https://doi.org/10.1063/1.4930033  
+56. Williams, M., Rana, N., & Dwivedi, Y. (2015). The unified theory of acceptance and use of technology (UTAUT): A 
+literature rev iew. Journal of Enterprise Information Management , 28, 443 –488. https://doi.org/10.1108/JEIM -09-2014 -
+0088  
+ 

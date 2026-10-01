@@ -1,0 +1,190 @@
+ 
+  
+ 
+  
+  
+ 
+News
+South Africa Tops African Generative
+AI Adoption Rankings in 2026
+Microsoft Report
+ Friday, 22 May 2026 12:04
+South Africa ranked as Africa’s leading user of generative AI tools in the first
+quarter of 2026, with a 23.1% adoption rate among people aged 15-64.
+Microsoft reported widening disparities between developed and
+developing countries, with average GenAI adoption rates of 27.5% and 15.4%
+respectively.
+The United Arab Emirates remained the global leader in generative AI
+usage, with 70.1% of its population using GenAI tools.
+South Africa, Namibia, and both Libya and Gabon ranked as Africa’s top users of
+generative artificial intelligence tools such as ChatGPT, Gemini, Claude and
+Copilot during the first quarter of 2026, according to a report that Microsoft
+published on May 7, 2026.
+Titled “Global AI Diffusion - Q1 2026 Trends and Insights,” the report measured
+global AI diffusion based on the proportion of people aged 15 to 64 who used a
+generative AI solution between January 1 and March 31, 2026. Microsoft based the
+study on aggregated and anonymized telemetry data. The company then
+adjusted the data to account for differences in operating system and connected
+device market shares, internet penetration rates and national populations.
+South Africa ranked among the countries where generative AI adoption has
+become relatively established. Some 23.1% of the country’s population aged 15 to
+64 used the technology during the first quarter of 2026, compared with 19.3%
+during the same period a year earlier.
+Wide Disparities
+With a usage rate of 15.1% during the first three months of 2026, Namibia ranked
+second in Africa, ahead of both Libya and Gabon at 15%, followed by Egypt and
+Botswana at 14.8%, Senegal at 13.9%, Tunisia at 13.5% and Algeria at 13.2%.
+Zambia and Ivory Coast shared 10th place on the continent, with 13.1% of their
+populations using generative AI solutions.
+(See the full ranking of the 46 African countries surveyed below.)
+Globally, the use of generative AI tools increased to an average of 17.8% of the
+population aged 15-64 during the first quarter of 2026, compared with 15.1%
+during the same period in 2025.
+The United Arab Emirates retained its position as the global leader in generative
+AI adoption, with 70.1% of its population using the technology. The Gulf monarchy
+ranked ahead of Singapore at 63.4%, Norway at 48.6%, Ireland at 48.4% and France
+at 47.8%.
+Moreover, the report highlighted widening disparities between developed and
+developing countries. Developed countries recorded an average generative AI
+usage rate of 27.5% during the first quarter of 2026, representing growth of 2.8
+percentage points compared with the second half of 2025.
+In contrast, developing countries posted an average usage rate of 15.4% during
+the first three months of 2026. That figure represented an increase of only 1.3
+percentage points compared with the second half of the previous year.
+The report said the widening gap reflected systemic challenges across
+developing economies, where limited access to reliable electricity, internet
+connectivity and digital skills continued to slow generative AI adoption.
+“Until these fundamental gaps are addressed, the benefits of this technology will
+remain unevenly distributed, risking the further aggravation of existing global
+economic inequalities,” the report stated.
+Walid Kéfi
+Ranking of African Countries With the Highest Generative AI Usage in Q1 2026
+1-South Africa (23.1% of the population)
+2-Namibia (15.1%)
+3-Libya (15%)
+Gabon (15%)
+5-Egypt (14.8%)
+Botswana (14.8%)
+7-Senegal (13.9%)
+8-Tunisia (13.5%)
+9-Algeria (13.2%)
+10-Zambia (13.1%)
+Ivory Coast (13.1%)
+12-Morocco (11.7%)
+13-Gambia (11.4%)
+14-Angola (10.9%)
+Madagascar (10.9%)
+Malawi (10.9%)
+Mozambique (10.9%)
+18-Benin (10.1%)
+Burkina Faso (10.1%)
+Ghana (10.1%)
+Guinea (10.1%)
+Guinea-Bissau (10.1%)
+Liberia (10.1%)
+Mali (10.1%)
+Mauritania (10.1%)
+Niger (10.1%)
+Nigeria (10.1%)
+Sierra Leone (10.1%)
+Togo (10.1%)
+30-Lesotho (9.8%)
+31-Kenya (8.7%)
+Cameroon (8.7%)
+Central African Republic (8.7%)
+Chad (8.7%)
+Congo (8.7%)
+DR Congo (8.7%)
+37-Zimbabwe (8.5%)
+38-Burundi (7.6%)
+Eritrea (7.6%)
+Ethiopia (7.6%)
+Somalia (7.6%)
+South Sudan (7.6%)
+Sudan (7.6%)
+Tanzania (7.6%)
+Uganda (7.6%)
+46-Rwanda (7.2%)
+FollowFollow @EcoﬁnAgency
+On the same topic
+Algeria Breaks Oﬀ Diplomatic Ties With the United Arab Emirates
+Algeria cut diplomatic relations with the United Arab Emirates on Thursday, September 10, 2026, its foreign ministry citing "multiplying
+provocative or...
+Guinea Targets Industrial Growth through 25 Strategic Agreements with
+Morocco
+Morocco and Guinea signed 25 cooperation agreements on September 8 to expand ties across finance, agriculture, customs, and
+transport. Commercial...
+Botswana, Angola strengthen security ties to curb cross-border crime
+Botswana and Angola signed several cooperation agreements, including one covering defense and security. The two countries will
+strengthen joint efforts...
+Food Prices Drive Niger’s Inﬂation Higher Between April and July 2026
+Niger’s inflation rate rose from 0.7% in April to 1.2% in July 2026. Higher cereal and meat prices accounted for much of the increase.
+Millet prices...
+Live News
+ 16:56  Algeria B reaks Of f Diplomatic Ties Wi th the Uni ted Ar ab Emir ates
+ 16:51  Guinea T argets I ndustrial Gr owth thr ough 25 Str ategic Agr eements wi th
+Morocco
+ 16:42  Everest Finance Launches Sama Naf fa Platf orm to B oost R etail Investing in
+Senegal
+ 16:38  Rwanda S ecures $80 Mi llion Concessional Funding to B olster MSME Financing
+ 14:14  Senegal Launches National T raining Plan to Adapt Its Administr ation to the
+Digital Age
+ 14:04  Egypt's Mohamed Gaber A utomates Administr ative Tasks Thr ough AI Agents
+ 14:00  Côte d'I voire Expands Dr one Del ivery of Medical Pr oducts Wi th Zipl ine
+ 13:56  Assal i Kais Turns Legal R esear ch Into an AI -Powered Query
+Most Read
+01 Malawi Seeks Private Investment to Close Digital Connectivity Gap
+02 Semiconductors: Mapping Africa’ s Capabilities Across the V alue Chain
+03 Kenya Plans $182 Million Infrastructure Investment in Rift V alley’ s Bomet County
+04 MTN Re-engages Eurobond Market a Decade After Its Last Issue
+05 Senegal Mango Sector Sees Better-Managed 2026 Season Despite Quality Concerns
+Your email
+S U B S CR I B E
+ 08:59  Togo R aises Pump Prices Again, Gasol ine Hi ts CFAF 817
+ 21:12  CEMAC Clears 120 Camer oonian Pr oducts f or Preferential T rade
+Enter your email to receive our
+newsletter
+Ever est Finance Launches Sama Naffa Platform to Boost Retail Investing in
+Senegal
+Everest Finance, a Senegalese brokerage, launched Sama Naf fa on Friday , September 1 1, a platform that lets individuals
+start saving from 1,000 FCF A...
+Rwanda Secur es $80 Million Concessional Funding to Bolster  MSME
+Financing
+Rwanda secured $80 million in soft loans to expand af fordable credit and liquidity for MSMEs. MSMEs represent over
+90% of Rwandan businesses but...
+Ghana Moves to Close Digital Skills Gap by Embedding Digital
+Certiﬁcations in Universities
+Eleven universities will integrate One Million Coders certiﬁcations into degree and diploma programs, giving students an
+additional route to acquire...
+Lifestyle
+Namibia Studies Ghana’ s GoldBod Model to Str engthen Gold-Sector
+Oversight
+Namibia is examining Ghana’ s gold-trading framework as it seeks greater uniformity and stronger oversight across its
+mining sector . The review comes as...
+Timbuktu, Mali's Historic City of 333 Saints
+On the edge of the Sahara, Timbuktu preserves the legacy of Africa's great empires. It also reﬂects the vulnerability of
+ancient cities facing modern...
+Benin Brings Vodun and Female Resilience to Villeneuve’Africa 2026
+The Villeneuve-Loubet festival will bring together 15 African countries and around 40 associations and NGOs, with
+Benin’ s Vodun traditions and Agojié...
+ 
+ 
+ Ecoﬁn Agency provides daily coverage of nine key African economic sectors: public management, ﬁnance,
+telecoms, agribusiness, mining, energy, transport, communication, and education.
+It also designs and manages specialized media, both online and print, for African institutions and publishers.
+SALES & ADVERTISING
+regie@agenceecoﬁn.com 
+Tél: +41 22 301 96 11 
+Mob: +41 78 699 13 72
+EDITORIAL
+redaction@agenceecoﬁn.com
+More information
+Team
+Publisher
+ECOFIN AGENCY
+Mediamania Sarl
+Rue du Léman, 6
+1201 Geneva
+Switzerland
+Ecoﬁn Agency is a sector-focused economic news agency, founded in December 2010. Its web platform was
+launched in June 2011. ©Mediamania.
