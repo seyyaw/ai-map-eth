@@ -18,10 +18,10 @@
 :root,
 [data-appearance="light"]                     { --bg:#fbfaf8; --surface:#ffffff; --surface-2:#f6f4f0;
                                                 --ink:#1b1a18; --muted:#6b6862; --line:#e3dfd8;
-                                                --accent:#0b6b53; --accent-ink:#ffffff;
-                                                --accent-soft:#e6f1ed; --warn:#8a5a00;
-                                                --warn-soft:#fdf3e2; --shadow:0 1px 2px rgba(20,18,14.05);
-                                                --gradient-start:#0b6b53; --gradient-end:#0d8a6a;
+                                                --accent:#4f46e5; --accent-ink:#ffffff;
+                                                --accent-soft:#eef0fd; --warn:#8a5a00;
+                                                --warn-soft:#fdf3e2; --shadow:0 1px 2px rgba(20,18,14,.05);
+                                                --gradient-start:#4f46e5; --gradient-end:#7c3aed;
                                                 --success:#10b981; --success-soft:#d1fae5; }
 [data-appearance="light"][data-bg="warm"]     { --bg:#faf5ec; --surface:#fffdf9; --surface-2:#f4ede0; --line:#e7dccb; }
 [data-appearance="light"][data-bg="sand"]     { --bg:#f4efe4; --surface:#fdfaf3; --surface-2:#ece4d4; --line:#ded2bd; }
@@ -29,15 +29,20 @@
 [data-appearance="light"][data-bg="mist"]     { --bg:#f0f4f7; --surface:#fbfcfe; --surface-2:#e4ebf1; --line:#d3dde5; }
 [data-appearance="light"][data-bg="contrast"] { --bg:#ffffff; --surface:#ffffff; --surface-2:#f2f2f2;
                                                 --ink:#000000; --muted:#3a3a3a; --line:#000000;
-                                                --accent:#00543f; --accent-soft:#dcefe8; --shadow:none; }
+                                                --accent:#2c1f87; --accent-soft:#e1ddf7; --shadow:none;
+                                                /* The gradient tokens feed the filled-button background; left at
+                                                   their ordinary-mode values they would quietly undo the point of
+                                                   this palette by drawing buttons in the weaker everyday accent
+                                                   instead of the strengthened one above. */
+                                                --gradient-start:#2c1f87; --gradient-end:#2c1f87; }
 
 /*  (- dark palettes -) */
 [data-appearance="dark"]                      { --bg:#16171a; --surface:#1e2024; --surface-2:#25282d;
                                                 --ink:#eceae6; --muted:#9d9a94; --line:#31343a;
-                                                --accent:#3fae8d; --accent-ink:#0d1512;
-                                                --accent-soft:#1a2f28; --warn:#d9a441;
-                                                --warn-soft:#2c2314; --shadow:0 1px 2px rgba(0,0,0.4);
-                                                --gradient-start:#3fae8d; --gradient-end:#4ec9a6;
+                                                --accent:#818cf8; --accent-ink:#13102b;
+                                                --accent-soft:#211c42; --warn:#d9a441;
+                                                --warn-soft:#2c2314; --shadow:0 1px 2px rgba(0,0,0,.4);
+                                                --gradient-start:#818cf8; --gradient-end:#a78bfa;
                                                 --success:#34d399; --success-soft:#064e3b; }
 [data-appearance="dark"][data-bg="warm"]      { --bg:#1b1815; --surface:#241f1a; --surface-2:#2c2620; --line:#3a332b; }
 [data-appearance="dark"][data-bg="sand"]      { --bg:#1d1a15; --surface:#26221b; --surface-2:#2f2a21; --line:#3e372c; }
@@ -45,10 +50,18 @@
 [data-appearance="dark"][data-bg="mist"]      { --bg:#14181c; --surface:#1c2126; --surface-2:#232a30; --line:#2e363d; }
 [data-appearance="dark"][data-bg="contrast"]  { --bg:#000000; --surface:#000000; --surface-2:#141414;
                                                 --ink:#ffffff; --muted:#d0d0d0; --line:#ffffff;
-                                                --accent:#5fd6b0; --accent-ink:#000000;
-                                                --accent-soft:#0d2b22; --shadow:none; }
+                                                --accent:#b4aaff; --accent-ink:#000000;
+                                                --accent-soft:#1f1a40; --shadow:none;
+                                                --gradient-start:#b4aaff; --gradient-end:#b4aaff; }
 
-:root { --radius:10px; --maxw:760px; }
+/* --maxw governs the outer page chrome (header, progress bar, card edges): it
+   fills ~95% of the viewport on ordinary desktop and laptop screens, never
+   drops below the old 760px floor on a narrow window, and stops growing past
+   1600px so the header/progress bar do not become absurdly wide on an
+   ultrawide monitor. --measure is the separate, much narrower width that
+   actual reading content (question text, options, paragraphs) is held to;
+   see the padding-based centering on .card/.q below. */
+:root { --radius:10px; --maxw:clamp(760px, 95vw, 1600px); --measure:760px; }
 
 /* Respect a reduced-motion preference: transitions here are decoration only. */
 @media (prefers-reduced-motion: reduce) { *, *:before, *:after { transition:none !important; animation:none !important; } }
@@ -57,13 +70,25 @@
 html{ -webkit-text-size-adjust:100%; }
 body{
   margin:0; background:var(--bg); color:var(--ink);
-  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Ethiopic","Abyssinica SIL",sans-serif;
+  /* "Exo 2" leads for Latin text (larger x-height, reads well at a distance,
+     which matters for an enumerator holding a tablet during an interview).
+     The Ethiopic-capable fonts stay in the chain after it: Exo 2 has no
+     Ethiopic glyphs, so the browser falls through to them automatically for
+     any Ethiopic-script text without anything extra needed here. */
+  font:18px/1.6 "Exo 2",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Ethiopic","Abyssinica SIL",sans-serif;
   transition:background-color .18s ease, color .18s ease;
   background-image:radial-gradient(circle at 20% 80%, var(--accent-soft) 0%, transparent 50%),
                    radial-gradient(circle at 80% 20%, var(--accent-soft) 0%, transparent 50%);
   background-attachment:fixed;
 }
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* Full-bleed card chrome with a narrow, centered reading column inside it.
+   The card/question border and background span the wide .wrap; the padding
+   formula below keeps the actual text block at --measure (760px) wide
+   whenever there is room for it, and falls back to the base padding (same as
+   before this redesign) once the viewport is too narrow for that to apply,
+   which is what keeps phones full-bleed without a separate media query. */
 
 /* Visible focus everywhere: the questionnaire is fully keyboard-operable. */
 :focus-visible{ outline:2.5px solid var(--accent); outline-offset:2px; border-radius:4px; }
@@ -86,11 +111,12 @@ select,input,textarea{font:inherit;color:inherit;background:var(--surface);
 textarea{width:100%;min-height:110px;resize:vertical}
 input[type=text],input[type=email],input[type=number],input[type=month]{width:100%}
 
-.iconbtn{background:transparent;border:1px solid var(--line);border-radius:8px;color:inherit;
-  cursor:pointer;font:inherit;font-size:15px;line-height:1;padding:8px 10px}
+.iconbtn{background:transparent;border:1px solid var(--line);border-radius:9px;color:inherit;
+  cursor:pointer;font:inherit;font-size:17px;line-height:1;padding:10px 12px;
+  display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
 .iconbtn:hover{border-color:var(--accent)}
 
-.pill{font-size:12px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);
+.pill{font-size:13px;padding:4px 10px;border-radius:99px;border:1px solid var(--line);
   color:var(--muted);white-space:nowrap}
 .pill.off{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)}
 .pill.saved{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
@@ -99,27 +125,27 @@ input[type=text],input[type=email],input[type=number],input[type=month]{width:10
 #progwrap{background:var(--surface);border-bottom:1px solid var(--line)}
 #progwrap .wrap{padding-top:9px;padding-bottom:10px}
 .prog-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
-  font-size:12.5px;color:var(--muted);margin-bottom:6px}
+  font-size:14px;color:var(--muted);margin-bottom:7px}
 .prog-top strong{color:var(--ink);font-weight:600}
-.prog-pct{font-variant-numeric:tabular-nums;font-weight:650;color:var(--accent)}
-#progtrack{height:8px;background:var(--surface-2);border:1px solid var(--line);
+.prog-pct{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent);font-size:16px}
+#progtrack{height:10px;background:var(--surface-2);border:1px solid var(--line);
   border-radius:99px;overflow:hidden}
 #progfill{height:100%;width:0;background:linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
   border-radius:99px;transition:width .35s cubic-bezier(.4,0.2,1);
-  box-shadow:0 0 8px rgba(11,107,83,0.3)}
+  box-shadow:0 0 8px rgba(79,70,229,0.3)}
 /* Section ticks: one segment per section, filled as each is completed. */
-#progsteps{display:flex;gap:3px;margin-top:6px}
-#progsteps i{flex:1;height:3px;border-radius:99px;background:var(--surface-2);
+#progsteps{display:flex;gap:3px;margin-top:7px}
+#progsteps i{flex:1;height:4px;border-radius:99px;background:var(--surface-2);
   border:1px solid var(--line);transition:background-color .25s ease}
 #progsteps i.done{background:var(--accent);border-color:var(--accent)}
-#progsteps i.current{background:var(--accent);border-color:var(--accent);opacity.5}
+#progsteps i.current{background:var(--accent);border-color:var(--accent);opacity:.5}
 
 /* Within-section position: one question is shown at a time, so the respondent
    needs to see where they are inside the section as well as overall. */
-.prog-sub{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:7px;
-  font-size:12px;color:var(--muted)}
-#subdots{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
-#subdots i{width:7px;height:7px;border-radius:50%;background:var(--surface-2);
+.prog-sub{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;
+  font-size:13.5px;color:var(--muted)}
+#subdots{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+#subdots i{width:8px;height:8px;border-radius:50%;background:var(--surface-2);
   border:1px solid var(--line);display:block;transition:background-color .2s ease}
 #subdots i.done{background:var(--accent);border-color:var(--accent)}
 #subdots i.current{background:var(--accent);border-color:var(--accent);
@@ -128,14 +154,15 @@ input[type=text],input[type=email],input[type=number],input[type=month]{width:10
 /* ------------------------------------------------------------ layout */
 main{padding:26px 0 64px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px;margin-bottom:18px;box-shadow:var(--shadow);
+  padding-block:28px;padding-inline:max(26px, calc((100% - var(--measure)) / 2));
+  margin-bottom:18px;box-shadow:var(--shadow);
   transition:transform .2s ease, box-shadow .2s ease}
-.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0.1)}
-h1{font-size:26px;line-height:1.25;margin:0 0 8px;letter-spacing:-.02em}
-h2{font-size:20px;margin:0 0 10px}
-h3{font-size:16px;margin:0 0 8px}
-.lede{color:var(--muted);margin:0 0 20px}
-.fine{font-size:13px;color:var(--muted)}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+h1{font-size:34px;line-height:1.22;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:26px;margin:0 0 12px}
+h3{font-size:20px;margin:0 0 9px}
+.lede{color:var(--muted);margin:0 0 20px;font-size:1.08em}
+.fine{font-size:15px;color:var(--muted)}
 a{color:var(--accent)}
 
 /* The instrument picker uses the same .opt radio rows as every other
@@ -146,67 +173,91 @@ a{color:var(--accent)}
 .opt .optsub{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 .opt.sel .optsub{color:var(--accent)}
 
+/* #secmeta is a direct child of #survey, outside any .q/.card, same as
+   .navbtns/#reviewbar/#lenfs/#survey > p below; it needs the same measure
+   constraint so the section label lines up with the question cards under it
+   instead of stretching to the full wide chrome width. */
 .secmeta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
-  font-size:12px;text-transform:uppercase;letter-spacing.09em;color:var(--muted);margin-bottom:12px}
+  font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:12px;
+  max-width:var(--measure);margin-inline:auto}
 
 /* ------------------------------------------------------------ questions */
 .q{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px;margin-bottom:14px;box-shadow:var(--shadow);scroll-margin-top:150px}
+  padding-block:24px;padding-inline:max(22px, calc((100% - var(--measure)) / 2));
+  margin-bottom:14px;box-shadow:var(--shadow);scroll-margin-top:150px}
 .q.invalid{border-color:var(--warn)}
 .qhead{display:flex;gap:10px;align-items:baseline}
-.qnum{font-size:12px;font-weight:650;color:var(--accent);background:var(--accent-soft);
-  border-radius:5px;padding:2px 6px;flex:none;letter-spacing.02em}
-.q .qtext{font-size:17px;font-weight:560;margin:0 0 6px;line-height:1.4}
-.q .qhelp{font-size:14px;color:var(--muted);margin:0 0 14px}
+.qnum{font-size:13px;font-weight:650;color:var(--accent);background:var(--accent-soft);
+  border-radius:5px;padding:3px 8px;flex:none;letter-spacing:.02em}
+.q .qtext{font-size:22px;font-weight:650;margin:0 0 7px;line-height:1.4}
+.q .qhelp{font-size:16px;color:var(--muted);margin:0 0 16px}
 .req-star{color:var(--warn);font-weight:700}
 
-.opts{display:flex;flex-direction:column;gap:8px;margin-top:12px}
-.opt{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border:1px solid var(--line);
-  border-radius:8px;cursor:pointer;transition:all .15s ease;position:relative;overflow:hidden}
+.opts{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line);
+  border-radius:10px;cursor:pointer;transition:all .15s ease;position:relative;overflow:hidden;font-size:18px}
 .opt:hover{border-color:var(--accent);background:var(--surface-2);transform:translateX(4px)}
-.opt.sel{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 2px 8px rgba(11,107,83,0.15)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 2px 8px rgba(79,70,229,0.15)}
 .opt.sel::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
-.opt input{margin:3px 0 0;accent-color:var(--accent);flex:none}
+.opt input{margin:3px 0 0;accent-color:var(--accent);flex:none;width:19px;height:19px}
 .opt span{flex:1}
-.opt kbd{font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);
-  border:1px solid var(--line);border-radius:4px;padding:3px 5px;background:var(--surface-2);flex:none}
+.opt kbd{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);
+  border:1px solid var(--line);border-radius:4px;padding:4px 6px;background:var(--surface-2);flex:none}
 .opt.sel kbd{color:var(--accent);border-color:var(--accent)}
 
-.scale{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
-.scale button{flex:1;min-width:56px;padding:12px 4px;border:1px solid var(--line);border-radius:8px;
-  background:var(--surface);color:inherit;cursor:pointer;font:inherit}
+.scale{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.scale button{flex:1;min-width:64px;padding:14px 6px;border:1px solid var(--line);border-radius:9px;
+  background:var(--surface);color:inherit;cursor:pointer;font:inherit;font-size:17px}
 .scale button:hover{border-color:var(--accent)}
 .scale button.sel{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.scale-ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
+.scale-ends{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:7px}
 
 .gridwrap{overflow-x:auto;margin-top:12px;-webkit-overflow-scrolling:touch}
-table.grid{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
-table.grid th,table.grid td{border-bottom:1px solid var(--line);padding:9px 7px;text-align:center}
+table.grid{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+table.grid th,table.grid td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:center}
 table.grid th:first-child,table.grid td:first-child{text-align:left;min-width:190px;font-weight:400}
-table.grid thead th{font-size:12px;color:var(--muted);font-weight:500;vertical-align:bottom}
+table.grid thead th{font-size:13px;color:var(--muted);font-weight:500;vertical-align:bottom}
 table.grid tbody tr:hover{background:var(--surface-2)}
 table.grid tbody tr.answered td:first-child{color:var(--accent)}
-table.grid input{accent-color:var(--accent)}
+/* The bare radio in each cell, not a labelled row like .opt, so its own box is
+   the whole tap target: sized up from the browser default (~13px) for a
+   tablet enumerator, though a grid cell is too narrow to reach the full
+   44x44 guideline without widening every column. */
+table.grid input{accent-color:var(--accent);width:24px;height:24px}
 
 .rep{border:1px dashed var(--line);border-radius:8px;padding:14px;margin-top:10px}
-.rep h4{margin:0 0 10px;font-size:14px;color:var(--muted);font-weight:500}
+.rep h4{margin:0 0 10px;font-size:15px;color:var(--muted);font-weight:500}
 .rep .fld{margin-bottom:11px}
-.rep .fld label{display:block;font-size:14px;margin-bottom:5px}
+.rep .fld label{display:block;font-size:15px;margin-bottom:5px}
 
 /* ------------------------------------------------------------ nav */
-.navbtns{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
-.counter{font-size:13px;color:var(--muted)}
+/* .navbtns can appear either inside a .card (already measure-width via the
+   card's own padding) or as a direct child of #survey, outside any card; the
+   max-width/auto-margin here keeps the second case aligned with the question
+   cards above it instead of stretching to the full wide chrome width. */
+.navbtns{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;
+  max-width:var(--measure);margin-inline:auto}
+.counter{font-size:14px;color:var(--muted)}
+/* The hint line and the skip-question link are also direct children of
+   #survey outside any .q/.card; same reasoning as .navbtns above. */
+#survey > p{max-width:var(--measure);margin-left:auto;margin-right:auto}
+/* The section-intro help text (app.js appends a bare p.qhelp to #qform as the
+   first child, right before the question card, for the first question of a
+   section) is a step further down than #survey > p reaches: it is a child of
+   #qform, not of #survey directly, so it needs the same constraint spelled
+   out again rather than being reached by the selector above. */
+#qform > .qhelp{max-width:var(--measure);margin-left:auto;margin-right:auto}
 .btn{background:linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  color:var(--accent-ink);border:1px solid var(--accent);border-radius:8px;
-  padding:11px 22px;font:inherit;font-weight:560;cursor:pointer;transition:all .2s ease;
-  box-shadow:0 2px 4px rgba(11,107,83,0.2)}
-.btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 4px 8px rgba(11,107,83,0.3)}
+  color:var(--accent-ink);border:1px solid var(--accent);border-radius:9px;
+  padding:14px 28px;font:inherit;font-size:1em;font-weight:620;cursor:pointer;transition:all .2s ease;
+  box-shadow:0 2px 4px rgba(79,70,229,0.2)}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 4px 8px rgba(79,70,229,0.3)}
 .btn:active{transform:translateY(0)}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--accent);filter:none}
-.btn:disabled{opacity.4;cursor:not-allowed;filter:none}
+.btn:disabled{opacity:.4;cursor:not-allowed;filter:none}
 .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.err{color:var(--warn);font-size:14px;margin-top:9px;font-weight:500}
+.err{color:var(--warn);font-size:15px;margin-top:9px;font-weight:500}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /* Live region for screen-reader announcements; visually hidden. */
@@ -215,30 +266,30 @@ table.grid input{accent-color:var(--accent)}
 
 /* ------------------------------------------------------------ dialogs */
 dialog{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
-  color:var(--ink);max-width:460px;width:calc(100% - 32px);padding:24px;box-shadow:0 8px 32px rgba(0,0,0.18)}
-dialog:backdrop{background:rgba(0,0,0.45)}
-dialog h3{margin:0 0 6px;font-size:18px}
+  color:var(--ink);max-width:460px;width:calc(100% - 32px);padding:24px;box-shadow:0 8px 32px rgba(0,0,0,.18)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+dialog h3{margin:0 0 6px;font-size:20px}
 
 .setgroup{margin-top:18px}
-.setgroup>label{display:block;font-size:13px;font-weight:600;margin-bottom:8px;color:var(--muted);
-  text-transform:uppercase;letter-spacing.06em}
+.setgroup>label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em}
 .seg{display:flex;gap:6px}
-.seg button{flex:1;padding:9px 6px;border:1px solid var(--line);border-radius:8px;background:var(--surface);
-  color:inherit;cursor:pointer;font:inherit;font-size:14px}
+.seg button{flex:1;padding:11px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);
+  color:inherit;cursor:pointer;font:inherit;font-size:15px}
 .seg button:hover{border-color:var(--accent)}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 
 .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .sw{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;
   border:1px solid var(--line);border-radius:8px;background:var(--surface);color:inherit;
-  cursor:pointer;font:inherit;font-size:12px}
+  cursor:pointer;font:inherit;font-size:13px}
 .sw:hover{border-color:var(--accent)}
 .sw[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
 .sw i{width:100%;height:26px;border-radius:5px;border:1px solid var(--line);display:block}
 
 /* Only shown for questions the schema marks optional, so skipping is a
    deliberate act rather than the default. */
-.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:13px;color:var(--muted);
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:14px;color:var(--muted);
   text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .linkbtn:hover{color:var(--accent)}
 
@@ -246,11 +297,11 @@ footer{padding:24px 0 40px}
 
 @media (max-width:560px){
   .card.q{padding:18px}
-  h1{font-size:22px}
+  h1{font-size:28px}
   .navbtns{flex-wrap:wrap}
   .navbtns .btn{flex:1;min-width:120px}
   .counter{order:3;width:100%;text-align:center}
-  .brand{font-size:15px}
+  .brand{font-size:16px}
   .swatches{grid-template-columns:repeat(2,1fr)}
 }
 
@@ -308,13 +359,15 @@ footer{padding:24px 0 40px}
   100% { left: 100%; }
 }
 
-/* Length choice on the picker, and the invitation block on the done screen. */
-#lenfs{border:0;padding:0;margin:18px 0 0}
+/* Length choice on the picker, and the invitation block on the done screen.
+   #lenfs is a direct child of #survey, outside any .q/.card, so it gets the
+   same measure constraint those get, for the same reason. */
+#lenfs{border:0;padding:0;margin:18px auto 0;max-width:var(--measure)}
 #lenhint{margin:6px 0 0}
 #invitebox{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
-#invitebox h3{margin:0 0 4px;font-size:15px}
+#invitebox h3{margin:0 0 4px;font-size:16px}
 #invitelink{display:inline-block;background:var(--surface-2);border-radius:6px;
-  padding:6px 9px;font-size:13px;word-break:break-all;margin-bottom:8px}
+  padding:6px 9px;font-size:14px;word-break:break-all;margin-bottom:8px}
 
 /* ===========================================================================
    Question-type cues, larger question text, and the multi-select Done button.
@@ -327,11 +380,11 @@ footer{padding:24px 0 40px}
 
 .qbadge{
   display:flex; align-items:center; gap:7px;
-  font-size:12.5px; font-weight:600; letter-spacing.02em;
+  font-size:13.5px; font-weight:600; letter-spacing:.02em;
   color:var(--muted); margin:0 0 10px;
   text-transform:uppercase;
 }
-.qbadge-ico{ font-size:14px; line-height:1; }
+.qbadge-ico{ font-size:15px; line-height:1; }
 .qbadge-max{
   margin-left:auto; text-transform:none; font-weight:500;
   background:var(--surface-2); border-radius:20px; padding:2px 9px;
@@ -342,7 +395,7 @@ footer{padding:24px 0 40px}
    readable in the high-contrast palette and for a colourblind respondent. */
 .qbadge:before{
   content:""; width:3px; height:15px; border-radius:2px;
-  background:currentColor; opacity.55; flex:0 0 auto;
+  background:currentColor; opacity:.55; flex:0 0 auto;
 }
 .t-single      { color:#2a78d6; }
 .t-multi.t-checklist   { color:#0b6b53; }
@@ -371,7 +424,7 @@ footer{padding:24px 0 40px}
 /* The question itself, a step larger than body text. It is the thing being
    asked; it should not be the same size as the note under it. */
 .qtext{ font-size:1.22em; line-height:1.4; font-weight:650; }
-.qhelp{ font-size.97em; line-height:1.5; }
+.qhelp{ font-size:.97em; line-height:1.5; }
 
 /* ------------------------------------------------------------ "Other, please specify" */
 .otherbox{
@@ -379,11 +432,11 @@ footer{padding:24px 0 40px}
   background:var(--surface-2); border-radius:9px;
   border-left:3px solid var(--accent);
 }
-.otherlab{ display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+.otherlab{ display:block; font-size:14px; font-weight:600; margin-bottom:6px; }
 .otherbox input{ width:100%; }
 
 /* ------------------------------------------------------------ format complaints */
-.fielderr{ color:var(--warn); font-size:13px; margin:6px 0 0; font-weight:600; }
+.fielderr{ color:var(--warn); font-size:14px; margin:6px 0 0; font-weight:600; }
 input.bad{ border-color:var(--warn); box-shadow:0 0 0 2px var(--warn-soft); }
 
 /* ------------------------------------------------------------ Done, on a multi-select only */
@@ -403,7 +456,7 @@ input.bad{ border-color:var(--warn); box-shadow:0 0 0 2px var(--warn-soft); }
    therefore numbered, banded, and confirmed once answered. */
 
 .gridcap{ display:flex; align-items:center; flex-wrap:wrap;
-  font-size:12.5px; color:var(--muted); margin:10px 0 2px; }
+  font-size:13.5px; color:var(--muted); margin:10px 0 2px; }
 .gridcap-n{ font-weight:700; color:var(--ink); }
 .gridtally{ color:var(--muted); font-variant-numeric:tabular-nums; }
 .gridtally.complete{ color:var(--accent); font-weight:650; }
@@ -417,9 +470,9 @@ table.grid tbody tr:hover{ background:var(--accent-soft); }
 /* The row number: this row is a question, and it is the nth of them. */
 .rownum{
   display:inline-flex; align-items:center; justify-content:center;
-  min-width:22px; height:22px; margin-right:9px; padding:0 5px;
+  min-width:24px; height:24px; margin-right:9px; padding:0 5px;
   border-radius:6px; background:var(--surface); border:1px solid var(--line);
-  font-size:11.5px; font-weight:700; color:var(--muted);
+  font-size:12.5px; font-weight:700; color:var(--muted);
   font-variant-numeric:tabular-nums;
 }
 .rowlabel{ font-weight:500; }
@@ -443,8 +496,15 @@ table.grid tbody tr.answered .rownum:after{ content:"✓"; font-size:12px; font-
 }
 .q.invalid table.grid tbody tr:not(.answered) .rownum{ border-color:var(--warn); color:var(--warn); }
 
-/* The stem stays visible above a long grid while the rows scroll past it. */
-.q:has(table.grid) .qtext{ position:sticky; top:0; z-index:1;
+/* The stem stays visible above a long grid while the rows scroll past it.
+   This has to sit on .qhead, not .qtext itself: a sticky element can only move
+   within the box of its own immediate parent, and .qtext's parent (.qhead) is
+   just a one-line flex row, exactly as tall as the text, which left it no room
+   to stick at all. .qhead's own parent is the full question card, which is as
+   tall as the whole grid, so it is the one that needs the sticky rule. The top
+   offset clears the page's own sticky header (56px tall, plus its 1px border)
+   so the stem settles in just beneath it instead of being drawn under it. */
+.q:has(table.grid) .qhead{ position:sticky; top:57px; z-index:1;
   background:var(--surface); padding:4px 0; }
 
 /* ------------------------------------------------------------ completion */
@@ -464,11 +524,11 @@ table.grid tbody tr.answered .rownum:after{ content:"✓"; font-size:12px; font-
   text-align:left; margin:26px auto 0; max-width:40em;
   border-top:1px solid var(--line); padding-top:20px;
 }
-.done-next h3{ font-size:14px; text-transform:uppercase; letter-spacing.05em;
+.done-next h3{ font-size:15px; text-transform:uppercase; letter-spacing:.05em;
   color:var(--muted); margin:0 0 12px; font-weight:650; }
 .done-list{ list-style:none; margin:0; padding:0; }
 .done-list li{ display:flex; gap:11px; align-items:flex-start; margin-bottom:12px;
-  font-size:14.5px; line-height:1.5; }
+  font-size:15.5px; line-height:1.5; }
 .done-list li > span:first-child{ flex:0 0 auto; font-size:17px; line-height:1.3; }
 
 .done-actions{ justify-content:center; margin-top:24px; }
@@ -485,13 +545,23 @@ table.grid tbody tr.answered .rownum:after{ content:"✓"; font-size:12px; font-
    through everything before it; without Finish, the only way out of a review is
    to reach the last question, which is exactly what someone who came back to fix
    one thing will not do. */
-#reviewbar{
+/* :not([hidden]) matters here: #reviewbar carries the `hidden` attribute by
+   default in the markup, and an element's own `display` declared in author
+   CSS overrides the browser's built-in `[hidden]{display:none}` rule
+   regardless of selector specificity. Without this guard the bar (and its
+   "Finish and save" button) would show on every ordinary question, not only
+   while reviewing an already-submitted response. */
+#reviewbar:not([hidden]){
   display:flex; align-items:center; justify-content:space-between; gap:12px;
-  flex-wrap:wrap; margin-top:18px; padding:13px 15px;
+  flex-wrap:wrap; margin:18px auto 0; padding:14px 17px;
   background:var(--accent-soft); border:1px solid var(--accent);
   border-radius:var(--radius);
+  /* A direct child of #survey, not a .q/.card, so it needs its own measure
+     constraint to keep its edges lined up with the question cards above it
+     rather than stretching to the full wide chrome width. */
+  max-width:var(--measure);
 }
-.reviewnote{ font-size:13.5px; font-weight:600; }
+.reviewnote{ font-size:14.5px; font-weight:600; }
 body.reviewing #progwrap{ box-shadow:inset 0 -2px 0 var(--accent); }
 
 /* The returning-respondent offer, above the picker. */
