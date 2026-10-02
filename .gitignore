@@ -8,3 +8,5 @@ backups/
 
 # docker compose secrets
 .env
+/ai_map_research_program.docx
+/ai_map_workstreams.docx
