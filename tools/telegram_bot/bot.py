@@ -19,6 +19,7 @@ Run:
 Dependencies: python-telegram-bot>=21  (pip install -r requirements.txt)
 """
 
+import html
 import json
 import logging
 import math
@@ -431,6 +432,25 @@ RULE = "──────────"
 VALIDATORS = COMMON.get("validators", {})
 
 
+def clip(s, limit=64):
+    """Trim button text to Telegram's hard 64-character cap at a word boundary.
+
+    Several option labels in this schema (R1's branch choices, D4's maturity
+    ladder, T1's build-vs-buy ladder) run well past 64 characters because they
+    were written to stand alone as full sentences, not as button text. A plain
+    `s[:64]` lands mid-word -- "university, hospital, or similar" on R1
+    becomes "...government office, un" -- which reads as a rendering glitch,
+    not a shortened option, because nothing marks it as cut off. Breaking on
+    the last whole word and adding an ellipsis at least tells the respondent
+    something was trimmed, even though a button has no way to show the rest.
+    """
+    s = s.strip()
+    if len(s) <= limit:
+        return s
+    head = s[:limit - 1].rsplit(" ", 1)[0] or s[:limit - 1]
+    return head.rstrip(",.;:- ") + "…"
+
+
 def check_format(q, value):
     """Validate a typed answer against the shared rule in common.json.
 
@@ -628,7 +648,7 @@ def opt_keyboard(q, opts, answers, lang, st=None):
         label = tr(o["label"], lang)
         if multi and o["value"] in (chosen or []):
             label = "✓ " + label
-        rows.append([InlineKeyboardButton(label[:64], callback_data=f"o|{i}")])
+        rows.append([InlineKeyboardButton(clip(label), callback_data=f"o|{i}")])
     if multi:
         # Telegram gives buttons no colour and no size, so "prominent" has to be
         # built from the only thing available: the label. The spacer row detaches
@@ -648,8 +668,11 @@ def opt_keyboard(q, opts, answers, lang, st=None):
 
 
 def grid_keyboard(q, row, lang, st=None):
-    rows = [[InlineKeyboardButton(tr(c["label"], lang)[:64], callback_data=f"g|{i}")]
-            for i, c in enumerate(q["scale"])]
+    """The column choices for one row: likert_grid names them `scale`, matrix
+    names the same shape `col_options`. Same button layout either way."""
+    cols = q.get("scale") or q.get("col_options") or []
+    rows = [[InlineKeyboardButton(clip(tr(c["label"], lang)), callback_data=f"g|{i}")]
+            for i, c in enumerate(cols)]
     if st is not None:
         rows += nav_row(q, st, lang)
     return kb(rows)
@@ -677,7 +700,7 @@ async def send_question(update_or_q, ctx, st):
         # Keep/Finish belong here too: consent is the first screen of a review,
         # and without them the only way past it is to re-consent.
         markup = kb(review_row(st) +
-                    [[InlineKeyboardButton("✅ " + tr(COMMON["consent"]["affirm"], lang)[:60],
+                    [[InlineKeyboardButton("✅ " + clip(tr(COMMON["consent"]["affirm"], lang), 61),
                                            callback_data="consent")],
                      [InlineKeyboardButton("❌ No, I do not agree", callback_data="decline")]])
         return await ctx.bot.send_message(chat_id, body, reply_markup=markup, parse_mode=ParseMode.HTML)
@@ -698,9 +721,15 @@ async def send_question(update_or_q, ctx, st):
                                           reply_markup=opt_keyboard(q, opts, st["answers"], lang, st),
                                           parse_mode=ParseMode.HTML)
 
-    if q["type"] == "likert_grid":
+    if q["type"] in ("likert_grid", "matrix"):
+        # A matrix is a grid by another name: rows become row_options, the scale
+        # becomes col_options, and it is walked one row at a time exactly like a
+        # likert_grid. progress_stats already weights and scores the two
+        # identically (see question_weight/answered_weight above); this is the
+        # rendering catching up to that, not a new kind of question.
         st["_grid_row"] = st.get("_grid_row", 0)
-        row = q["rows"][st["_grid_row"]]
+        rows = q.get("rows") or q.get("row_options") or []
+        row = rows[st["_grid_row"]]
         save_session(chat_id, st)
         return await ctx.bot.send_message(chat_id, grid_block(st, sec, q, st["_grid_row"], lang),
             reply_markup=grid_keyboard(q, row, lang, st),
@@ -739,8 +768,11 @@ async def send_question(update_or_q, ctx, st):
     st["awaiting_text"] = True
     save_session(chat_id, st)
     if st.get("review") and q["id"] in st["answers"]:
-        # Show what is already there, or a review turns into retyping.
-        text += f"\n\n<i>Currently:</i> <code>{tr(str(st['answers'][q['id']]))}</code>"
+        # Show what is already there, or a review turns into retyping. Escaped
+        # because this is the respondent's own typed text, not schema text --
+        # an answer containing "<", ">" or "&" would otherwise be read as HTML
+        # and either break the message or render wrong.
+        text += f"\n\n<i>Currently:</i> <code>{html.escape(tr(str(st['answers'][q['id']])))}</code>"
     await ctx.bot.send_message(chat_id, text, reply_markup=kb(nav) if nav else None,
                                parse_mode=ParseMode.HTML)
     rule = VALIDATORS.get(q.get("validate") or "")
@@ -1242,10 +1274,12 @@ async def on_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if data.startswith("g|"):
         i = int(data.split("|")[1])
         r = st.get("_grid_row", 0)
+        rows = q.get("rows") or q.get("row_options") or []
+        cols = q.get("scale") or q.get("col_options") or []
         cur = dict(st["answers"].get(q["id"], {}))
-        cur[q["rows"][r]["value"]] = q["scale"][i]["value"]
+        cur[rows[r]["value"]] = cols[i]["value"]
         st["answers"][q["id"]] = cur
-        if r + 1 < len(q["rows"]):
+        if r + 1 < len(rows):
             st["_grid_row"] = r + 1
             save_session(chat_id, st)
             await qd.edit_message_reply_markup(None)

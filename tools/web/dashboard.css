@@ -44,8 +44,28 @@
 
 .dash .wrap { max-width:var(--dashw); }
 
+/* The shared header (#hdr .wrap, styles.css) is a single no-wrap flex row,
+   which is fine for the questionnaire's lighter header but not for the
+   dashboard's: brand text plus the response-count pill, the Questionnaire
+   link and the sign-out button do not fit on one line under ~560px, and
+   because none of those children can shrink below their own text, the row
+   overflowed its box instead of wrapping -- which dragged the sign-out
+   button (and the tail of the Questionnaire link) off the right edge of a
+   phone screen, reachable only by scrolling sideways. Scoped to .dash so the
+   questionnaire's own header is untouched. */
+@media (max-width:560px) {
+  .dash #hdr .wrap { flex-wrap:wrap; row-gap:8px; min-height:0; padding-block:10px; }
+  .dash .hdr-right { margin-left:auto; }
+}
+
 /* ------------------------------------------------------------------ gate */
-#gate { max-width:520px; margin:12vh auto; }
+/* padding-inline is set directly here, not inherited from .card: that rule
+   centres a reading column inside a wide chrome, sized against the
+   CONTAINING block's width (here, up to 1500px via --dashw), not against
+   this element's own 520px cap. Left to inherit, the calculated padding
+   alone would exceed the card's whole width on anything but a narrow
+   screen, squeezing the content area to nothing. */
+#gate { max-width:520px; margin:12vh auto; padding-inline:28px; }
 #gate input { width:100%; padding:11px 13px; font:inherit; border:1px solid var(--line);
   border-radius:8px; background:var(--surface); color:var(--ink); }
 #gate .err { color:var(--crit); font-weight:600; }
@@ -66,8 +86,16 @@
 #tabs button:hover { color:var(--ink); }
 
 /* ----------------------------------------------------------------- layout */
-.grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); }
-.grid.wide { grid-template-columns:repeat(auto-fit,minmax(520px,1fr)); }
+/* minmax(Npx,1fr): the track's Npx floor is a hard minimum that a grid item
+   is never shrunk below, even when the grid's own container is narrower --
+   that floor is what was pushing .grid.wide panels (520px) off the right
+   edge of a phone screen, dragging the whole document (header included)
+   into horizontal scroll with it. min(520px,100%) caps that floor at
+   whatever width is actually available, so auto-fit still gives multiple
+   columns on anything wide enough and collapses to one full-width column,
+   not an overflowing one, once it is not. */
+.grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr)); }
+.grid.wide { grid-template-columns:repeat(auto-fit,minmax(min(520px,100%),1fr)); }
 .panel { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
   padding:16px 18px; box-shadow:var(--shadow); min-width:0; }
 .panel.span2 { grid-column:1 / -1; }

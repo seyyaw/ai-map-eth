@@ -161,7 +161,13 @@ function chartBarsH(items, opts) {
   return `<div>${items.map(i => {
     const w = Math.max(1, 100 * Math.abs(i.value) / max);
     const color = i.color || 'var(--s1)';
-    return `<div style="display:grid;grid-template-columns:${labelW}px 1fr auto;gap:10px;
+    // minmax(0, Npx), not a bare Npx: a fixed label column holds every row to
+    // that exact width regardless of how little space the panel actually has,
+    // which is what pushed wide-label charts (labelW up to 290) off the right
+    // edge on a phone -- the label itself already truncates with ellipsis, so
+    // letting the TRACK shrink below its preferred width when the viewport is
+    // narrow costs nothing but a shorter truncation point.
+    return `<div style="display:grid;grid-template-columns:minmax(0,${labelW}px) 1fr auto;gap:10px;
         align-items:center;height:${rowH}px" tabindex="0" data-tip="${esc(`<div class="t">${i.label}</div><div class="r">${i.tip || i.display || i.value}</div>`)}">
       <span style="font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"
         title="${esc(i.label)}">${esc(i.label)}</span>

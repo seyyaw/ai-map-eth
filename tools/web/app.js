@@ -63,7 +63,15 @@ const BACKGROUNDS = [
   { id: 'contrast', label: 'Contrast', light: '#ffffff', dark: '#000000',
     swatch: 'linear-gradient(135deg,#ffffff 0 50%,#000000 50% 100%)' }
 ];
-const THEME_DEFAULT = 'light', BG_DEFAULT = 'paper', SIZE_DEFAULT = '16';
+// SIZE_DEFAULT must track the body font-size in styles.css: this value is
+// written as an inline style on <body> on every load (below), which beats
+// any stylesheet rule regardless of specificity. It was left at the old '16'
+// through a later pass that raised the stylesheet's own base size to 18 and
+// then 19, which made that CSS change a dead letter for every respondent who
+// had never touched the text-size setting -- the inline style silently put
+// it back to 16 a moment after the stylesheet applied it. Normal here, and
+// the "Normal" button below, must always equal styles.css's body font-size.
+const THEME_DEFAULT = 'light', BG_DEFAULT = 'paper', SIZE_DEFAULT = '19';
 
 const prefersDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
 const getTheme = () => localStorage.getItem('aimap_theme') || THEME_DEFAULT;
